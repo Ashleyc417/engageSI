@@ -2,10 +2,15 @@
 
 :root {
   --font: "Wotfard", sans-serif;
+  --color-background-300: 11, 12, 19;
+  --color-background-500: 38, 43, 61;
 
+  --color-text: 247, 247, 247;
+  --color-action: 31, 3, 255;
+  --color-foreground: 85, 156, 255;
 }
 
-
+/* Some CSS Resets for convenience */
 *,
 *::before,
 *::after {
@@ -14,12 +19,6 @@
 
 * {
   margin: 0;
-}
-
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  font-family: var(--font);
 }
 
 img,
@@ -51,4 +50,42 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+/* General Styles */
+html {
+  transition: all 0.125s linear;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  min-height: 100vh;
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+  background-color: rgb(var(--color-background-300));
+  color: rgb(var(--color-text));
+}
+
+#app {
+  padding-block: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  max-width: 1024px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+footer {
+  margin-block-start: auto;
+  margin-block-end: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding-inline: 3.5rem;
+  }
 }

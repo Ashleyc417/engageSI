@@ -1,6 +1,5 @@
-<script>
-	import '../globals.css';
-</script>
-
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>EngageSI</h1>
+<p>
+	EngageSI is an app for California State University, Fullerton's Supplemental Instruction (SI)
+	Program. It offers an easy-to-use solution to boost participation and track SI engagement.
+</p>
