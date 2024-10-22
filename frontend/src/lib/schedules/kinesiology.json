@@ -1,0 +1,41 @@
+{
+  "department": "Kinesiology",
+  "rows": [
+    {
+      "classTitle": "\n                           <strong>Course</strong>\n                        ",
+      "classNumber": "\n                           <strong>Class Number</strong>\n                        ",
+      "courseInstructor": "\n                           <strong>Course Instructor</strong>\n                        ",
+      "siLeader": "\n                           <strong>SI Leader</strong>\n                        ",
+      "sessionDays": "\n                           <strong>SI Session Days</strong>\n                        ",
+      "sessionTimes": "\n                           <strong>SI Session Times</strong>\n                        ",
+      "location": "\n                           <strong>Location</strong>\n                        "
+    },
+    {
+      "classTitle": "KNES 210",
+      "classNumber": "15290",
+      "courseInstructor": "Samantha Richards",
+      "siLeader": "Juan Hernandez",
+      "sessionDays": "Tu Th",
+      "sessionTimes": "7:00-8:15 pm",
+      "location": "PLS-255"
+    },
+    {
+      "classTitle": "KNES 348",
+      "classNumber": "14969",
+      "courseInstructor": "William Thomas",
+      "siLeader": "Aron Rosas",
+      "sessionDays": "Tu Th",
+      "sessionTimes": "10:00-11:15 am",
+      "location": "GH-239"
+    },
+    {
+      "classTitle": "KNES 348",
+      "classNumber": "15165",
+      "courseInstructor": "Daniela Rubin",
+      "siLeader": "Michael Gomez",
+      "sessionDays": "Tu Th",
+      "sessionTimes": "2:30-3:45 pm",
+      "location": "MH-223"
+    }
+  ]
+}

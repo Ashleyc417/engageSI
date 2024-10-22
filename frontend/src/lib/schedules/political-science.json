@@ -1,0 +1,23 @@
+{
+  "department": "Political Science",
+  "rows": [
+    {
+      "classTitle": "\n                           <strong>Course</strong>\n                        ",
+      "classNumber": "\n                           <strong>Class Number</strong>\n                        ",
+      "courseInstructor": "\n                           <strong>Course Instructor</strong>\n                        ",
+      "siLeader": "\n                           <strong>SI Leader</strong>\n                        ",
+      "sessionDays": "\n                           <strong>SI Session Days</strong>\n                        ",
+      "sessionTimes": "\n                           <strong>SI Session Times</strong>\n                        ",
+      "location": "\n                           <strong>Location</strong>\n                        "
+    },
+    {
+      "classTitle": "POSC 100",
+      "classNumber": "17539",
+      "courseInstructor": "Scott Spitzer",
+      "siLeader": "Arturo Murillo Vargas",
+      "sessionDays": "Tu Th",
+      "sessionTimes": "11:30-12:45 pm",
+      "location": "GH-304"
+    }
+  ]
+}

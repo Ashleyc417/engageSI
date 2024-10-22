@@ -85,15 +85,14 @@ async function parseSchedule() {
     schedule.department = departmentName;
     schedule.rows = rows;
     schedules.push(schedule);
+
+    const departmentFileName = departmentName.split(" ").join("-").toLowerCase();
+
+    const filePath = join(process.cwd(), `../frontend/src/lib/schedules/${departmentFileName}.json`);
+    await writeFile(filePath, JSON.stringify(schedule, null, 2), 'utf-8');
+    console.log(`Schedules saved to ../frontend/src/lib/schedules/${departmentFileName}.json`);
   }
-
   console.log(schedules);
-
-  // Write the JSON data to ../frontend/src/lib/schedules/schedules.json
-  const filePath = join(process.cwd(), '../frontend/src/lib/schedules/schedules.json');
-  await writeFile(filePath, JSON.stringify(schedules, null, 2), 'utf-8');
-  console.log('Schedules saved to ../frontend/src/lib/schedules/schedules.json');
-  return schedules;
 }
 
 // Execute the function when the script is run

@@ -1,0 +1,101 @@
+{
+  "department": "Biology",
+  "rows": [
+    {
+      "classNumber": "19568, 19570, 19572, 19576, 19579",
+      "courseInstructor": "Maryam Sanei",
+      "siLeader": "Josephine Azmy",
+      "sessionDays": "Mo We Fr",
+      "sessionTimes": "11:00-11:50 am",
+      "location": "MH-223"
+    },
+    {
+      "classNumber": "19583, 20159, 19917, 19918, 19919",
+      "courseInstructor": "Catherine Brennan",
+      "siLeader": "Anjolie Hsu",
+      "sessionDays": "Mo We",
+      "sessionTimes": "4:00-5:15 pm",
+      "location": "MH-223"
+    },
+    {
+      "classNumber": "19583, 20159, 19917, 19918, 19919",
+      "courseInstructor": "Catherine Brennan",
+      "siLeader": "Nanette Villegas",
+      "sessionDays": "Mo We",
+      "sessionTimes": "1:00-2:15 pm",
+      "location": "H-321A"
+    },
+    {
+      "classNumber": "19944, 19946, 20157, 20290, 20292",
+      "courseInstructor": "Seong Min Kim",
+      "siLeader": "Will Shin",
+      "sessionDays": "Tu Th",
+      "sessionTimes": "5:30pm-6:45pm",
+      "location": "MH-223"
+    },
+    {
+      "classNumber": "21651, 21653, 21655",
+      "courseInstructor": "Lane Whitlow",
+      "siLeader": "Jasmine Ahmadi",
+      "sessionDays": "Mo We Fr",
+      "sessionTimes": "10:00-10:50 am",
+      "location": "MH-223"
+    },
+    {
+      "classNumber": "21641, 21643, 21645, 21647, 21649",
+      "courseInstructor": "Lane Whitlow",
+      "siLeader": "Bobby Rastegar",
+      "sessionDays": "Mo We",
+      "sessionTimes": "11:30-12:45pm",
+      "location": "GH-229"
+    },
+    {
+      "classNumber": "21641, 21643, 21645, 21647, 21649",
+      "courseInstructor": "Lane Whitlow",
+      "siLeader": "Jaye Bui",
+      "sessionDays": "Mo We",
+      "sessionTimes": "5:30-6:45 pm",
+      "location": "MH-223"
+    },
+    {
+      "classNumber": "19586, 19588, 19640, 19642, 19762, 19764, 21637, 21639",
+      "courseInstructor": "Douglas Eernisse",
+      "siLeader": "Andrew Doan",
+      "sessionDays": "Mo We",
+      "sessionTimes": "1:00-2:15 pm",
+      "location": "MH-223"
+    },
+    {
+      "classNumber": "19586, 19588, 19640, 19642, 19762, 19764, 21637, 21639",
+      "courseInstructor": "Douglas Eernisse",
+      "siLeader": "Mia Ceja",
+      "sessionDays": "Mo We",
+      "sessionTimes": "4:00-5:15 pm",
+      "location": "LH-403A"
+    },
+    {
+      "classNumber": "19767",
+      "courseInstructor": "Nikolas Nikolaidis",
+      "siLeader": "Wesley Chao",
+      "sessionDays": "Tu Th",
+      "sessionTimes": "10:00-11:15 am",
+      "location": "MH-223"
+    },
+    {
+      "classNumber": "23365",
+      "courseInstructor": "Ryan Walter",
+      "siLeader": "Alyssa Stammerjohan",
+      "sessionDays": "Mo We",
+      "sessionTimes": "10:00-11:15 am",
+      "location": "H-513"
+    },
+    {
+      "classNumber": "19768",
+      "courseInstructor": "Darren Sandquist",
+      "siLeader": "James Rodriguez",
+      "sessionDays": "Mo We",
+      "sessionTimes": "2:30-3:45pm",
+      "location": "MH-223"
+    }
+  ]
+}
