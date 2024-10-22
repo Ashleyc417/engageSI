@@ -2,6 +2,51 @@ import { parseHTML } from "linkedom";
 
 const singleSchedules = ["Accounting", "Engineering", "Finance", "Kinesiology", "Physics", "Political Science", "Psychology"];
 
+function parseRegularTable(content) {
+  // Get all entries for this department's SI schedule
+  const rowData = content.querySelectorAll("tr > td");
+
+  const rows = [];
+  let i = 0;
+  const rowEntries = rowData.map(item => item.innerHTML);
+  while (i < rowData.length) {
+    const rowInfo = {
+      classNumber: rowEntries[i],
+      courseInstructor: rowEntries[i + 1],
+      siLeader: rowEntries[i + 2],
+      sessionDays: rowEntries[i + 3],
+      sessionTimes: rowEntries[i + 4],
+      location: rowEntries[i + 5],
+    }
+    rows.push(rowInfo);
+    i += 6;
+  }
+  return rows;
+}
+
+function parseSmallerTable(content) {
+  // Get all entries for this department's SI schedule
+  const rowData = content.querySelectorAll("tr > td");
+
+  const rows = [];
+  let i = 0;
+  const rowEntries = rowData.map(item => item.innerHTML);
+  while (i < rowData.length) {
+    const rowInfo = {
+      classTitle: rowEntries[i],
+      classNumber: rowEntries[i + 1],
+      courseInstructor: rowEntries[i + 2],
+      siLeader: rowEntries[i + 3],
+      sessionDays: rowEntries[i + 4],
+      sessionTimes: rowEntries[i + 5],
+      location: rowEntries[i + 6],
+    }
+    rows.push(rowInfo);
+    i += 7;
+  }
+  return rows;
+}
+
 async function parseSchedule() {
   const url = "https://itwebstg.fullerton.edu/si-v5/schedule/ib-schedule.xml";
   const response = await fetch(url);
@@ -26,36 +71,19 @@ async function parseSchedule() {
       continue;
     }
 
+    // Get departmentName for ease of use
+    const departmentTitle = department.innerHTML;
+    const departmentName = departmentTitle.substring(0, departmentTitle.indexOf(" Fall"));
 
-    const rows = [];
+    const rows = singleSchedules.includes(departmentName) ? parseSmallerTable(content) : parseRegularTable(content);
 
-    // Get row data!
-    const rowData = content.querySelectorAll("tr > td");
-    if (singleSchedules.includes(department.innerHTML.substring(0, department.innerHTML.indexOf("Fall")))) {
-      console.log(department.innerHTML);
-    } else {
-      let i = 0;
-      let rowInfo = {};
-      while (i < rowData.length) {
-        const row = rowData.map(item => item.innerHTML);
-        rowInfo = {
-          classNumber: row[i],
-          courseInstructor: row[i + 1],
-          siLeader: row[i + 2],
-          sessionDays: row[i + 3],
-          sessionTimes: row[i + 4],
-          location: row[i + 5],
-        }
-        rows.push(rowInfo);
-        i += 6;
-      }
-    }
-    schedule.department = department.innerHTML;
+    schedule.department = departmentName;
     schedule.rows = rows;
+
     schedules.push(schedule);
   }
-  console.log(schedules[1]);
-  return "Hello";
+  console.log(schedules[schedules.length - 1]);
+  return schedules;
 }
 
 export const load = async () => {
