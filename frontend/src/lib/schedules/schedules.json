@@ -1,0 +1,1072 @@
+[
+  {
+    "department": "Accounting",
+    "rows": [
+      {
+        "classTitle": "ACCT 201A",
+        "classNumber": "12079",
+        "courseInstructor": "Randy Hoffman",
+        "siLeader": "Grace Albertson",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "GH-204"
+      },
+      {
+        "classTitle": "ACCT201A",
+        "classNumber": "23053",
+        "courseInstructor": "Michael Manning",
+        "siLeader": "Grace Tjiptadjaja",
+        "sessionDays": "Mo We",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "MH-465"
+      },
+      {
+        "classTitle": "ACCT 201B",
+        "classNumber": "11939",
+        "courseInstructor": "Randy Hoffman",
+        "siLeader": "Jackson Steuber",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "2:30- 3:45 pm",
+        "location": "MH-663"
+      },
+      {
+        "classTitle": "ACCT 301A",
+        "classNumber": "12265",
+        "courseInstructor": "Farzana Afrin",
+        "siLeader": "Helen Ku",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "CPAC-205"
+      },
+      {
+        "classTitle": "ACCT 301B",
+        "classNumber": "12292",
+        "courseInstructor": "Walied Keshk",
+        "siLeader": "Heather Le",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "PLS-255"
+      },
+      {
+        "classTitle": "ACCT 302",
+        "classNumber": "12062",
+        "courseInstructor": "Zhejia Ling",
+        "siLeader": "Stacie Bautista",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "PLS-255"
+      },
+      {
+        "classTitle": "ACCT 308",
+        "classNumber": "11946",
+        "courseInstructor": "Jonathan Durrant",
+        "siLeader": "Isaac McDonald",
+        "sessionDays": "Mo We",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "PLS-255"
+      }
+    ]
+  },
+  {
+    "department": "Biology",
+    "rows": [
+      {
+        "classNumber": "19568, 19570, 19572, 19576, 19579",
+        "courseInstructor": "Maryam Sanei",
+        "siLeader": "Josephine Azmy",
+        "sessionDays": "Mo We Fr",
+        "sessionTimes": "11:00-11:50 am",
+        "location": "MH-223"
+      },
+      {
+        "classNumber": "19583, 20159, 19917, 19918, 19919",
+        "courseInstructor": "Catherine Brennan",
+        "siLeader": "Anjolie Hsu",
+        "sessionDays": "Mo We",
+        "sessionTimes": "4:00-5:15 pm",
+        "location": "MH-223"
+      },
+      {
+        "classNumber": "19583, 20159, 19917, 19918, 19919",
+        "courseInstructor": "Catherine Brennan",
+        "siLeader": "Nanette Villegas",
+        "sessionDays": "Mo We",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "H-321A"
+      },
+      {
+        "classNumber": "19944, 19946, 20157, 20290, 20292",
+        "courseInstructor": "Seong Min Kim",
+        "siLeader": "Will Shin",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "5:30pm-6:45pm",
+        "location": "MH-223"
+      },
+      {
+        "classNumber": "21651, 21653, 21655",
+        "courseInstructor": "Lane Whitlow",
+        "siLeader": "Jasmine Ahmadi",
+        "sessionDays": "Mo We Fr",
+        "sessionTimes": "10:00-10:50 am",
+        "location": "MH-223"
+      },
+      {
+        "classNumber": "21641, 21643, 21645, 21647, 21649",
+        "courseInstructor": "Lane Whitlow",
+        "siLeader": "Bobby Rastegar",
+        "sessionDays": "Mo We",
+        "sessionTimes": "11:30-12:45pm",
+        "location": "GH-229"
+      },
+      {
+        "classNumber": "21641, 21643, 21645, 21647, 21649",
+        "courseInstructor": "Lane Whitlow",
+        "siLeader": "Jaye Bui",
+        "sessionDays": "Mo We",
+        "sessionTimes": "5:30-6:45 pm",
+        "location": "MH-223"
+      },
+      {
+        "classNumber": "19586, 19588, 19640, 19642, 19762, 19764, 21637, 21639",
+        "courseInstructor": "Douglas Eernisse",
+        "siLeader": "Andrew Doan",
+        "sessionDays": "Mo We",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "MH-223"
+      },
+      {
+        "classNumber": "19586, 19588, 19640, 19642, 19762, 19764, 21637, 21639",
+        "courseInstructor": "Douglas Eernisse",
+        "siLeader": "Mia Ceja",
+        "sessionDays": "Mo We",
+        "sessionTimes": "4:00-5:15 pm",
+        "location": "LH-403A"
+      },
+      {
+        "classNumber": "19767",
+        "courseInstructor": "Nikolas Nikolaidis",
+        "siLeader": "Wesley Chao",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "MH-223"
+      },
+      {
+        "classNumber": "23365",
+        "courseInstructor": "Ryan Walter",
+        "siLeader": "Alyssa Stammerjohan",
+        "sessionDays": "Mo We",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "H-513"
+      },
+      {
+        "classNumber": "19768",
+        "courseInstructor": "Darren Sandquist",
+        "siLeader": "James Rodriguez",
+        "sessionDays": "Mo We",
+        "sessionTimes": "2:30-3:45pm",
+        "location": "MH-223"
+      }
+    ]
+  },
+  {
+    "department": "Chemistry",
+    "rows": [
+      {
+        "classNumber": "19712",
+        "courseInstructor": "Steven Saric",
+        "siLeader": "David Velasquez",
+        "sessionDays": "Mo We",
+        "sessionTimes": "4:00-5:15 pm",
+        "location": "MH-529"
+      },
+      {
+        "classNumber": "19664",
+        "courseInstructor": "Mehdi Jalali Heravi",
+        "siLeader": "Kaiwei Shi",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "MH-657"
+      },
+      {
+        "classNumber": "20168",
+        "courseInstructor": "Cathie Overstreet",
+        "siLeader": "Ivy Ambrosio",
+        "sessionDays": "Mo We",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "MH-529"
+      },
+      {
+        "classNumber": "20284",
+        "courseInstructor": "Cynthia Pratt",
+        "siLeader": "Yasmin Ambeguia",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "MH-663"
+      },
+      {
+        "classNumber": "19731, 19720",
+        "courseInstructor": "Mehdi Jalali Heravi",
+        "siLeader": "Milca Monge",
+        "sessionDays": "Mo We Fr",
+        "sessionTimes": "10:00-10:50 am",
+        "location": "MH-529"
+      },
+      {
+        "classNumber": "19857, 19860",
+        "courseInstructor": "Michael Giblin",
+        "siLeader": "Trianna Lopez",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "MH-529"
+      },
+      {
+        "classNumber": "19742, 19745",
+        "courseInstructor": "Julia Chan",
+        "siLeader": "Andrian Nguyen",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "MH-223"
+      },
+      {
+        "classNumber": "23331, 23338",
+        "courseInstructor": "Juan Fernandez",
+        "siLeader": "Danial Parsi",
+        "sessionDays": "Mo We",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "MH-657"
+      },
+      {
+        "classNumber": "19992, 19994",
+        "courseInstructor": "Mehdi Jalali Heravi",
+        "siLeader": "Edrin Astillero",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "PLS-255"
+      },
+      {
+        "classNumber": "19716, 19846",
+        "courseInstructor": "Steven Saric",
+        "siLeader": "Marianna Navarro",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "H-414"
+      },
+      {
+        "classNumber": "19714, 19848",
+        "courseInstructor": "Joya Cooley",
+        "siLeader": "Lucy Guzman",
+        "sessionDays": "Mo We",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "H-530"
+      },
+      {
+        "classNumber": "19850, 19852",
+        "courseInstructor": "Anneka Casas",
+        "siLeader": "Joleyna Pham",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "MH-584"
+      },
+      {
+        "classNumber": "19394",
+        "courseInstructor": "Michael Giblin",
+        "siLeader": "Guian Calisterio",
+        "sessionDays": "Mo We Fr",
+        "sessionTimes": "9:00-9:50 am",
+        "location": "MH-529"
+      },
+      {
+        "classNumber": "10672",
+        "courseInstructor": "Juan Fernandez",
+        "siLeader": "Michelle Le",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "MH-600"
+      },
+      {
+        "classNumber": "20089",
+        "courseInstructor": "Ryan Cammarota",
+        "siLeader": "Cassandra Yuan",
+        "sessionDays": "Mo We",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "MH-529"
+      },
+      {
+        "classNumber": "19972",
+        "courseInstructor": "Michael Ferracane",
+        "siLeader": "Amanda Tsang",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "MH-600"
+      },
+      {
+        "classNumber": "19426, 23083",
+        "courseInstructor": "Aaron Watson",
+        "siLeader": "Damian Ventura",
+        "sessionDays": "Mo We",
+        "sessionTimes": "4:00-5:15pm",
+        "location": "MH-584"
+      },
+      {
+        "classNumber": "19804",
+        "courseInstructor": "Jeff Leister",
+        "siLeader": "Patrick Walthall",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "4:00-5:15pm",
+        "location": "MH-529"
+      },
+      {
+        "classNumber": "19948",
+        "courseInstructor": "Aaron Watson",
+        "siLeader": "Matthew Guerrero",
+        "sessionDays": "Mo We",
+        "sessionTimes": "5:30-6:45 pm",
+        "location": "MH-529"
+      },
+      {
+        "classNumber": "20211",
+        "courseInstructor": "Juan Fernandez",
+        "siLeader": "Jose Ortiz",
+        "sessionDays": "Mo We",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "E-321"
+      },
+      {
+        "classNumber": "19805",
+        "courseInstructor": "John Haan",
+        "siLeader": "Usman Akhtar",
+        "sessionDays": "Mo We",
+        "sessionTimes": "12:30-1:45pm",
+        "location": "EC-165"
+      },
+      {
+        "classNumber": "19806",
+        "courseInstructor": "Allyson Fry-Petit",
+        "siLeader": "Alex Hobrath",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "MH-529"
+      },
+      {
+        "classNumber": "18625",
+        "courseInstructor": "Andrew Petit",
+        "siLeader": "Leo Zhang",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "MH-529"
+      },
+      {
+        "classNumber": "19567",
+        "courseInstructor": "Michael Groves",
+        "siLeader": "Damian Ventura",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "MH-529"
+      },
+      {
+        "classNumber": "19666",
+        "courseInstructor": "Kenneth Childers",
+        "siLeader": "Amanda Reyes",
+        "sessionDays": "Mo We",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "H-516"
+      },
+      {
+        "classNumber": "19593",
+        "courseInstructor": "Madeline Rasche",
+        "siLeader": "John Baker",
+        "sessionDays": "Mo We",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "MH-529"
+      }
+    ]
+  },
+  {
+    "department": "Computer Science",
+    "rows": [
+      {
+        "classNumber": "20623",
+        "courseInstructor": "Kevin Wortman",
+        "siLeader": "Jonathan Aslam",
+        "sessionDays": "Mo We",
+        "sessionTimes": "5:30-6:45 pm",
+        "location": "PLS-255"
+      },
+      {
+        "classNumber": "21607",
+        "courseInstructor": "Kanika Sood",
+        "siLeader": "Syon Chau",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "11:00-12:15 pm",
+        "location": "CS-401"
+      },
+      {
+        "classNumber": "21611",
+        "courseInstructor": "Kevin Wortman",
+        "siLeader": "Joel Rico",
+        "sessionDays": "Mo We",
+        "sessionTimes": "4:30-5:45 pm",
+        "location": "CS-401"
+      },
+      {
+        "classNumber": "22656",
+        "courseInstructor": "Stephen May",
+        "siLeader": "Katherine Sutandar",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "H-323"
+      },
+      {
+        "classNumber": "18390",
+        "courseInstructor": "Rong Jin",
+        "siLeader": "Dane Camacho",
+        "sessionDays": "Mo We",
+        "sessionTimes": "11:00-12:15 pm",
+        "location": "MH-600"
+      },
+      {
+        "classNumber": "18391",
+        "courseInstructor": "Joshna Suresh",
+        "siLeader": "Samuel Kim",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "9:30-10:45 am",
+        "location": "CS-202"
+      },
+      {
+        "classNumber": "21666",
+        "courseInstructor": "Paul Inventado",
+        "siLeader": "Ashley Chan",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "4:00-5:15 pm",
+        "location": "E-NE042"
+      },
+      {
+        "classNumber": "21676",
+        "courseInstructor": "Michael Peralta",
+        "siLeader": "Ricardo Granados Macias",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "CS-202"
+      },
+      {
+        "classNumber": "18092",
+        "courseInstructor": "Michael Peralta",
+        "siLeader": "David Solano",
+        "sessionDays": "Mo We",
+        "sessionTimes": "4:00-5:15 pm",
+        "location": "CS-202"
+      },
+      {
+        "classNumber": "21677",
+        "courseInstructor": "Thomas Bettens",
+        "siLeader": "Destiny Bonillas",
+        "sessionDays": "Mo We",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "CS-202"
+      },
+      {
+        "classNumber": "21679",
+        "courseInstructor": "Thomas Bettens",
+        "siLeader": "Derrick Lee",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "4:00-5:15 pm",
+        "location": "CS-202"
+      },
+      {
+        "classNumber": "21680",
+        "courseInstructor": "Michael Peralta",
+        "siLeader": "Esteban Escartin",
+        "sessionDays": "Mo We",
+        "sessionTimes": "8:30-9:45 am",
+        "location": "CS-202"
+      },
+      {
+        "classNumber": "17998, 17999",
+        "courseInstructor": "Yitsen Ku",
+        "siLeader": "Andrew Saldana",
+        "sessionDays": "Mo We",
+        "sessionTimes": "3:00-4:15 pm",
+        "location": "CS-110A"
+      },
+      {
+        "classNumber": "18097, 18098",
+        "courseInstructor": "Floyd Holliday",
+        "siLeader": "Sara Sadek",
+        "sessionDays": "Mo We",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "CS-110B"
+      },
+      {
+        "classNumber": "18278, 18279",
+        "courseInstructor": "Yitsen Ku",
+        "siLeader": "Raxel Ortiz",
+        "sessionDays": "Mo We",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "E-NE042"
+      },
+      {
+        "classNumber": "18352, 18353",
+        "courseInstructor": "Yitsen Ku",
+        "siLeader": "Nicholas Chung",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "2:00-3:15 pm",
+        "location": "CS-202"
+      },
+      {
+        "classNumber": "22896, 22897",
+        "courseInstructor": "Floyd Holliday",
+        "siLeader": "Khoa Nguyen",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "2:30-3:45 am",
+        "location": "E-SE022"
+      }
+    ]
+  },
+  {
+    "department": "Economics",
+    "rows": [
+      {
+        "classNumber": "12617",
+        "courseInstructor": "Robert Mead",
+        "siLeader": "Emily Baros",
+        "sessionDays": "Mo We",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "GH-302"
+      },
+      {
+        "classNumber": "12351",
+        "courseInstructor": "Francis Mummery",
+        "siLeader": "Joshua Angell",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "4:00-5:15 pm",
+        "location": "GH-304"
+      },
+      {
+        "classNumber": "12711",
+        "courseInstructor": "Francis Mummery",
+        "siLeader": "Scott Bunal",
+        "sessionDays": "Mo We",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "PLS-255"
+      },
+      {
+        "classNumber": "12108",
+        "courseInstructor": "Francis Mummery",
+        "siLeader": "Angelica Mora",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "H-321B"
+      },
+      {
+        "classNumber": "12108",
+        "courseInstructor": "Francis Mummery",
+        "siLeader": "Wanting Yu",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "H-530"
+      },
+      {
+        "classNumber": "12442",
+        "courseInstructor": "Kenneth Kim",
+        "siLeader": "Li Li",
+        "sessionDays": "Mo We",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "GH-207"
+      },
+      {
+        "classNumber": "21672",
+        "courseInstructor": "Kenneth Kim",
+        "siLeader": "Jake Herrera",
+        "sessionDays": "Mo We",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "PLS-255"
+      }
+    ]
+  },
+  {
+    "department": "Engineering",
+    "rows": [
+      {
+        "classTitle": "EGME 304",
+        "classNumber": "18014",
+        "courseInstructor": "Haowei Wang",
+        "siLeader": "Katie Haxton",
+        "sessionDays": "Mo We",
+        "sessionTimes": "9:30-10:45 am",
+        "location": "CP-127"
+      }
+    ]
+  },
+  {
+    "department": "Finance",
+    "rows": [
+      {
+        "classTitle": "FIN 320",
+        "classNumber": "12681",
+        "courseInstructor": "Kelly Ko",
+        "siLeader": "Ladi Trejo",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "H-516"
+      },
+      {
+        "classTitle": "FIN 320",
+        "classNumber": "12075",
+        "courseInstructor": "Kelly Ko",
+        "siLeader": "Nirvan Chitnis",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "2:30 am-3:45 pm",
+        "location": "PLS-255"
+      },
+      {
+        "classTitle": "FIN 320",
+        "classNumber": "12602",
+        "courseInstructor": "Mark Collinson",
+        "siLeader": "Madalyn Aiello",
+        "sessionDays": "Mo We",
+        "sessionTimes": "4:00-5:15 pm",
+        "location": "PLS-255"
+      },
+      {
+        "classTitle": "FIN 320",
+        "classNumber": "21379",
+        "courseInstructor": "Mark Collinson",
+        "siLeader": "Soroosh Hesam",
+        "sessionDays": "Mo We",
+        "sessionTimes": "11:30-12:45 am",
+        "location": "PLS-255"
+      },
+      {
+        "classTitle": "FIN 320",
+        "classNumber": "12027",
+        "courseInstructor": "Mehmet Akbulut",
+        "siLeader": "Giang Truong",
+        "sessionDays": "Mo We",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "LH-319A"
+      }
+    ]
+  },
+  {
+    "department": "Information Systems and Decision Sciences (ISDS)",
+    "rows": [
+      {
+        "classNumber": "12501",
+        "courseInstructor": "Melody Zhang",
+        "siLeader": "Stanley Nicholas",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "LH-319A"
+      },
+      {
+        "classNumber": "23122",
+        "courseInstructor": "Bhushan Kapoor",
+        "siLeader": "Ezgi Erdem",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "LH-319A"
+      },
+      {
+        "classNumber": "12478",
+        "courseInstructor": "Ram Singhania",
+        "siLeader": "Brian Banh",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "LH-319A"
+      },
+      {
+        "classNumber": "12477",
+        "courseInstructor": "Majid Kermani",
+        "siLeader": "Nhu Huynh",
+        "sessionDays": "Mo We",
+        "sessionTimes": "4:00-5:15 pm",
+        "location": "LH-319A"
+      },
+      {
+        "classNumber": "12396",
+        "courseInstructor": "Maggie Kalczynska",
+        "siLeader": "Chloe Tran",
+        "sessionDays": "Mo We",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "LH-319A"
+      },
+      {
+        "classNumber": "11971",
+        "courseInstructor": "Steven Candelaria",
+        "siLeader": "Mason Young",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "LH-319A"
+      },
+      {
+        "classNumber": "12464",
+        "courseInstructor": "Daoji Li",
+        "siLeader": "Vy Chu",
+        "sessionDays": "Mo We",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "LH-319A"
+      }
+    ]
+  },
+  {
+    "department": "Kinesiology",
+    "rows": [
+      {
+        "classTitle": "\n                           <strong>Course</strong>\n                        ",
+        "classNumber": "\n                           <strong>Class Number</strong>\n                        ",
+        "courseInstructor": "\n                           <strong>Course Instructor</strong>\n                        ",
+        "siLeader": "\n                           <strong>SI Leader</strong>\n                        ",
+        "sessionDays": "\n                           <strong>SI Session Days</strong>\n                        ",
+        "sessionTimes": "\n                           <strong>SI Session Times</strong>\n                        ",
+        "location": "\n                           <strong>Location</strong>\n                        "
+      },
+      {
+        "classTitle": "KNES 210",
+        "classNumber": "15290",
+        "courseInstructor": "Samantha Richards",
+        "siLeader": "Juan Hernandez",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "7:00-8:15 pm",
+        "location": "PLS-255"
+      },
+      {
+        "classTitle": "KNES 348",
+        "classNumber": "14969",
+        "courseInstructor": "William Thomas",
+        "siLeader": "Aron Rosas",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "GH-239"
+      },
+      {
+        "classTitle": "KNES 348",
+        "classNumber": "15165",
+        "courseInstructor": "Daniela Rubin",
+        "siLeader": "Michael Gomez",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "MH-223"
+      }
+    ]
+  },
+  {
+    "department": "Mathematics",
+    "rows": [
+      {
+        "classNumber": "20382",
+        "courseInstructor": "Jessica Rivas",
+        "siLeader": "Christian Ramirez",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "N/A",
+        "courseInstructor": "N/A",
+        "siLeader": "N/A",
+        "sessionDays": "N/A",
+        "sessionTimes": "N/A",
+        "location": "N/A"
+      },
+      {
+        "classNumber": "18748",
+        "courseInstructor": "Vincent Razo",
+        "siLeader": "Luca Ngo",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "18749",
+        "courseInstructor": "Natalie Conghuyen",
+        "siLeader": "Demi Chen",
+        "sessionDays": "Mo We",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "20031",
+        "courseInstructor": "Guadalupe Merino",
+        "siLeader": "Madison Blattner",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "8:30-9:45 am",
+        "location": "MH-663"
+      },
+      {
+        "classNumber": "18762",
+        "courseInstructor": "Jessica Rivas",
+        "siLeader": "Max Ichinose",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "8:30-9:45 am",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "19655",
+        "courseInstructor": "Ashley Thune-Aguayo",
+        "siLeader": "Vic Mendoza",
+        "sessionDays": "Mo We",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "19874",
+        "courseInstructor": "Atousa Karimi",
+        "siLeader": "Kaedalyne Luna",
+        "sessionDays": "Mo We",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "20251",
+        "courseInstructor": "Jeremy Wilson",
+        "siLeader": "Cat Nguyen",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "19377",
+        "courseInstructor": "Susan Deeb",
+        "siLeader": "Sasha Tafolla",
+        "sessionDays": "Mo We",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "19323",
+        "courseInstructor": "Mahnaz Moradi Nargesi",
+        "siLeader": "Angeline Gaurano",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "20391",
+        "courseInstructor": "Nicholas Brubaker",
+        "siLeader": "Adrian Bautista",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "8:30-9:45 am",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "19786",
+        "courseInstructor": "Hassan Yousefi",
+        "siLeader": "Sama Ahmed",
+        "sessionDays": "Mo We",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "19646",
+        "courseInstructor": "George Arthur",
+        "siLeader": "Josephine Choi",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "20386",
+        "courseInstructor": "Nicholas Brubaker",
+        "siLeader": "Trisha Huynh",
+        "sessionDays": "Mo We",
+        "sessionTimes": "4:00-5:15 pm",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "18770",
+        "courseInstructor": "Derdei Bichara",
+        "siLeader": "Joshua Hambric",
+        "sessionDays": "Mo We",
+        "sessionTimes": "8:30-9:45 am",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "18769",
+        "courseInstructor": "Derdei Bichara",
+        "siLeader": "Mark Garcia",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "19324",
+        "courseInstructor": "Kun Niu",
+        "siLeader": "Max Haaga",
+        "sessionDays": "Mo We",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "19789",
+        "courseInstructor": "Thomas Murphy",
+        "siLeader": "Roberto Ruiz",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "4:00-5:15 pm",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "21519",
+        "courseInstructor": "Stephanie Reed",
+        "siLeader": "Vanessa Roque",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "19344",
+        "courseInstructor": "Stephanie Reed",
+        "siLeader": "Tomas Oh",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "19402",
+        "courseInstructor": "Alfonso Agnew",
+        "siLeader": "Joshua Valdez",
+        "sessionDays": "Mo We",
+        "sessionTimes": "4:00-5:15 pm",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "19380",
+        "courseInstructor": "Scott Annin",
+        "siLeader": "Janda Huang",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "4:00-5:15 pm",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "19650",
+        "courseInstructor": "Roberto Soto",
+        "siLeader": "Vincent Nguyen",
+        "sessionDays": "Mo We",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "MH-187D"
+      }
+    ]
+  },
+  {
+    "department": "Physics",
+    "rows": [
+      {
+        "classTitle": "PHYS 211",
+        "classNumber": "18796",
+        "courseInstructor": "Gary Kleiban",
+        "siLeader": "Lauren Hofreiter",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "MH-600"
+      },
+      {
+        "classTitle": "PHYS 211",
+        "classNumber": "19332",
+        "courseInstructor": "Michael Dubuque",
+        "siLeader": "Mohammed Mohseni",
+        "sessionDays": "Mo We",
+        "sessionTimes": "7:00-8:15 pm",
+        "location": "MH-600"
+      },
+      {
+        "classTitle": "PHYS 211",
+        "classNumber": "20026",
+        "courseInstructor": "Anton Peshkov",
+        "siLeader": "Tyler Erautt",
+        "sessionDays": "Mo We",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "MH-600"
+      },
+      {
+        "classTitle": "PHYS 212",
+        "classNumber": "20192",
+        "courseInstructor": "Gary Kleiban",
+        "siLeader": "James Lincoln",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "MH-600"
+      },
+      {
+        "classTitle": "PHYS 212",
+        "classNumber": "19563",
+        "courseInstructor": "Gabriel Bonilla",
+        "siLeader": "Aleishai Pena-Lopez",
+        "sessionDays": "Mo We",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "MH-600"
+      },
+      {
+        "classTitle": "PHYS 225",
+        "classNumber": "19453",
+        "courseInstructor": "Meng Shen",
+        "siLeader": "Jonathan Prijyanonda",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "4:00-5:15 pm",
+        "location": "MH-600"
+      },
+      {
+        "classTitle": "PHYS 226",
+        "classNumber": "20425",
+        "courseInstructor": "Mary Usufzy",
+        "siLeader": "Sam Montoya",
+        "sessionDays": "Mo We Fr",
+        "sessionTimes": "10:00-10:50 am",
+        "location": "MH-600"
+      },
+      {
+        "classTitle": "PHYS 226",
+        "classNumber": "20208",
+        "courseInstructor": "Linda Leonard",
+        "siLeader": "Anthony Gallegos",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "8:30-9:45 am",
+        "location": "MH-600"
+      },
+      {
+        "classTitle": "PHYS 226",
+        "classNumber": "19454",
+        "courseInstructor": "Jocelyn Read",
+        "siLeader": "Justin Razzouq",
+        "sessionDays": "Mo We",
+        "sessionTimes": "8:30-9:45 am",
+        "location": "MH-600"
+      }
+    ]
+  },
+  {
+    "department": "Political Science",
+    "rows": [
+      {
+        "classTitle": "\n                           <strong>Course</strong>\n                        ",
+        "classNumber": "\n                           <strong>Class Number</strong>\n                        ",
+        "courseInstructor": "\n                           <strong>Course Instructor</strong>\n                        ",
+        "siLeader": "\n                           <strong>SI Leader</strong>\n                        ",
+        "sessionDays": "\n                           <strong>SI Session Days</strong>\n                        ",
+        "sessionTimes": "\n                           <strong>SI Session Times</strong>\n                        ",
+        "location": "\n                           <strong>Location</strong>\n                        "
+      },
+      {
+        "classTitle": "POSC 100",
+        "classNumber": "17539",
+        "courseInstructor": "Scott Spitzer",
+        "siLeader": "Arturo Murillo Vargas",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "GH-304"
+      }
+    ]
+  },
+  {
+    "department": "Psychology",
+    "rows": [
+      {
+        "classTitle": "PSYC 300",
+        "classNumber": "15641",
+        "courseInstructor": "Susan Shimazu",
+        "siLeader": "Vanessa Avelino",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "11:30-12:45 am",
+        "location": "MH-663"
+      }
+    ]
+  }
+]
