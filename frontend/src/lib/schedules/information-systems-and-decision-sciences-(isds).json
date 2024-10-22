@@ -1,61 +1,65 @@
 {
   "department": "Information Systems and Decision Sciences (ISDS)",
-  "rows": [
-    {
-      "classNumber": "12501",
-      "courseInstructor": "Melody Zhang",
-      "siLeader": "Stanley Nicholas",
-      "sessionDays": "Tu Th",
-      "sessionTimes": "2:30-3:45 pm",
-      "location": "LH-319A"
-    },
-    {
-      "classNumber": "23122",
-      "courseInstructor": "Bhushan Kapoor",
-      "siLeader": "Ezgi Erdem",
-      "sessionDays": "Tu Th",
-      "sessionTimes": "11:30-12:45 pm",
-      "location": "LH-319A"
-    },
-    {
-      "classNumber": "12478",
-      "courseInstructor": "Ram Singhania",
-      "siLeader": "Brian Banh",
-      "sessionDays": "Tu Th",
-      "sessionTimes": "10:00-11:15 am",
-      "location": "LH-319A"
-    },
-    {
-      "classNumber": "12477",
-      "courseInstructor": "Majid Kermani",
-      "siLeader": "Nhu Huynh",
-      "sessionDays": "Mo We",
-      "sessionTimes": "4:00-5:15 pm",
-      "location": "LH-319A"
-    },
-    {
-      "classNumber": "12396",
-      "courseInstructor": "Maggie Kalczynska",
-      "siLeader": "Chloe Tran",
-      "sessionDays": "Mo We",
-      "sessionTimes": "10:00-11:15 am",
-      "location": "LH-319A"
-    },
-    {
-      "classNumber": "11971",
-      "courseInstructor": "Steven Candelaria",
-      "siLeader": "Mason Young",
-      "sessionDays": "Tu Th",
-      "sessionTimes": "1:00-2:15 pm",
-      "location": "LH-319A"
-    },
-    {
-      "classNumber": "12464",
-      "courseInstructor": "Daoji Li",
-      "siLeader": "Vy Chu",
-      "sessionDays": "Mo We",
-      "sessionTimes": "11:30-12:45 pm",
-      "location": "LH-319A"
-    }
-  ]
+  "sessionsOffered": {
+    "ISDS 361A": [
+      {
+        "classNumber": "12501",
+        "courseInstructor": "Melody Zhang",
+        "siLeader": "Stanley Nicholas",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "LH-319A"
+      },
+      {
+        "classNumber": "23122",
+        "courseInstructor": "Bhushan Kapoor",
+        "siLeader": "Ezgi Erdem",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "LH-319A"
+      },
+      {
+        "classNumber": "12478",
+        "courseInstructor": "Ram Singhania",
+        "siLeader": "Brian Banh",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "LH-319A"
+      },
+      {
+        "classNumber": "12477",
+        "courseInstructor": "Majid Kermani",
+        "siLeader": "Nhu Huynh",
+        "sessionDays": "Mo We",
+        "sessionTimes": "4:00-5:15 pm",
+        "location": "LH-319A"
+      },
+      {
+        "classNumber": "12396",
+        "courseInstructor": "Maggie Kalczynska",
+        "siLeader": "Chloe Tran",
+        "sessionDays": "Mo We",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "LH-319A"
+      },
+      {
+        "classNumber": "11971",
+        "courseInstructor": "Steven Candelaria",
+        "siLeader": "Mason Young",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "LH-319A"
+      }
+    ],
+    "ISDS 361B": [
+      {
+        "classNumber": "12464",
+        "courseInstructor": "Daoji Li",
+        "siLeader": "Vy Chu",
+        "sessionDays": "Mo We",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "LH-319A"
+      }
+    ]
+  }
 }

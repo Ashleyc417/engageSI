@@ -1,14 +1,15 @@
 {
   "department": "Engineering",
-  "rows": [
-    {
-      "classTitle": "EGME 304",
-      "classNumber": "18014",
-      "courseInstructor": "Haowei Wang",
-      "siLeader": "Katie Haxton",
-      "sessionDays": "Mo We",
-      "sessionTimes": "9:30-10:45 am",
-      "location": "CP-127"
-    }
-  ]
+  "sessionsOffered": {
+    "EGME 304": [
+      {
+        "classNumber": "18014",
+        "courseInstructor": "Haowei Wang",
+        "siLeader": "Katie Haxton",
+        "sessionDays": "Mo We",
+        "sessionTimes": "9:30-10:45 am",
+        "location": "CP-127"
+      }
+    ]
+  }
 }

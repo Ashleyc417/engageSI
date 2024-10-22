@@ -1,68 +1,75 @@
 {
   "department": "Accounting",
-  "rows": [
-    {
-      "classTitle": "ACCT 201A",
-      "classNumber": "12079",
-      "courseInstructor": "Randy Hoffman",
-      "siLeader": "Grace Albertson",
-      "sessionDays": "Tu Th",
-      "sessionTimes": "11:30-12:45 pm",
-      "location": "GH-204"
-    },
-    {
-      "classTitle": "ACCT201A",
-      "classNumber": "23053",
-      "courseInstructor": "Michael Manning",
-      "siLeader": "Grace Tjiptadjaja",
-      "sessionDays": "Mo We",
-      "sessionTimes": "10:00-11:15 am",
-      "location": "MH-465"
-    },
-    {
-      "classTitle": "ACCT 201B",
-      "classNumber": "11939",
-      "courseInstructor": "Randy Hoffman",
-      "siLeader": "Jackson Steuber",
-      "sessionDays": "Tu Th",
-      "sessionTimes": "2:30- 3:45 pm",
-      "location": "MH-663"
-    },
-    {
-      "classTitle": "ACCT 301A",
-      "classNumber": "12265",
-      "courseInstructor": "Farzana Afrin",
-      "siLeader": "Helen Ku",
-      "sessionDays": "Tu Th",
-      "sessionTimes": "1:00-2:15 pm",
-      "location": "CPAC-205"
-    },
-    {
-      "classTitle": "ACCT 301B",
-      "classNumber": "12292",
-      "courseInstructor": "Walied Keshk",
-      "siLeader": "Heather Le",
-      "sessionDays": "Tu Th",
-      "sessionTimes": "11:30-12:45 pm",
-      "location": "PLS-255"
-    },
-    {
-      "classTitle": "ACCT 302",
-      "classNumber": "12062",
-      "courseInstructor": "Zhejia Ling",
-      "siLeader": "Stacie Bautista",
-      "sessionDays": "Tu Th",
-      "sessionTimes": "1:00-2:15 pm",
-      "location": "PLS-255"
-    },
-    {
-      "classTitle": "ACCT 308",
-      "classNumber": "11946",
-      "courseInstructor": "Jonathan Durrant",
-      "siLeader": "Isaac McDonald",
-      "sessionDays": "Mo We",
-      "sessionTimes": "2:30-3:45 pm",
-      "location": "PLS-255"
-    }
-  ]
+  "sessionsOffered": {
+    "ACCT 201A": [
+      {
+        "classNumber": "12079",
+        "courseInstructor": "Randy Hoffman",
+        "siLeader": "Grace Albertson",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "GH-204"
+      }
+    ],
+    "ACCT201A": [
+      {
+        "classNumber": "23053",
+        "courseInstructor": "Michael Manning",
+        "siLeader": "Grace Tjiptadjaja",
+        "sessionDays": "Mo We",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "MH-465"
+      }
+    ],
+    "ACCT 201B": [
+      {
+        "classNumber": "11939",
+        "courseInstructor": "Randy Hoffman",
+        "siLeader": "Jackson Steuber",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "2:30- 3:45 pm",
+        "location": "MH-663"
+      }
+    ],
+    "ACCT 301A": [
+      {
+        "classNumber": "12265",
+        "courseInstructor": "Farzana Afrin",
+        "siLeader": "Helen Ku",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "CPAC-205"
+      }
+    ],
+    "ACCT 301B": [
+      {
+        "classNumber": "12292",
+        "courseInstructor": "Walied Keshk",
+        "siLeader": "Heather Le",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "PLS-255"
+      }
+    ],
+    "ACCT 302": [
+      {
+        "classNumber": "12062",
+        "courseInstructor": "Zhejia Ling",
+        "siLeader": "Stacie Bautista",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "PLS-255"
+      }
+    ],
+    "ACCT 308": [
+      {
+        "classNumber": "11946",
+        "courseInstructor": "Jonathan Durrant",
+        "siLeader": "Isaac McDonald",
+        "sessionDays": "Mo We",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "PLS-255"
+      }
+    ]
+  }
 }

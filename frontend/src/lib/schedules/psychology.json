@@ -1,14 +1,15 @@
 {
   "department": "Psychology",
-  "rows": [
-    {
-      "classTitle": "PSYC 300",
-      "classNumber": "15641",
-      "courseInstructor": "Susan Shimazu",
-      "siLeader": "Vanessa Avelino",
-      "sessionDays": "Tu Th",
-      "sessionTimes": "11:30-12:45 am",
-      "location": "MH-663"
-    }
-  ]
+  "sessionsOffered": {
+    "PSYC 300": [
+      {
+        "classNumber": "15641",
+        "courseInstructor": "Susan Shimazu",
+        "siLeader": "Vanessa Avelino",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "11:30-12:45 am",
+        "location": "MH-663"
+      }
+    ]
+  }
 }
