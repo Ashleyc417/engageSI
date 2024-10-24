@@ -1,7 +1,3 @@
-<script>
-	export let data;
-</script>
-
 <h1>EngageSI</h1>
 <p>
 	EngageSI is an app for California State University, Fullerton's Supplemental Instruction (SI)

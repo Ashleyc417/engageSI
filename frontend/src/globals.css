@@ -1,24 +1,24 @@
 @import url('https://fonts.cdnfonts.com/css/wotfard');
 
 :root {
-  --font: "Wotfard", sans-serif;
-  --color-background-300: 11, 12, 19;
-  --color-background-500: 38, 43, 61;
+	--font: 'Wotfard', sans-serif;
+	--color-background-300: 11, 12, 19;
+	--color-background-500: 34, 39, 51;
 
-  --color-text: 247, 247, 247;
-  --color-action: 31, 3, 255;
-  --color-foreground: 85, 156, 255;
+	--color-text: 247, 247, 247;
+	--color-action: 31, 3, 255;
+	--color-foreground: 85, 156, 255;
 }
 
 /* Some CSS Resets for convenience */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 * {
-  margin: 0;
+	margin: 0;
 }
 
 img,
@@ -26,15 +26,15 @@ picture,
 video,
 canvas,
 svg {
-  display: block;
-  max-width: 100%;
+	display: block;
+	max-width: 100%;
 }
 
 input,
 button,
 textarea,
 select {
-  font: inherit;
+	font: inherit;
 }
 
 p,
@@ -44,48 +44,48 @@ h3,
 h4,
 h5,
 h6 {
-  overflow-wrap: break-word;
+	overflow-wrap: break-word;
 }
 
 #root,
 #__next {
-  isolation: isolate;
+	isolation: isolate;
 }
 
 /* General Styles */
 html {
-  transition: all 0.125s linear;
+	transition: all 0.125s linear;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
-  min-height: 100vh;
-  font-family: var(--font);
-  -webkit-font-smoothing: antialiased;
-  background-color: rgb(var(--color-background-300));
-  color: rgb(var(--color-text));
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	min-height: 100vh;
+	font-family: var(--font);
+	-webkit-font-smoothing: antialiased;
+	background-color: rgb(var(--color-background-300));
+	color: rgb(var(--color-text));
 }
 
 #app {
-  padding-block: 2rem;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  row-gap: 1rem;
-  max-width: 1024px;
-  margin-inline: auto;
-  padding-inline: 1rem;
+	padding-block: 2rem;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+	max-width: 1024px;
+	margin-inline: auto;
+	padding-inline: 1rem;
 }
 
 footer {
-  margin-block-start: auto;
-  margin-block-end: 1.5rem;
+	margin-block-start: auto;
+	margin-block-end: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
-  main {
-    padding-inline: 3.5rem;
-  }
+	main {
+		padding-inline: 3.5rem;
+	}
 }
