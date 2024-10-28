@@ -1,21 +1,24 @@
 <nav>
 	<span>
-		<a href="/">EngageSI</a>
+		<!-- TODO: Add Home Icon to Replace "Home"-->
+		<a href="/">Home</a>
+		<a href="/department-links">Departments</a>
 	</span>
 	<div class="nav-end">
+		<a href="/account">Account</a>
 		<a href="/departments/cpsc">Computer Science</a>
 		<a href="/departments/math">Mathematics</a>
 	</div>
 </nav>
 
 <style>
-	nav {
+	nav {	
 		display: flex;
 		gap: 1rem;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: space-between	;
 		background-color: rgb(var(--color-background-500));
-		padding: 0.75rem 1.25rem;
+		padding: 1.5rem;
 		border-radius: 0.5rem;
 	}
 
@@ -32,6 +35,6 @@
 
 	nav .nav-end {
 		display: flex;
-		gap: 0.75rem;
+		gap: 1rem;
 	}
 </style>
