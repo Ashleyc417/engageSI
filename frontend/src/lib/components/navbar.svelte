@@ -12,11 +12,11 @@
 </nav>
 
 <style>
-	nav {	
+	nav {
 		display: flex;
 		gap: 1rem;
 		align-items: center;
-		justify-content: space-between	;
+		justify-content: space-between;
 		background-color: rgb(var(--color-background-500));
 		padding: 1.5rem;
 		border-radius: 0.5rem;

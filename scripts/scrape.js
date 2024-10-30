@@ -88,7 +88,7 @@ async function parseSchedule() {
     const departmentTitle = department.innerHTML;
     const departmentName = departmentTitle.substring(
       0,
-      departmentTitle.indexOf(" Fall")
+      departmentTitle.indexOf(" Fall"),
     );
 
     const rows = singleSchedules.includes(departmentName)

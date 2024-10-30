@@ -1,7 +1,6 @@
-
 <!-- `schedules` lets us re-use the component below -->
 <script>
-    export let schedules;
+	export let schedules;
 </script>
 
 <!-- Component to hold each department's table -->

@@ -1,7 +1,7 @@
 <script>
-    import accounting from '$lib/schedules/accounting.json'
+	import accounting from '$lib/schedules/accounting.json';
 	import Intro from '../../../lib/components/intro.svelte';
-    import Table from '../../../lib/components/table.svelte';
+	import Table from '../../../lib/components/table.svelte';
 </script>
 
 <h1>Accounting SI</h1>
@@ -11,4 +11,4 @@
 <h2>SI Schedule</h2>
 
 <!-- `schedules` is the table of the math department's si courses offered  -->
-<Table schedules={accounting}/>	
+<Table schedules={accounting} />

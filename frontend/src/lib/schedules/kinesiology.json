@@ -1,33 +1,33 @@
 {
-  "department": "Kinesiology",
-  "sessionsOffered": {
-    "KNES 210": [
-      {
-        "classNumber": "15290",
-        "courseInstructor": "Samantha Richards",
-        "siLeader": "Juan Hernandez",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "7:00-8:15 pm",
-        "location": "PLS-255"
-      }
-    ],
-    "KNES 348": [
-      {
-        "classNumber": "14969",
-        "courseInstructor": "William Thomas",
-        "siLeader": "Aron Rosas",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "10:00-11:15 am",
-        "location": "GH-239"
-      },
-      {
-        "classNumber": "15165",
-        "courseInstructor": "Daniela Rubin",
-        "siLeader": "Michael Gomez",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "2:30-3:45 pm",
-        "location": "MH-223"
-      }
-    ]
-  }
+	"department": "Kinesiology",
+	"sessionsOffered": {
+		"KNES 210": [
+			{
+				"classNumber": "15290",
+				"courseInstructor": "Samantha Richards",
+				"siLeader": "Juan Hernandez",
+				"sessionDays": "Tu Th",
+				"sessionTimes": "7:00-8:15 pm",
+				"location": "PLS-255"
+			}
+		],
+		"KNES 348": [
+			{
+				"classNumber": "14969",
+				"courseInstructor": "William Thomas",
+				"siLeader": "Aron Rosas",
+				"sessionDays": "Tu Th",
+				"sessionTimes": "10:00-11:15 am",
+				"location": "GH-239"
+			},
+			{
+				"classNumber": "15165",
+				"courseInstructor": "Daniela Rubin",
+				"siLeader": "Michael Gomez",
+				"sessionDays": "Tu Th",
+				"sessionTimes": "2:30-3:45 pm",
+				"location": "MH-223"
+			}
+		]
+	}
 }
