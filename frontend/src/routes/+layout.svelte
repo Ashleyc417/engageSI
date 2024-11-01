@@ -3,7 +3,8 @@
 	import Navbar from '../lib/components/navbar.svelte';
 </script>
 
+<Navbar />
+
 <main id="app">
-	<Navbar />
 	<slot />
 </main>
