@@ -1,42 +1,48 @@
 <script>
-	let isMenuOpen = false;
+	import { fade } from 'svelte/transition';
+
+	let isSidebarOpen = false;
+
+	function toggleSidebar() {
+		isSidebarOpen = !isSidebarOpen;
+	}
 </script>
 
-<!-- <div class="navbar">
-	<div class="top">
-		<a href="/" class="logo"><h1>EngageSI</h1></a>
-		<button class="burger">
-			<div class="bar-1" />
-			<div class="bar-2" />
-			<div class="bar-3" />
-		</button>
-	</div>
-	<nav class:open={isMenuOpen}>
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/routes/deparment-links">Departments</a></li>
-			<li><a href="/routes/account">Account</a></li>
-			<li class="sign-in-btn"><a href="/">Sign In</a></li>
-		</ul>
-	</nav>
-</div> -->
-
 <nav>
-	<div class="left">
+	<div class="nav-start">
 		<a href="/"><h1>EngageSI</h1></a>
 	</div>
-	<div>
-		<a href="/">Home</a>
-		<a href="departments">Home</a>
-		<a href="/account">Home</a>
+
+	<button class="toggle-sidebar-btn" on:click={toggleSidebar}>
+		<img src="/menu.svg" alt="Hamburger Menu Icon" class="menu-icon" />
+	</button>
+
+	<div class="nav-end">
+		<a href="/">About</a>
+		<a href="/departments">Deparments</a>
 		<button class="sign-in-btn">Sign In</button>
 	</div>
-</nav> 
+</nav>
 
+<div class="sidebar {isSidebarOpen ? 'active' : ''}">
+	<a href="/">About</a>
+	<a href="/departments">Deparments</a>
+	<button class="sign-in-btn">Sign In</button>
+</div>
 
+<div
+	class="custom-overlay {isSidebarOpen ? 'custom-overlay-active' : ''}"
+	on:click={toggleSidebar}
+	on:keydown={toggleSidebar}
+	in:fade={{ duration: 100 }}
+	out:fade={{ duration: 100 }}
+	role="presentation"
+	tabindex="-1"
+/>
 
 <style>
 	nav {
+		z-index: 20;
 		position: fixed;
 		display: flex;
 		width: 100%;
@@ -46,36 +52,63 @@
 		padding: 1rem;
 	}
 
-	.navbar {
-		background-color: rgb(var(--color-background-500));
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		/* align-items: center; */
-		position: relative;
-	}
-
-	.logo {
-		margin-left: 6vw;
-	}
-
-	ul {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+	nav > .nav-end {
+		display: none;
 		align-items: center;
-		gap: 5vh;
-		margin-top: 2vh;
-		margin-bottom: 4vh;
-		list-style: none;
-		font-size: 1.1rem;
+		gap: 1rem;
+	}
+
+	.menu-icon {
+		width: 32px;
+	}
+
+	.toggle-sidebar-btn {
+		background-color: transparent;
+		border: none;
+		outline: none;
+	}
+
+	.sidebar {
+		z-index: 40;
+		position: fixed;
+		padding: 5rem 5rem 3rem 1.5rem;
+		top: 0;
+		right: -190px;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		background-color: rgb(var(--color-background-500));
+	}
+
+	.sidebar.active {
+		right: 0;
 	}
 
 	.sign-in-btn {
-		background-color: var(--primary);
+		border: none;
+		outline: none;
+		cursor: pointer;
+		background-color: rgb(var(--color-text));
+		color: rgb(var(--color-background-300));
 		padding: 0.4rem 1rem;
 		border-radius: 10px;
 		font-weight: 500;
+	}
+
+	.custom-overlay {
+		position: fixed;
+		display: none;
+		left: 0;
+		top: 0;
+		z-index: 30;
+		height: 100vh;
+		width: 100vw;
+		background-color: rgba(15, 23, 42, 0.25);
+	}
+
+	.custom-overlay-active {
+		display: block;
 	}
 
 	a {
@@ -83,74 +116,13 @@
 		text-decoration: none;
 	}
 
-	.burger {
-		height: 28px;
-		aspect-ratio: 1;
-		border: 2px solid rgb(var(--color-text));
-		background-color: transparent;
-		border-radius: 5px;
-		margin-right: 6vw;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	.burger > div {
-		height: 2px;
-		width: 14px;
-		background-color: rgb(var(--color-text));
-		position: absolute;
-	}
+	@media screen and (min-width: 640px) {
+		nav > .nav-end {
+			display: flex;
+		}
 
-	.bar-1{
-		transform: translateY(-5px);
+		.menu-icon {
+			display: none;
+		}
 	}
-	.bar-2{
-		transform: translateY(0px);
-	}
-	.bar-3{
-		transform: translateY(5px);
-	}
-
 </style>
-
-
-<!-- <nav>
-	<span>
-		<a href="/">Home</a>
-		<a href="/department-links">Departments</a>
-	</span>
-	<div class="nav-end">
-		<a href="/account">Account</a>
-		<a href="/departments/cpsc">Computer Science</a>
-		<a href="/departments/math">Mathematics</a>
-	</div>
-</nav>
-
-<style>
-	nav {
-		display: flex;
-		gap: 1rem;
-		align-items: center;
-		justify-content: space-between;
-		background-color: rgb(var(--color-background-500));
-		padding: 1.5rem;
-		border-radius: 0.5rem;
-	}
-
-	a {
-		text-decoration-color: transparent;
-		text-underline-offset: 2px;
-		color: rgb(var(--color-text));	
-		transition: text-decoration-color 100ms ease;
-	}
-
-	a:hover {
-		text-decoration-color: rgb(var(--color-text));
-	}
-
-	nav .nav-end {
-		display: flex;
-		gap: 1rem;
-	}
-</style> -->
-
