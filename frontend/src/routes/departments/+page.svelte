@@ -9,7 +9,7 @@
 		{ link: 'finance', name: 'Finance' },
 		{ link: 'isds', name: 'Information Systems & Decision Sciences' },
 		{ link: 'kinesiology', name: 'Kinesiology' },
-		{ link: 'mathematics', name: 'Mathematics' },
+		{ link: 'math', name: 'Mathematics' },
 		{ link: 'physics', name: 'Physics' },
 		{ link: 'political-science', name: 'Political Science' },
 		{ link: 'psychology', name: 'Psychology' }
