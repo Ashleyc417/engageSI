@@ -19,7 +19,7 @@
 
 	<div class="nav-end">
 		<a href="/">About</a>
-		<a href="/department-links">Departments</a>
+		<a href="/departments">Departments</a>
 		<button class="sign-in-btn">Sign In</button>
 	</div>
 </nav>
@@ -30,7 +30,7 @@
 	</button>
 
 	<a href="/">About</a>
-	<a href="/department	-links">Departments</a>
+	<a href="/departments">Departments</a>
 	<button class="sign-in-btn">Sign In</button>
 </div>
 
