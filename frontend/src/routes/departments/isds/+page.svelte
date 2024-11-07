@@ -1,5 +1,5 @@
 <script>
-	import isds from '$lib/schedules/information-systems-and-decision-sciences-(isds).json';
+	import isds from '$lib/schedules/isds.json';
 	import Intro from '$lib/components/intro.svelte';
 	import Table from '$lib/components/table.svelte';
 </script>
