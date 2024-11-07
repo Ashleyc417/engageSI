@@ -25,6 +25,10 @@
 </nav>
 
 <div class="sidebar {isSidebarOpen ? 'active' : ''}">
+	<button class="toggle-sidebar-btn" on:click={toggleSidebar}>
+		<img src="/close.svg" alt="Close Sidebar Icon" class="close-icon" />
+	</button>
+
 	<a href="/">About</a>
 	<a href="/departments">Deparments</a>
 	<button class="sign-in-btn">Sign In</button>
@@ -44,6 +48,7 @@
 	nav {
 		z-index: 20;
 		position: fixed;
+		top: 0;
 		display: flex;
 		width: 100%;
 		align-items: center;
@@ -62,6 +67,13 @@
 		width: 32px;
 	}
 
+	.close-icon {
+		width: 32px;
+		position: absolute;
+		left: 1rem;
+		top: 2rem;
+	}
+
 	.toggle-sidebar-btn {
 		background-color: transparent;
 		border: none;
@@ -71,18 +83,31 @@
 	.sidebar {
 		z-index: 40;
 		position: fixed;
-		padding: 5rem 5rem 3rem 1.5rem;
+		padding: 5rem 1.5rem;
+		width: 15rem;
 		top: 0;
-		right: -190px;
+		right: -15rem;
 		height: 100vh;
 		display: flex;
 		flex-direction: column;
 		gap: 1.5rem;
 		background-color: rgb(var(--color-background-500));
+		font-size: 1.25rem;
+		transition: right 200ms ease;
 	}
 
 	.sidebar.active {
 		right: 0;
+	}
+
+	.sidebar > a {
+		padding: 0.25rem;
+		border-radius: 0.25rem;
+		text-underline-offset: 2px;
+	}
+
+	.sidebar > a:hover {
+		text-decoration: underline;
 	}
 
 	.sign-in-btn {
@@ -94,6 +119,7 @@
 		padding: 0.4rem 1rem;
 		border-radius: 10px;
 		font-weight: 500;
+		width: 100%;
 	}
 
 	.custom-overlay {

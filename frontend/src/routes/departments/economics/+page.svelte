@@ -1,7 +1,7 @@
 <script>
 	import economics from '$lib/schedules/economics.json';
-	import Intro from '../../../lib/components/intro.svelte';
-	import Table from '../../../lib/components/table.svelte';
+	import Intro from '$lib/components/intro.svelte';
+	import Table from '$lib/components/table.svelte';
 </script>
 
 <h1>Economics SI</h1>

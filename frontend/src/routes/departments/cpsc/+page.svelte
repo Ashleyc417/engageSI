@@ -1,7 +1,7 @@
 <script>
 	import cpsc from '$lib/schedules/computer-science.json';
-	import Intro from '../../../lib/components/intro.svelte';
-	import Table from '../../../lib/components/table.svelte';
+	import Intro from '$lib/components/intro.svelte';
+	import Table from '$lib/components/table.svelte';
 </script>
 
 <h1>Computer Science SI</h1>

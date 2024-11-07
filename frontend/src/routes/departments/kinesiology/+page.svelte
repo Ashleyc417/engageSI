@@ -1,7 +1,7 @@
 <script>
 	import kinesiology from '$lib/schedules/kinesiology.json';
-	import Intro from '../../../lib/components/intro.svelte';
-	import Table from '../../../lib/components/table.svelte';
+	import Intro from '$lib/components/intro.svelte';
+	import Table from '$lib/components/table.svelte';
 </script>
 
 <h1>Kinesiology SI</h1>

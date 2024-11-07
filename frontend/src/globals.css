@@ -61,7 +61,7 @@ body {
 	margin: 0;
 	padding: 0;
 	line-height: 1.5;
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	font-family: var(--font);
 	-webkit-font-smoothing: antialiased;
 	background-color: rgb(var(--color-background-300));
@@ -69,12 +69,12 @@ body {
 }
 
 #app {
+	margin: 4rem;
 	padding-block: 2rem;
-	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	row-gap: 1rem;
-	max-width: 1024px;
+	max-width: 1536px;
 	margin-inline: auto;
 	padding-inline: 1rem;
 }
@@ -85,7 +85,7 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-	main {
+	#app {
 		padding-inline: 3.5rem;
 	}
 }

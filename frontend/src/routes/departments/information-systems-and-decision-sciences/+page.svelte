@@ -1,7 +1,7 @@
 <script>
-	import isds from '$lib/schedules/information-and-decision-science.json';
-	import Intro from '../../../lib/components/intro.svelte';
-	import Table from '../../../lib/components/table.svelte';
+	import isds from '$lib/schedules/information-systems-and-decision-sciences-(isds).json';
+	import Intro from '$lib/components/intro.svelte';
+	import Table from '$lib/components/table.svelte';
 </script>
 
 <h1>Information and Decision Sciences SI</h1>
