@@ -103,7 +103,7 @@ async function parseSchedule() {
       .join("-")
       .toLowerCase();
 
-    const pathString = `../frontend/src/lib/schedules/${departmentFileName}.json`;
+    const pathString = `../src/lib/schedules/${departmentFileName}.json`;
     const filePath = join(process.cwd(), pathString);
     await writeFile(filePath, JSON.stringify(schedule, null, 2), "utf-8");
   }
