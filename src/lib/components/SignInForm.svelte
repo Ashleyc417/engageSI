@@ -39,7 +39,7 @@
     alert('Login successful!');
 
     // Optionally, redirect to dashboard or other page
-    // For example, use SvelteKit's `goto('/dashboard')`
+    // For example, use SvelteKit's goto('/dashboard')
     // You could redirect here after login success:
     // goto('/dashboard');
   };

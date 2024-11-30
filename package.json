@@ -26,7 +26,7 @@
 	"type": "module",
 	"dependencies": {
 		"@supabase/ssr": "^0.5.1",
-		"@supabase/supabase-js": "^2.46.1",
+		"@supabase/supabase-js": "^2.46.2",
 		"linkedom": "^0.18.5",
 		"node-fetch": "^3.3.2"
 	}
