@@ -1,8 +1,8 @@
 <script>
 	import { fade } from 'svelte/transition';
-  
+	
 	let isSidebarOpen = false;
-  
+	
 	function toggleSidebar() {
 	  isSidebarOpen = !isSidebarOpen;
 	}
@@ -24,6 +24,10 @@
 	  <a href="/signin">
 		<button class="sign-in-btn">Sign In</button>
 	  </a>
+	  <!-- Register Button that navigates to the registration page -->
+	  <a href="/register">
+		<button class="register-btn">Register</button>
+	  </a>
 	</div>
   </nav>
   
@@ -37,6 +41,10 @@
 	<!-- Sign In Button that navigates to the sign-in page -->
 	<a href="/signin">
 	  <button class="sign-in-btn">Sign In</button>
+	</a>
+	<!-- Register Button that navigates to the registration page -->
+	<a href="/register">
+	  <button class="register-btn">Register</button>
 	</a>
   </div>
   
@@ -116,7 +124,7 @@
 	  text-decoration: underline;
 	}
   
-	.sign-in-btn {
+	.sign-in-btn, .register-btn {
 	  border: none;
 	  outline: none;
 	  cursor: pointer;
@@ -126,6 +134,10 @@
 	  border-radius: 10px;
 	  font-weight: 500;
 	  width: 100%;
+	}
+  
+	.sign-in-btn:hover, .register-btn:hover {
+	  background-color: #45a049;
 	}
   
 	.custom-overlay {
