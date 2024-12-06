@@ -8,6 +8,8 @@
 	--color-text: 247, 247, 247;
 	--color-action: 31, 3, 255;
 	--color-foreground: 85, 156, 255;
+
+	color-scheme: dark;
 }
 
 /* Some CSS Resets for convenience */
