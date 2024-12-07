@@ -57,9 +57,23 @@
 			creates a more efficient and engaging experience for both students and leaders, encouraging
 			greater participation in SI sessions and ultimately fostering a stronger learning community.
 		</p>
-		<div class="sample-container">
-			<img src="/sample.png" alt="EngageSI sample usage" />
-			<i>Example of how to utilize EngageSI</i>
+		<img class="si-logo" src="/si-logo.jpg" alt="SI Logo" />
+	</div>
+</section>
+
+<section class="example-usage-section">
+	<h2>How to Use EngageSI</h2>
+	<div class="example-usage-container">
+		<div class="example-usages">
+			<h3>Examples</h3>
+			<button>Signing into EngageSI</button>
+			<button>Selecting an SI Course</button>
+			<button>Viewing Saved SI Courses</button>
+			<button>Marking Attendance</button>
+		</div>
+		<div class="example-usages">
+			<img src="/sample.png" alt="Utilizing EngageSI Example" />
+			<i>Marking Attendance in EngageSI</i>
 		</div>
 	</div>
 </section>
@@ -71,6 +85,10 @@
 
 	h2 {
 		font-size: 2.5rem;
+	}
+
+	h3 {
+		font-size: 2rem;
 	}
 
 	p {
@@ -132,31 +150,58 @@
 		font-size: 3rem;
 	}
 
-	.goals-grid > p {
-		font-size: 1.125rem;
-	}
-
 	.goals-section > .goals-grid {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 1rem;
+		display: flex;
+		margin-right: auto;
+		justify-content: center;
+		gap: 2.5rem;
 	}
 
-	.sample-container {
+	.goals-grid > p {
+		max-width: 1024px;
+	}
+
+	.si-logo {
+		border-radius: 50%;
+		width: 10rem;
+		height: 10rem;
+	}
+
+	.example-usage-container {
 		display: grid;
+		max-width: 1024px;
+		margin-inline: auto;
+		grid-template-columns: 300px 1fr;
+		gap: 2rem;
 		padding: 4rem;
 		border-radius: 1rem;
 		border: 2px solid gray;
 		max-width: max-content;
 	}
 
-	.sample-container > img {
-		max-width: 25rem;
+	.example-usages {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
 	}
 
-	.sample-container > i {
-		font-size: small;
+	.example-usages > button {
+		outline: none;
+		cursor: pointer;
+		border: 2px solid gray;
+		background-color: transparent;
+		border-radius: 0.5rem;
+		width: 100%;
+		padding: 1rem;
+	}
+
+	.example-usages > img {
+		width: 40rem;
+		border: 2px solid gray;
+		border-radius: 0.5rem;
+	}
+
+	.example-usages > i {
 		text-align: center;
-		margin-block-start: 0.125rem;
 	}
 </style>

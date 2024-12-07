@@ -1,54 +1,46 @@
 <script>
 	import { fade } from 'svelte/transition';
-	
+
 	let isSidebarOpen = false;
-	
+
 	function toggleSidebar() {
-	  isSidebarOpen = !isSidebarOpen;
+		isSidebarOpen = !isSidebarOpen;
 	}
-  </script>
-  
-  <nav>
+</script>
+
+<nav>
 	<div class="nav-start">
-	  <a href="/"><h1>EngageSI</h1></a>
+		<a href="/"><h1>EngageSI</h1></a>
 	</div>
-  
+
 	<button class="toggle-sidebar-btn" on:click={toggleSidebar}>
-	  <img src="/menu.svg" alt="Hamburger Menu Icon" class="menu-icon" />
+		<img src="/menu.svg" alt="Hamburger Menu Icon" class="menu-icon" />
 	</button>
-  
+
 	<div class="nav-end">
-	  <a href="/">About</a>
-	  <a href="/departments">Departments</a>
-	  <!-- Sign In Button that navigates to the sign-in page -->
-	  <a href="/signin">
-		<button class="sign-in-btn">Sign In</button>
-	  </a>
-	  <!-- Register Button that navigates to the registration page -->
-	  <a href="/register">
-		<button class="register-btn">Register</button>
-	  </a>
+		<a href="/">About</a>
+		<a href="/departments">Departments</a>
+		<!-- Sign In Button that navigates to the sign-in page -->
+		<a href="/signin">
+			<button class="sign-in-btn">Sign In</button>
+		</a>
 	</div>
-  </nav>
-  
-  <div class="sidebar {isSidebarOpen ? 'active' : ''}">
+</nav>
+
+<div class="sidebar {isSidebarOpen ? 'active' : ''}">
 	<button class="toggle-sidebar-btn" on:click={toggleSidebar}>
-	  <img src="/close.svg" alt="Close Sidebar Icon" class="close-icon" />
+		<img src="/close.svg" alt="Close Sidebar Icon" class="close-icon" />
 	</button>
-  
+
 	<a href="/">About</a>
 	<a href="/departments">Departments</a>
 	<!-- Sign In Button that navigates to the sign-in page -->
 	<a href="/signin">
-	  <button class="sign-in-btn">Sign In</button>
+		<button class="sign-in-btn">Sign In</button>
 	</a>
-	<!-- Register Button that navigates to the registration page -->
-	<a href="/register">
-	  <button class="register-btn">Register</button>
-	</a>
-  </div>
-  
-  <div
+</div>
+
+<div
 	class="custom-overlay {isSidebarOpen ? 'custom-overlay-active' : ''}"
 	on:click={toggleSidebar}
 	on:keydown={toggleSidebar}
@@ -56,118 +48,117 @@
 	out:fade|global={{ duration: 100 }}
 	role="presentation"
 	tabindex="-1"
-  />
-  
-  <style>
+/>
+
+<style>
 	nav {
-	  z-index: 20;
-	  position: fixed;
-	  top: 0;
-	  display: flex;
-	  width: 100%;
-	  align-items: center;
-	  justify-content: space-between;
-	  background-color: rgb(var(--color-background-500));
-	  padding: 1rem;
-	}
-  
-	nav > .nav-end {
-	  display: none;
-	  align-items: center;
-	  gap: 1rem;
-	}
-  
-	.menu-icon {
-	  width: 32px;
-	}
-  
-	.close-icon {
-	  width: 32px;
-	  position: absolute;
-	  left: 1rem;
-	  top: 2rem;
-	}
-  
-	.toggle-sidebar-btn {
-	  background-color: transparent;
-	  border: none;
-	  outline: none;
-	}
-  
-	.sidebar {
-	  z-index: 40;
-	  position: fixed;
-	  padding: 5rem 1.5rem;
-	  width: 15rem;
-	  top: 0;
-	  right: -15rem;
-	  height: 100vh;
-	  display: flex;
-	  flex-direction: column;
-	  gap: 1.5rem;
-	  background-color: rgb(var(--color-background-500));
-	  font-size: 1.25rem;
-	  transition: right 200ms ease;
-	}
-  
-	.sidebar.active {
-	  right: 0;
-	}
-  
-	.sidebar > a {
-	  padding: 0.25rem;
-	  border-radius: 0.25rem;
-	  text-underline-offset: 2px;
-	}
-  
-	.sidebar > a:hover {
-	  text-decoration: underline;
-	}
-  
-	.sign-in-btn, .register-btn {
-	  border: none;
-	  outline: none;
-	  cursor: pointer;
-	  background-color: rgb(var(--color-text));
-	  color: rgb(var(--color-background-300));
-	  padding: 0.4rem 1rem;
-	  border-radius: 10px;
-	  font-weight: 500;
-	  width: 100%;
-	}
-  
-	.sign-in-btn:hover, .register-btn:hover {
-	  background-color: #45a049;
-	}
-  
-	.custom-overlay {
-	  position: fixed;
-	  display: none;
-	  left: 0;
-	  top: 0;
-	  z-index: 30;
-	  height: 100vh;
-	  width: 100vw;
-	  background-color: rgba(15, 23, 42, 0.25);
-	}
-  
-	.custom-overlay-active {
-	  display: block;
-	}
-  
-	a {
-	  color: rgb(var(--color-text));
-	  text-decoration: none;
-	}
-  
-	@media screen and (min-width: 640px) {
-	  nav > .nav-end {
+		z-index: 20;
+		position: fixed;
+		top: 0;
 		display: flex;
-	  }
-  
-	  .menu-icon {
-		display: none;
-	  }
+		width: 100%;
+		align-items: center;
+		justify-content: space-between;
+		background-color: rgb(var(--color-background-500));
+		padding: 1rem;
 	}
-  </style>
-  
+
+	nav > .nav-end {
+		display: none;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.menu-icon {
+		width: 32px;
+	}
+
+	.close-icon {
+		width: 32px;
+		position: absolute;
+		left: 1rem;
+		top: 2rem;
+	}
+
+	.toggle-sidebar-btn {
+		background-color: transparent;
+		border: none;
+		outline: none;
+	}
+
+	.sidebar {
+		z-index: 40;
+		position: fixed;
+		padding: 5rem 1.5rem;
+		width: 15rem;
+		top: 0;
+		right: -15rem;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		background-color: rgb(var(--color-background-500));
+		font-size: 1.25rem;
+		transition: right 200ms ease;
+	}
+
+	.sidebar.active {
+		right: 0;
+	}
+
+	.sidebar > a {
+		padding: 0.25rem;
+		border-radius: 0.25rem;
+		text-underline-offset: 2px;
+	}
+
+	.sidebar > a:hover {
+		text-decoration: underline;
+	}
+
+	.sign-in-btn {
+		border: none;
+		outline: none;
+		cursor: pointer;
+		background-color: rgb(var(--color-text));
+		color: rgb(var(--color-background-300));
+		padding: 0.4rem 1rem;
+		border-radius: 10px;
+		font-weight: 500;
+		width: 100%;
+	}
+
+	.sign-in-btn:hover {
+		background-color: #45a049;
+	}
+
+	.custom-overlay {
+		position: fixed;
+		display: none;
+		left: 0;
+		top: 0;
+		z-index: 30;
+		height: 100vh;
+		width: 100vw;
+		background-color: rgba(15, 23, 42, 0.25);
+	}
+
+	.custom-overlay-active {
+		display: block;
+	}
+
+	a {
+		color: rgb(var(--color-text));
+		text-decoration: none;
+	}
+
+	@media screen and (min-width: 640px) {
+		nav > .nav-end {
+			display: flex;
+		}
+
+		.menu-icon {
+			display: none;
+		}
+	}
+</style>
