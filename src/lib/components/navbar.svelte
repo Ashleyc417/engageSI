@@ -52,8 +52,8 @@
 	class="custom-overlay {isSidebarOpen ? 'custom-overlay-active' : ''}"
 	on:click={toggleSidebar}
 	on:keydown={toggleSidebar}
-	in:fade={{ duration: 100 }}
-	out:fade={{ duration: 100 }}
+	in:fade|global={{ duration: 100 }}
+	out:fade|global={{ duration: 100 }}
 	role="presentation"
 	tabindex="-1"
   />
