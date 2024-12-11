@@ -84,13 +84,17 @@
 		flex-direction: column;
 		border: 2px solid gray;
 		border-radius: 0.5rem;
-		padding: 3.5rem;
+		padding: 2rem;
 		margin-inline: auto;
 	}
 
 	h2 {
 		text-align: center;
 		font-size: 2rem;
+	}
+
+	p {
+		font-size: 0.875rem;
 	}
 
 	a {
@@ -117,5 +121,15 @@
 		background-color: rgb(var(--color-background-500));
 		border-radius: 0.25rem;
 		padding: 0.5rem;
+	}
+
+	@media screen and (min-width: 640px) {
+		form {
+			padding: 3.5rem;
+		}
+
+		p {
+			font-size: 1rem;
+		}
 	}
 </style>
