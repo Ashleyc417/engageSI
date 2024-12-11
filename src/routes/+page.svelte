@@ -57,7 +57,7 @@
 			creates a more efficient and engaging experience for both students and leaders, encouraging
 			greater participation in SI sessions and ultimately fostering a stronger learning community.
 		</p>
-		<img class="si-logo" src="/si-logo.jpg" alt="SI Logo" />
+		<img class="si-logo" src="/si-logo.jpeg" alt="SI Logo" />
 	</div>
 </section>
 
