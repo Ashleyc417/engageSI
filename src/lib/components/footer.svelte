@@ -1,10 +1,6 @@
-<script>
-	export let companyName = "EngageSI"; // Default fallback
-</script>
-
 <footer>
 	<div class="footer-content">
-		<p>&copy; {new Date().getFullYear()} {companyName}. All rights reserved.</p>
+		<p>&copy; {new Date().getFullYear()} EngageSI. All rights reserved.</p>
 		<nav>
 			<a href="/">About Us</a>
 			<a href="/departments">Departments</a>
