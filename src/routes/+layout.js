@@ -1,12 +1,12 @@
-import { createBrowserClient, createServerClient, isBrowser } from '@supabase/ssr';
-import { PUBLIC_SUPABASE_ANON_KEY, PUBLIC_SUPABASE_URL } from '$env/static/public';
+import { createBrowserClient, createServerClient, isBrowser } from "@supabase/ssr";
+import { PUBLIC_SUPABASE_ANON_KEY, PUBLIC_SUPABASE_URL } from "$env/static/public";
 
-export const load = async ({ data, depends, fetch }) => {
+export const load = async ({ data, depends, fetch, url }) => {
 	/**
 	 * Declare a dependency so the layout can be invalidated, for example, on
 	 * session refresh.
 	 */
-	depends('supabase:auth');
+	depends("supabase:auth");
 
 	const supabase = isBrowser()
 		? createBrowserClient(PUBLIC_SUPABASE_URL, PUBLIC_SUPABASE_ANON_KEY, {
@@ -38,5 +38,5 @@ export const load = async ({ data, depends, fetch }) => {
 		data: { user }
 	} = await supabase.auth.getUser();
 
-	return { session, supabase, user };
+	return { session, supabase, user, profile: data.profile, url: url.pathname };
 };

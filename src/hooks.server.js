@@ -1,8 +1,8 @@
-import { createServerClient } from '@supabase/ssr';
-import { redirect } from '@sveltejs/kit';
-import { sequence } from '@sveltejs/kit/hooks';
+import { createServerClient } from "@supabase/ssr";
+import { redirect } from "@sveltejs/kit";
+import { sequence } from "@sveltejs/kit/hooks";
 
-import { PUBLIC_SUPABASE_URL, PUBLIC_SUPABASE_ANON_KEY } from '$env/static/public';
+import { PUBLIC_SUPABASE_URL, PUBLIC_SUPABASE_ANON_KEY } from "$env/static/public";
 
 const supabase = async ({ event, resolve }) => {
 	/**
@@ -20,11 +20,20 @@ const supabase = async ({ event, resolve }) => {
 			 */
 			setAll: (cookiesToSet) => {
 				cookiesToSet.forEach(({ name, value, options }) => {
-					event.cookies.set(name, value, { ...options, path: '/' });
+					event.cookies.set(name, value, { ...options, path: "/" });
 				});
 			}
 		}
 	});
+
+	if ("suppressGetSessionWarning" in event.locals.supabase.auth) {
+		// @ts-expect-error - suppressGetSessionWarning is not part of the official API
+		event.locals.supabase.auth.suppressGetSessionWarning = true;
+	} else {
+		console.warn(
+			"SupabaseAuthClient#suppressGetSessionWarning was removed. See https://github.com/supabase/auth-js/issues/888."
+		);
+	}
 
 	/**
 	 * Unlike `supabase.auth.getSession()`, which returns the session _without_
@@ -57,7 +66,7 @@ const supabase = async ({ event, resolve }) => {
 			 * Supabase libraries use the `content-range` and `x-supabase-api-version`
 			 * headers, so we need to tell SvelteKit to pass it through.
 			 */
-			return name === 'content-range' || name === 'x-supabase-api-version';
+			return name === "content-range" || name === "x-supabase-api-version";
 		}
 	});
 };
@@ -67,12 +76,12 @@ const authGuard = async ({ event, resolve }) => {
 	event.locals.session = session;
 	event.locals.user = user;
 
-	if (!event.locals.session && event.url.pathname.startsWith('/private')) {
-		redirect(303, '/auth');
+	if (!event.locals.session && event.url.pathname.startsWith("/private")) {
+		redirect(303, "/auth");
 	}
 
-	if (event.locals.session && event.url.pathname === '/auth') {
-		redirect(303, '/private');
+	if (event.locals.session && event.url.pathname === "/auth") {
+		redirect(303, "/");
 	}
 
 	return resolve(event);

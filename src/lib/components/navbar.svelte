@@ -1,8 +1,9 @@
 <script>
-	import { fade } from 'svelte/transition';
+	import { fade } from "svelte/transition";
+
+	export let profile;
 
 	let isSidebarOpen = false;
-
 	function toggleSidebar() {
 		isSidebarOpen = !isSidebarOpen;
 	}
@@ -21,9 +22,15 @@
 		<a href="/">About</a>
 		<a href="/departments">Departments</a>
 		<!-- Sign In Button that navigates to the sign-in page -->
-		<a href="/signin">
-			<button class="sign-in-btn">Sign In</button>
-		</a>
+		{#if profile}
+			<a href="/dashboard">
+				<button class="sign-in-btn">Dashboard</button>
+			</a>
+		{:else}
+			<a href="/signin">
+				<button class="sign-in-btn">Sign In</button>
+			</a>
+		{/if}
 	</div>
 </nav>
 
@@ -35,9 +42,15 @@
 	<a href="/">About</a>
 	<a href="/departments">Departments</a>
 	<!-- Sign In Button that navigates to the sign-in page -->
-	<a href="/signin">
-		<button class="sign-in-btn">Sign In</button>
-	</a>
+	{#if profile}
+		<a href="/dashboard">
+			<button class="sign-in-btn">Dashboard</button>
+		</a>
+	{:else}
+		<a href="/signin">
+			<button class="sign-in-btn">Sign In</button>
+		</a>
+	{/if}
 </div>
 
 <div

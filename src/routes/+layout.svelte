@@ -2,14 +2,16 @@
 	import { onMount } from "svelte";
 	import { invalidate } from "$app/navigation";
 	import Navbar from "../lib/components/navbar.svelte";
-	import Footer from "../lib/components/footer.svelte"; // Import Footer component
+	import Footer from "../lib/components/footer.svelte";
+	import { invalidateAll } from "$app/navigation";
 	import "../globals.css";
 
 	export let data;
-	$: ({ session, supabase } = data);
+	$: ({ session, supabase, profile } = data);
 
 	onMount(() => {
 		const { data } = supabase.auth.onAuthStateChange((_, newSession) => {
+			if (newSession) invalidateAll();
 			if (newSession?.expires_at !== session?.expires_at) {
 				invalidate("supabase:auth");
 			}
@@ -24,11 +26,11 @@
 </svelte:head>
 
 <div class="layout-container">
-	<Navbar />
+	<Navbar {profile} />
 	<main id="app">
 		<slot />
 	</main>
-	<Footer companyName="EngageSI" />
+	<Footer />
 </div>
 
 <style>
