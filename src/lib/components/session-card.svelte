@@ -19,7 +19,7 @@
 		{#if isDashboard}
 			<button
 				class="remove-session-btn"
-				formaction="/account/departments/remove&sessionKey={sessionKey}"
+				formaction="/account/departments/remove?sessionKey={sessionKey}"
 			>
 				Remove SI Session
 			</button>

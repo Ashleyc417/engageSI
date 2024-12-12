@@ -1,5 +1,5 @@
 <script>
-	import SessionCard from "../../lib/components/session-card.svelte";
+	import SessionCard from "$lib/components/session-card.svelte";
 
 	export let data;
 

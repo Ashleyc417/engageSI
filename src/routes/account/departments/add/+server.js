@@ -1,4 +1,4 @@
-import { fail, json, redirect } from "@sveltejs/kit";
+import { fail, redirect } from "@sveltejs/kit";
 
 export const POST = async ({ url, locals: { supabase, safeGetSession } }) => {
 	const { session, user } = await safeGetSession();
