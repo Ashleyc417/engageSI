@@ -37,13 +37,12 @@
 		color: #ffffff;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
+		text-align: left;
+		text-indent: 3rem;
 	}
 
 	.card:hover {
-		transform: translateY(-5px);
+		transform: translateY(-10px);
 	}
 
 	.mark-attendance-btn {
@@ -75,16 +74,18 @@
 
 	.si-leader-text {
 		font-size: 1.6rem;
+		text-align: center;
+		text-indent: 0rem;
 		font-weight: bold;
 		color: #007bff;
 	}
 
 	.card p {
-		font-size: 1.3rem;
-		line-height: 1.6;
+		font-size: 1.2rem;
+		line-height: 1.5;
 	}
 
 	.card p strong {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 	}
 </style>
