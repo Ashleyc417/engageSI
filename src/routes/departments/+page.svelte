@@ -26,8 +26,8 @@
 
 <style>
 	h1 {
+		font-size: 4rem;
 		text-align: center;
-		font-size: xx-large;
 	}
 
 	.department-links {
