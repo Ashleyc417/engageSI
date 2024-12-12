@@ -64,6 +64,10 @@
 />
 
 <style>
+	h1 {
+		font-size: 2rem;
+	}
+
 	nav {
 		z-index: 20;
 		position: fixed;
