@@ -41,7 +41,7 @@
 
 	/* Main content takes up remaining space */
 	main {
-		flex: 1; /* Grow and fill available space */
 		padding: 1rem; /* Optional padding for spacing */
+		width: 100%;
 	}
 </style>

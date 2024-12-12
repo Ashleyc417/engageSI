@@ -1,46 +1,51 @@
 <!-- newest it is supposed to center and justify the fuckin code but that shit is not working-->
 <script>
-	export let data;
+	export let form;
 </script>
 
-<form>
-	<h2>Register</h2>
+<section>
+	<form method="POST" action="/auth/?/register">
+		<h2>Register</h2>
 
-	<div>
-		<label for="name">Your Name</label>
-		<input id="name" type="text" required />
-	</div>
-	<div>
-		<label for="email" class="block text-sm font-medium">Email</label>
-		<input id="email" type="email" required />
-	</div>
-	<div>
-		<label for="text" class="block text-sm font-medium">CWID</label>
-		<input id="text" type="text" required />
-	</div>
+		<div>
+			<label for="name">Full Name</label>
+			<input id="name" type="text" required />
+		</div>
+		<div>
+			<label for="email" class="block text-sm font-medium">School Email</label>
+			<input id="email" type="email" required />
+		</div>
+		<div>
+			<label for="text" class="block text-sm font-medium">CWID</label>
+			<input id="text" type="text" required />
+		</div>
 
-	<div>
-		<label for="password" class="block text-sm font-medium">Password</label>
-		<input id="password" type="password" required />
-	</div>
+		<div>
+			<label for="password" class="block text-sm font-medium">Create Password</label>
+			<input id="password" type="password" required />
+		</div>
 
-	<div>
-		<label for="confirm-password" class="block text-sm font-medium">Confirm Your Password</label>
-		<input id="confirm-password" type="password" required />
-	</div>
+		<div>
+			<label for="confirm-password" class="block text-sm font-medium">Confirm Your Password</label>
+			<input id="confirm-password" type="password" required />
+		</div>
 
-	<!-- Display error message if validation fails -->
-	<!-- {#if errorMessage}
-		<div class="text-red-600 text-sm">{errorMessage}</div>
-	{/if} -->
+		{#if form && form.errorMessage}
+			<div class="text-red-600 text-sm">{form.errorMessage}</div>
+		{/if}
 
-	<!-- Submit button -->
-	<button type="submit">Register</button>
+		<!-- Submit button -->
+		<button type="submit">Register</button>
 
-	<p>Already have an account? <a href="/signin">Sign in!</a></p>
-</form>
+		<p>Already have an account? <a href="/signin">Sign in!</a></p>
+	</form>
+</section>
 
 <style>
+	section {
+		padding: 2rem;
+	}
+
 	form {
 		max-width: 500px;
 		width: 100%;
