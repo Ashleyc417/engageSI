@@ -1,7 +1,8 @@
 <script>
-	import political_science from '$lib/schedules/political-science.json';
-	import Intro from '$lib/components/intro.svelte';
-	import Table from '$lib/components/table.svelte';
+	import political_science from "$lib/schedules/political-science.json";
+	import Intro from "$lib/components/intro.svelte";
+	import Table from "$lib/components/table.svelte";
+	import { departmentNames } from "$lib/constants/department-names";
 </script>
 
 <h1>Political Science SI</h1>

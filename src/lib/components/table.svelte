@@ -2,6 +2,9 @@
 	import SessionCard from "./session-card.svelte";
 
 	export let schedules;
+	export let departmentName;
+
+	console.log(departmentName);
 </script>
 
 <div class="schedule-cards">
@@ -13,7 +16,7 @@
 					<SessionCard
 						{sessionInfo}
 						isDashboard={false}
-						sessionKey={`cpsc;${classTitle};${sessionInfo.siLeader}`}
+						sessionKey={`${departmentName};${classTitle};${sessionInfo.siLeader}`}
 					/>
 				{/each}
 			</div>

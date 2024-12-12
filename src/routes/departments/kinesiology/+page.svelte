@@ -1,7 +1,8 @@
 <script>
-	import kinesiology from '$lib/schedules/kinesiology.json';
-	import Intro from '$lib/components/intro.svelte';
-	import Table from '$lib/components/table.svelte';
+	import kinesiology from "$lib/schedules/kinesiology.json";
+	import Intro from "$lib/components/intro.svelte";
+	import Table from "$lib/components/table.svelte";
+	import { departmentNames } from "$lib/constants/department-names";
 </script>
 
 <h1>Kinesiology SI</h1>

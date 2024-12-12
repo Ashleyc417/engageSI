@@ -1,7 +1,8 @@
 <script>
-	import physics from '$lib/schedules/physics.json';
-	import Intro from '$lib/components/intro.svelte';
-	import Table from '$lib/components/table.svelte';
+	import physics from "$lib/schedules/physics.json";
+	import Intro from "$lib/components/intro.svelte";
+	import Table from "$lib/components/table.svelte";
+	import { departmentNames } from "$lib/constants/department-names";
 </script>
 
 <h1>Physics SI</h1>
