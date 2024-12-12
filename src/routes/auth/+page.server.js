@@ -5,6 +5,8 @@ export const load = async ({ locals: { safeGetSession } }) => {
 	if (session) redirect(303, "/dashboard");
 };
 
+const OAUTH_PROVIDERS = ["google", "discord"];
+
 export const actions = {
 	register: async ({ request, locals: { supabase } }) => {
 		const formData = await request.formData();
@@ -47,5 +49,25 @@ export const actions = {
 		}
 
 		redirect(303, "/dashboard");
+	},
+	socialLogin: async ({ url, locals: { supabase } }) => {
+		const provider = url.searchParams.get("provider");
+		if (!provider) {
+			return fail(422, { message: "Unable to process provider" });
+		}
+
+		if (!OAUTH_PROVIDERS.includes(provider)) {
+			return fail(400, { message: "Provider not supported" });
+		}
+		const signInQuery = await supabase.auth.signInWithOAuth({
+			provider: provider
+		});
+
+		if (signInQuery.error) {
+			console.error(signInQuery.error.message);
+			return fail(400, { message: "Something went wrong" });
+		}
+
+		redirect(303, signInQuery.data.url);
 	}
 };

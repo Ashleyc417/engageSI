@@ -2,8 +2,24 @@
 	export let form;
 </script>
 
-<form method="POST">
+<form method="post">
 	<h2>Sign In</h2>
+
+	<div>
+		<button type="submit" formaction="/auth/?/socialLogin&provider=google" class="auth-button">
+			Sign In with Google
+		</button>
+		<button type="submit" formaction="/auth/?/socialLogin&provider=discord" class="auth-button">
+			Sign In with Discord
+		</button>
+	</div>
+
+	<div class="divider">
+		<div class="divider-line"></div>
+		<div>or, sign in with your email</div>
+		<div class="divider-line"></div>
+	</div>
+
 	<div>
 		<label for="email" class="block text-sm font-medium">Email</label>
 		<input id="email" type="email" />
@@ -48,6 +64,27 @@
 	a {
 		color: white;
 		text-underline-offset: 2px;
+	}
+
+	.auth-button {
+		border: none;
+		cursor: pointer;
+		background-color: transparent;
+		border: 2px solid gray;
+		border-radius: 0.25rem;
+		padding: 0.5rem 1rem;
+	}
+
+	form > .divider {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.divider > .divider-line {
+		border: 1px solid gray;
+		flex-grow: 1;
 	}
 
 	form > div {
