@@ -18,11 +18,11 @@ export const load = async ({ locals: { supabase, safeGetSession } }) => {
 	for (const entry of data) {
 		const sessionKey = entry.session_key;
 		const [department, siCourse, siLeader] = sessionKey.split(";");
-		const { default: departmentSchedule } = await import(`$lib/schedules/computer-science.json`);
+		const { default: departmentSchedule } = await import(`$lib/schedules/${department}.json`);
 
 		for (const session of departmentSchedule.sessionsOffered[siCourse]) {
 			if (session.siLeader === siLeader) {
-				userSessions.push(session);
+				userSessions.push({ sessionInfo: session, extraInfo: { department, siCourse, siLeader } });
 				break;
 			}
 		}

@@ -12,4 +12,4 @@
 <h2>SI Schedule</h2>
 
 <!-- `schedules` is the table of the math department's si courses offered  -->
-<Table schedules={finance} />
+<Table schedules={finance} departmentName={departmentNames.finance} />

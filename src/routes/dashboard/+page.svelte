@@ -20,11 +20,11 @@
 		<h2>SI Sessions</h2>
 		<div class="schedule-entry">
 			<div class="card-container">
-				{#each userSessions as sessionInfo}
+				{#each userSessions as userSession}
 					<SessionCard
-						{sessionInfo}
+						sessionInfo={userSession.sessionInfo}
 						isDashboard={true}
-						sessionKey={`cpsc;${"CPSC 120"};${sessionInfo.siLeader}`}
+						sessionKey={`${userSession.extraInfo.department};${userSession.extraInfo.siCourse};${userSession.extraInfo.siLeader}`}
 					/>
 				{/each}
 			</div>
