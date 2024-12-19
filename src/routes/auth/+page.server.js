@@ -8,7 +8,7 @@ export const load = async ({ locals: { safeGetSession } }) => {
 const OAUTH_PROVIDERS = ["google", "discord"];
 
 export const actions = {
-	register: async ({ request, locals: { supabase } }) => {
+	signUp: async ({ request, locals: { supabase } }) => {
 		const formData = await request.formData();
 
 		const name = formData.get("name");
@@ -18,11 +18,11 @@ export const actions = {
 		const confirmPassword = formData.get("confirm-password");
 
 		if (!name || !email || !cwid || !password || !confirmPassword) {
-			return fail({ message: "Please provide all the items to register." });
+			fail({ message: "Please provide all the items to sign up." });
 		}
 
 		if (password != confirmPassword) {
-			return fail({ message: "Please ensure that both passwords match." });
+			fail({ message: "Please ensure that both passwords match." });
 		}
 
 		const { error: err } = await supabase.auth.signUp({ email, password });
@@ -34,18 +34,18 @@ export const actions = {
 
 		redirect(303, "/");
 	},
-	login: async ({ request, locals: { supabase } }) => {
+	signIn: async ({ request, locals: { supabase } }) => {
 		const formData = await request.formData();
 		const email = formData.get("email");
 		const password = formData.get("password");
 
 		if (!email || !password) {
-			return fail({ message: "Please enter an email and a password" });
+			fail({ message: "Please enter an email and a password" });
 		}
 
 		const { error } = await supabase.auth.signInWithPassword({ email, password });
 		if (error) {
-			return fail(error);
+			fail(error);
 		}
 
 		redirect(303, "/dashboard");

@@ -1,23 +1,22 @@
 <script>
 	export let form;
-	console.log(form);
 </script>
 
-<form method="post" action="/auth/?/signIn">
-	<h2>Sign In</h2>
+<form method="post" action="/auth/?/signUp">
+	<h2>Sign Up</h2>
 
 	<div>
 		<button type="submit" formaction="/auth/?/socialLogin&provider=google" class="auth-button">
-			<img src="/google.svg" alt="Google Icon" /> Sign In with Google
+			<img src="/google.svg" alt="Google Icon" /> Sign Up with Google
 		</button>
 		<button type="submit" formaction="/auth/?/socialLogin&provider=discord" class="auth-button">
-			<img src="/discord.svg" alt="Discord Icon" /> Sign In with Discord
+			<img src="/discord.svg" alt="Discord Icon" /> Sign Up with Discord
 		</button>
 	</div>
 
 	<div class="divider">
 		<div class="divider-line"></div>
-		<div>or, sign in with your email</div>
+		<div>or, sign up with your email</div>
 		<div class="divider-line"></div>
 	</div>
 
@@ -29,13 +28,17 @@
 		<label for="cwid" class="block text-sm font-medium">Password</label>
 		<input id="password" type="password" />
 	</div>
+	<div>
+		<label for="cwid" class="block text-sm font-medium">Confirm Your Password</label>
+		<input id="confirm-password" type="password" />
+	</div>
 
 	{#if form && form.message}
 		<div class="text-red-600 text-sm">{form.message}</div>
 	{/if}
 
-	<button type="submit">Sign In</button>
-	<p>Don't have an account? <a href="/signup">Create One!</a></p>
+	<button type="submit">Sign Up</button>
+	<p>Already have an account? <a href="/signin">Sign in!</a></p>
 </form>
 
 <style>
