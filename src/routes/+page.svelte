@@ -1,18 +1,46 @@
 <script>
 	const informationGrid = [
 		{
-			big: '49%',
-			text: 'Average course grade increase of SI students taking Calculus I compared to non-SI participants'
+			big: "49%",
+			text: "Average course grade increase of SI students taking Calculus I compared to non-SI participants"
 		},
 		{
-			big: '43%',
-			text: 'Average course grade increase of SI students taking Evolution and Biodiversity compared to non-SI participants'
+			big: "43%",
+			text: "Average course grade increase of SI students taking Evolution and Biodiversity compared to non-SI participants"
 		},
 		{
-			big: '49%',
-			text: 'SI participants receiving a passing grade in Evolution and Biodiversity, compared to 56% of non-participants.'
+			big: "49%",
+			text: "SI participants receiving a passing grade in Evolution and Biodiversity, compared to 56% of non-participants."
 		}
 	];
+
+	const exampleUsages = [
+		{
+			title: "Signing into EngageSI",
+			desc: "Navigate to the sign in page; you will be able to sign in with your email, or with your Google/Discord account",
+			imgPath: "/examples/signing-in.png"
+		},
+		{
+			title: "Selecting an SI Course",
+			desc: "You can find all of the SI courses in the departments page. Once you are signed in, you will be able to select the SI session that you want to be part of!",
+			imgPath: "/examples/select-sessions.png"
+		},
+		{
+			title: "Viewing Saved SI Courses",
+			desc: "If you are signed in, go to the dashboard page and you will be able to view all the SI courses you are currently enrolled in.",
+			imgPath: "/examples/view-sessions.png"
+		},
+		{
+			title: "Marking Attendance",
+			desc: "In your dashboard, select the SI course you would like to sign in to and click 'Join!'",
+			imgPath: "/examples/mark-attendance.png"
+		}
+	];
+
+	let currentExampleIndex = 0;
+	function setCurrentExampleIndex(i) {
+		currentExampleIndex = i;
+	}
 </script>
 
 <section class="hero-section">
@@ -66,44 +94,32 @@
 	<div class="example-usage-container">
 		<div class="example-usages">
 			<h3>Examples</h3>
-			<button>Signing into EngageSI</button>
-			<button>Selecting an SI Course</button>
-			<button>Viewing Saved SI Courses</button>
-			<button>Marking Attendance</button>
+			{#each exampleUsages as example, i}
+				<button on:click={() => setCurrentExampleIndex(i)}>{example.title}</button>
+			{/each}
 		</div>
 		<div class="example-usages">
-			<img src="/sample.png" alt="Utilizing EngageSI Example" />
-			<i>Marking Attendance in EngageSI</i>
+			<img src={exampleUsages[currentExampleIndex].imgPath} alt="Utilizing EngageSI Example" />
+			<i>{exampleUsages[currentExampleIndex].desc}</i>
 		</div>
 	</div>
 </section>
 
 <style>
-	h1 {
-		font-size: 4rem;
-	}
-
-	h2 {
-		font-size: 2.5rem;
-	}
-
-	h3 {
-		font-size: 2rem;
-	}
-
-	p {
-		font-size: 1.375rem;
-	}
-
 	section {
 		display: grid;
 		gap: 1rem;
 		margin-block-end: 2rem;
 	}
 
+	i {
+		max-width: 40rem;
+	}
+
 	.homepage-links {
 		display: flex;
-		align-items: center;
+		flex-direction: column;
+		max-width: max-content;
 		gap: 0.5rem;
 	}
 
@@ -126,8 +142,8 @@
 
 	.info-grid {
 		margin-block: 1rem;
+		padding-inline: 2rem;
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
 		gap: 1rem;
 	}
 
@@ -150,8 +166,14 @@
 		font-size: 3rem;
 	}
 
+	.info-elem > .text {
+		text-align: center;
+	}
+
 	.goals-section > .goals-grid {
 		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
 		margin-right: auto;
 		justify-content: center;
 		gap: 2.5rem;
@@ -168,7 +190,7 @@
 	}
 
 	.example-usage-container {
-		display: grid;
+		display: none;
 		max-width: 1024px;
 		margin-inline: auto;
 		grid-template-columns: 300px 1fr;
@@ -191,7 +213,6 @@
 		border: 2px solid gray;
 		background-color: transparent;
 		border-radius: 0.5rem;
-		width: 100%;
 		padding: 1rem;
 	}
 
@@ -203,5 +224,31 @@
 
 	.example-usages > i {
 		text-align: center;
+	}
+
+	@media screen and (min-width: 640px) {
+		.homepage-links {
+			flex-direction: row;
+			align-items: center;
+		}
+
+		.info-grid {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		.info-grid {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+		.goals-section > .goals-grid {
+			flex-direction: row;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		.example-usage-container {
+			display: grid;
+		}
 	}
 </style>

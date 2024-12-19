@@ -1,7 +1,7 @@
-@import url('https://fonts.cdnfonts.com/css/wotfard');
+@import url("https://fonts.cdnfonts.com/css/wotfard");
 
 :root {
-	--font: 'Wotfard', sans-serif;
+	--font: "Wotfard", sans-serif;
 	--color-background-300: 11, 12, 19;
 	--color-background-500: 31, 35, 43;
 
@@ -40,18 +40,16 @@ select {
 }
 
 h1 {
-	font-size: 4rem;
-	overflow-wrap: break-word;
+	font-size: 3rem;
 }
-
 h2 {
-	font-size: 2.5rem;
-	overflow-wrap: break-word;
+	font-size: 2rem;
 }
-
+h3 {
+	font-size: 1.5rem;
+}
 p {
-	font-size: 1.2rem;
-	overflow-wrap: break-word;
+	font-size: 1.125rem;
 }
 
 h3,
@@ -98,6 +96,22 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+	h1 {
+		font-size: 4rem;
+	}
+	h2 {
+		font-size: 2.5rem;
+	}
+	p {
+		font-size: 1.375rem;
+	}
+
+	#app {
+		padding-inline: 2.5rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
 	#app {
 		padding-inline: 3.5rem;
 	}
