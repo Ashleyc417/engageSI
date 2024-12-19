@@ -6,16 +6,26 @@ export const load = async ({ locals: { supabase, safeGetSession } }) => {
 		redirect(303, "/signin");
 	}
 
-	const userSiSessionsQuery = await supabase.from("user_si_sessions").select("*");
-
+	const userSiSessionsQuery = await supabase
+		.from("user_si_sessions")
+		.select("*")
+		.eq("user_id", user.id);
 	if (userSiSessionsQuery.error) {
 		error(500, { message: userSiSessionsQuery.error.message });
 	}
 
-	const userSessions = [];
-	const data = userSiSessionsQuery.data;
+	const attendanceLogsQuery = await supabase
+		.from("attendance_logs")
+		.select("*")
+		.eq("user_id", user.id);
+	if (attendanceLogsQuery.error) {
+		error(500, { message: attendanceLogsQuery.error.message });
+	}
 
-	for (const entry of data) {
+	const userSessions = [];
+	const sessionsData = userSiSessionsQuery.data;
+
+	for (const entry of sessionsData) {
 		const sessionKey = entry.session_key;
 		const [department, siCourse, siLeader] = sessionKey.split(";");
 		const { default: departmentSchedule } = await import(`$lib/schedules/${department}.json`);
@@ -27,5 +37,21 @@ export const load = async ({ locals: { supabase, safeGetSession } }) => {
 			}
 		}
 	}
-	return { userSessions };
+
+	const attendanceLogs = [];
+	const attendanceData = attendanceLogsQuery.data;
+
+	for (const entry of attendanceData) {
+		const sessionKey = entry.session_key;
+		const [department, siCourse, siLeader] = sessionKey.split(";");
+		const { default: departmentSchedule } = await import(`$lib/schedules/${department}.json`);
+
+		for (const session of departmentSchedule.sessionsOffered[siCourse]) {
+			if (session.siLeader === siLeader) {
+				attendanceLogs.push({ loggedAt: entry.created_at, siCourse, siLeader });
+				break;
+			}
+		}
+	}
+	return { userSessions, attendanceLogs };
 };

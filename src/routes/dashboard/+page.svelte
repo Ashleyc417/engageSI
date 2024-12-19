@@ -1,9 +1,11 @@
 <script>
 	import SessionCard from "$lib/components/session-card.svelte";
+	import AttendanceLogs from "$lib/components/attendance-logs.svelte";
 
 	export let data;
 
 	const userSessions = data.userSessions;
+	const attendanceLogs = data.attendanceLogs;
 </script>
 
 <section class="dashboard-container">
@@ -31,6 +33,7 @@
 		</div>
 		<div>
 			<h2>Attendance Record</h2>
+			<AttendanceLogs {attendanceLogs} />
 		</div>
 	</div>
 </section>
