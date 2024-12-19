@@ -91,7 +91,7 @@
 
 <section class="example-usage-section">
 	<h2>How to Use EngageSI</h2>
-	<div class="example-usage-container">
+	<div class="example-usage-container-desktop">
 		<div class="example-usages">
 			<h3>Examples</h3>
 			{#each exampleUsages as example, i}
@@ -102,6 +102,17 @@
 			<img src={exampleUsages[currentExampleIndex].imgPath} alt="Utilizing EngageSI Example" />
 			<i>{exampleUsages[currentExampleIndex].desc}</i>
 		</div>
+	</div>
+	<div class="example-usage-container-mobile">
+		{#each exampleUsages as example}
+			<div class="example-usage">
+				<div class="text">
+					<h3>{example.title}</h3>
+					<p>{example.desc}</p>
+				</div>
+				<img src={example.imgPath} alt="Utilizing EngageSI Example" />
+			</div>
+		{/each}
 	</div>
 </section>
 
@@ -189,7 +200,7 @@
 		height: 10rem;
 	}
 
-	.example-usage-container {
+	.example-usage-container-desktop {
 		display: none;
 		max-width: 1024px;
 		margin-inline: auto;
@@ -226,6 +237,37 @@
 		text-align: center;
 	}
 
+	.example-usage-container-mobile {
+		margin-inline: auto;
+		max-width: 640px;
+		display: grid;
+		gap: 2rem;
+	}
+
+	.example-usage {
+		background-color: transparent;
+		border: 2px solid gray;
+		padding: 2rem;
+		border-radius: 0.5rem;
+	}
+
+	.example-usage > .text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 1rem;
+	}
+
+	.example-usage > .text > p {
+		text-align: center;
+		font-size: 1rem;
+	}
+
+	.example-usage > img {
+		border: 2px solid gray;
+		border-radius: 0.5rem;
+	}
+
 	@media screen and (min-width: 640px) {
 		.homepage-links {
 			flex-direction: row;
@@ -234,6 +276,10 @@
 
 		.info-grid {
 			grid-template-columns: 1fr 1fr;
+		}
+
+		.example-usage > .text > p {
+			font-size: 1.25rem;
 		}
 	}
 
@@ -247,8 +293,12 @@
 	}
 
 	@media screen and (min-width: 1024px) {
-		.example-usage-container {
+		.example-usage-container-desktop {
 			display: grid;
+		}
+
+		.example-usage-container-mobile {
+			display: none;
 		}
 	}
 </style>

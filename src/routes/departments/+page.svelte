@@ -1,22 +1,24 @@
 <script>
 	const departmentLinks = [
-		{ link: 'accounting', name: 'Accounting' },
-		{ link: 'biology', name: 'Biology' },
-		{ link: 'chemistry', name: 'Chemistry' },
-		{ link: 'cpsc', name: 'Computer Science' },
-		{ link: 'economics', name: 'Economics' },
-		{ link: 'engineering', name: 'Engineering' },
-		{ link: 'finance', name: 'Finance' },
-		{ link: 'isds', name: 'Information Systems & Decision Sciences' },
-		{ link: 'kinesiology', name: 'Kinesiology' },
-		{ link: 'math', name: 'Mathematics' },
-		{ link: 'physics', name: 'Physics' },
-		{ link: 'political-science', name: 'Political Science' },
-		{ link: 'psychology', name: 'Psychology' }
+		{ link: "accounting", name: "Accounting" },
+		{ link: "biology", name: "Biology" },
+		{ link: "chemistry", name: "Chemistry" },
+		{ link: "cpsc", name: "Computer Science" },
+		{ link: "economics", name: "Economics" },
+		{ link: "engineering", name: "Engineering" },
+		{ link: "finance", name: "Finance" },
+		{ link: "isds", name: "Information Systems & Decision Sciences" },
+		{ link: "kinesiology", name: "Kinesiology" },
+		{ link: "math", name: "Mathematics" },
+		{ link: "physics", name: "Physics" },
+		{ link: "political-science", name: "Political Science" },
+		{ link: "psychology", name: "Psychology" }
 	];
 </script>
 
 <h1>Departments</h1>
+
+<p>Explore all Supplemental Instruction sessions organized by department below.</p>
 
 <div class="department-links">
 	{#each departmentLinks as departmentLink}
@@ -26,25 +28,51 @@
 
 <style>
 	h1 {
-		font-size: 4rem;
+		text-align: center;
+	}
+
+	p {
 		text-align: center;
 	}
 
 	.department-links {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
 		gap: 1rem;
 	}
 
 	.department-links > a {
+		height: 6rem;
+		background-color: transparent;
 		color: rgb(var(--color-text));
-		text-decoration: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		text-align: center;
-		font-size: large;
-		padding: 0.5rem 1rem;
-		border-radius: 0.25rem;
-		background-color: rgb(var(--color-background-500));
+		text-decoration: none;
+		/* font-size: 1.5rem; */
+		font-weight: 600;
+		padding: 1rem;
+		border-radius: 0.5rem;
+		border: 2px solid gray;
 		overflow-x: hidden;
-		white-space: nowrap;
+	}
+
+	@media screen and (min-width: 640px) {
+		.department-links {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		.department-links > a {
+			font-size: 1.25rem;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		.department-links {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
 	}
 </style>
