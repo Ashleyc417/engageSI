@@ -50,12 +50,16 @@
 		justify-content: center;
 		text-align: center;
 		text-decoration: none;
-		/* font-size: 1.5rem; */
 		font-weight: 600;
 		padding: 1rem;
 		border-radius: 0.5rem;
 		border: 2px solid rgb(var(--color-background-600));
 		overflow-x: hidden;
+		transition: border-color 150ms ease-in;
+	}
+
+	.department-links > a:hover {
+		border-color: rgb(var(--color-background-700));
 	}
 
 	@media screen and (min-width: 640px) {
