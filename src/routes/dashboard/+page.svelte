@@ -31,9 +31,13 @@
 				{/each}
 			</div>
 		</div>
-		<div>
-			<h2>Attendance Record</h2>
-			<AttendanceLogs {attendanceLogs} />
+		<h2>Attendance Record</h2>
+		<div class="attendance-record">
+			{#if attendanceLogs.length > 0}
+				<AttendanceLogs {attendanceLogs} />
+			{:else}
+				<p>Attendance logs will appear here.</p>
+			{/if}
 		</div>
 	</div>
 </section>
@@ -76,8 +80,9 @@
 		border-radius: 0.25rem;
 	}
 
-	.schedule-entry {
-		padding: 1rem;
+	.schedule-entry,
+	.attendance-record {
+		padding-block: 1rem;
 	}
 
 	.card-container {

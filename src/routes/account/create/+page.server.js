@@ -38,6 +38,12 @@ export const actions = {
 			return fail(400, { message: "Full name / CWID not provided" });
 		}
 
+		if (!/^8\d{8}$/.test(cwid.toString())) {
+			return fail(400, {
+				message: "Invalid CWID"
+			});
+		}
+
 		const cwidQuery = await supabase
 			.from("user_profile")
 			.select("*", { count: "exact" })

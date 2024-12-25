@@ -22,19 +22,19 @@
 	</div>
 
 	<div>
-		<label for="email" class="block text-sm font-medium">Email</label>
+		<label for="email">Email</label>
 		<input id="email" type="email" />
 	</div>
 	<div>
-		<label for="cwid" class="block text-sm font-medium">Password</label>
+		<label for="password">Password</label>
 		<input id="password" type="password" />
 	</div>
 
 	{#if form && form.message}
-		<div class="text-red-600 text-sm">{form.message}</div>
+		<div class="error-msg">{form.message}</div>
 	{/if}
 
-	<button type="submit">Sign In</button>
+	<button class="submit-btn" type="submit">Sign In</button>
 	<p>Don't have an account? <a href="/signup">Create One!</a></p>
 </form>
 
@@ -96,12 +96,17 @@
 		gap: 0.25rem;
 	}
 
-	form > button {
+	form > .submit-btn {
 		border: none;
 		cursor: pointer;
 		background-color: rgb(var(--color-foreground));
 		border-radius: 0.25rem;
 		padding: 0.5rem 1rem;
+		transition: opacity 150ms ease-in;
+	}
+
+	form > .submit-btn:hover {
+		opacity: 0.9;
 	}
 
 	input {
