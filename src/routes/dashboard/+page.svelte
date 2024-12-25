@@ -70,7 +70,7 @@
 	.logout-btn {
 		width: 100%;
 		cursor: pointer;
-		border: 2px solid gray;
+		border: 2px solid rgb(var(--color-background-600));
 		background-color: transparent;
 		padding: 0.5rem;
 		border-radius: 0.25rem;

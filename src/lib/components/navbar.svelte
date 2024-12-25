@@ -11,7 +11,7 @@
 
 <nav>
 	<div class="nav-start">
-		<a href="/"><h1>EngageSI</h1></a>
+		<a href="/">EngageSI</a>
 	</div>
 
 	<button class="toggle-sidebar-btn" on:click={toggleSidebar}>
@@ -21,14 +21,13 @@
 	<div class="nav-end">
 		<a href="/">About</a>
 		<a href="/departments">Departments</a>
-		<!-- Sign In Button that navigates to the sign-in page -->
 		{#if profile}
 			<a href="/dashboard">
-				<button class="sign-in-btn">Dashboard</button>
+				<button class="auth-link-btn">Dashboard</button>
 			</a>
 		{:else}
 			<a href="/signin">
-				<button class="sign-in-btn">Sign In</button>
+				<button class="auth-link-btn">Sign In</button>
 			</a>
 		{/if}
 	</div>
@@ -44,11 +43,11 @@
 	<!-- Sign In Button that navigates to the sign-in page -->
 	{#if profile}
 		<a href="/dashboard">
-			<button class="sign-in-btn">Dashboard</button>
+			<button class="auth-link-btn">Dashboard</button>
 		</a>
 	{:else}
 		<a href="/signin">
-			<button class="sign-in-btn">Sign In</button>
+			<button class="auth-link-btn">Sign In</button>
 		</a>
 	{/if}
 </div>
@@ -64,8 +63,9 @@
 />
 
 <style>
-	h1 {
-		font-size: 2rem;
+	.nav-start > a {
+		font-size: 1.25rem;
+		font-weight: 600;
 	}
 
 	nav {
@@ -76,7 +76,9 @@
 		width: 100%;
 		align-items: center;
 		justify-content: space-between;
-		background-color: rgb(var(--color-background-500));
+		background-color: rgba(var(--color-background-300), 0.9);
+		border: 1px solid rgb(var(--color-background-500));
+		backdrop-filter: blur(10px);
 		padding: 1rem;
 	}
 
@@ -84,6 +86,15 @@
 		display: none;
 		align-items: center;
 		gap: 1rem;
+	}
+
+	.nav-end > a {
+		color: rgb(var(--color-text-dark));
+		transition: color 150ms ease-in;
+	}
+
+	.nav-end > a:hover {
+		color: rgb(var(--color-text));
 	}
 
 	.menu-icon {
@@ -133,20 +144,20 @@
 		text-decoration: underline;
 	}
 
-	.sign-in-btn {
+	.auth-link-btn {
 		border: none;
 		outline: none;
 		cursor: pointer;
-		background-color: rgb(var(--color-text));
-		color: rgb(var(--color-background-300));
-		padding: 0.4rem 1rem;
-		border-radius: 10px;
-		font-weight: 500;
-		width: 100%;
+		background-color: transparent;
+		color: rgb(var(--color-text));
+		border: 2px solid rgb(var(--color-background-600));
+		padding: 0.375rem 1rem;
+		border-radius: 0.5rem;
+		transition: border-color 150ms ease-in;
 	}
 
-	.sign-in-btn:hover {
-		background-color: #45a049;
+	.auth-link-btn:hover {
+		border-color: rgb(var(--color-background-700));
 	}
 
 	.custom-overlay {

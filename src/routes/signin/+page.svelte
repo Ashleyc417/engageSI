@@ -45,7 +45,7 @@
 		display: flex;
 		gap: 1rem;
 		flex-direction: column;
-		border: 2px solid gray;
+		border: 2px solid rgb(var(--color-background-600));
 		border-radius: 0.5rem;
 		padding: 2rem;
 		margin-inline: auto;
@@ -69,7 +69,7 @@
 		border: none;
 		cursor: pointer;
 		background-color: transparent;
-		border: 2px solid gray;
+		border: 2px solid rgb(var(--color-background-600));
 		border-radius: 0.25rem;
 		padding: 0.5rem 1rem;
 		display: flex;
@@ -86,7 +86,7 @@
 	}
 
 	.divider > .divider-line {
-		border: 1px solid gray;
+		border: 1px solid rgb(var(--color-background-600));
 		flex-grow: 1;
 	}
 

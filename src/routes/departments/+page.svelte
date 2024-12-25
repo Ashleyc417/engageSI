@@ -54,7 +54,7 @@
 		font-weight: 600;
 		padding: 1rem;
 		border-radius: 0.5rem;
-		border: 2px solid gray;
+		border: 2px solid rgb(var(--color-background-600));
 		overflow-x: hidden;
 	}
 

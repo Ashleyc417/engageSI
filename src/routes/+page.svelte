@@ -52,7 +52,7 @@
 	</p>
 
 	<div class="homepage-links">
-		<a class="btn-contrast" href="/signin">Get Started</a>
+		<a class="btn-action" href="/signin">Get Started</a>
 		<a class="btn-secondary" href="/departments">View SI Departments</a>
 	</div>
 </section>
@@ -141,14 +141,24 @@
 		text-decoration: none;
 	}
 
-	.btn-contrast {
-		background-color: rgb(var(--color-text));
-		color: rgb(var(--color-foreground));
+	.btn-action {
+		background-color: rgb(var(--color-foreground));
+		color: rgb(var(--color-text));
+		transition: opacity 150ms ease-in;
+	}
+
+	.btn-action:hover {
+		opacity: 0.95;
 	}
 
 	.btn-secondary {
-		border: 2px solid rgb(var(--color-text));
+		border: 2px solid rgb(var(--color-background-600));
 		color: rgb(var(--color-text));
+		transition: border-color 150ms ease-in;
+	}
+
+	.btn-secondary:hover {
+		border-color: rgb(var(--color-background-700));
 	}
 
 	.info-grid {
@@ -161,15 +171,15 @@
 	.info-elem {
 		padding: 2rem;
 		border-radius: 1rem;
-		border: 2px solid gray;
+		border: 2px solid rgb(var(--color-background-600));
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		transition: border-color 150ms;
+		transition: border-color 150ms ease-in;
 	}
 
 	.info-elem:hover {
-		border-color: rgb(172, 172, 172);
+		border-color: rgb(var(--color-background-700));
 	}
 
 	.info-elem > .big {
@@ -208,7 +218,7 @@
 		gap: 2rem;
 		padding: 4rem;
 		border-radius: 1rem;
-		border: 2px solid gray;
+		border: 2px solid rgb(var(--color-background-600));
 		max-width: max-content;
 	}
 
@@ -221,15 +231,20 @@
 	.example-usages > button {
 		outline: none;
 		cursor: pointer;
-		border: 2px solid gray;
+		border: 2px solid rgb(var(--color-background-600));
 		background-color: transparent;
 		border-radius: 0.5rem;
 		padding: 1rem;
+		transition: border-color 150ms ease-in;
+	}
+
+	.example-usages > button:hover {
+		border-color: rgb(var(--color-background-700));
 	}
 
 	.example-usages > img {
 		width: 40rem;
-		border: 2px solid gray;
+		border: 2px solid rgb(var(--color-background-600));
 		border-radius: 0.5rem;
 	}
 
@@ -246,7 +261,7 @@
 
 	.example-usage {
 		background-color: transparent;
-		border: 2px solid gray;
+		border: 2px solid rgb(var(--color-background-600));
 		padding: 2rem;
 		border-radius: 0.5rem;
 	}
@@ -264,7 +279,7 @@
 	}
 
 	.example-usage > img {
-		border: 2px solid gray;
+		border: 2px solid rgb(var(--color-background-600));
 		border-radius: 0.5rem;
 	}
 

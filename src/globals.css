@@ -4,7 +4,10 @@
 	--font: "Wotfard", sans-serif;
 	--color-background-300: 11, 12, 19;
 	--color-background-500: 31, 35, 43;
+	--color-background-600: 121, 128, 130;
+	--color-background-700: 160, 172, 180;
 
+	--color-text-dark: 185, 186, 187;
 	--color-text: 247, 247, 247;
 	--color-action: 31, 3, 255;
 	--color-foreground: 85, 156, 255;
