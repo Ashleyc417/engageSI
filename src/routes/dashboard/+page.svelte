@@ -11,12 +11,12 @@
 <section class="dashboard-container">
 	<div class="user-section">
 		<div class="user-card">
-			<h2>Name: {data.profile.full_name}</h2>
+			<p class="student-name">Name: {data.profile.full_name}</p>
 			<p>CWID: {data.profile.cwid}</p>
+			<form method="post" action="/auth/logout">
+				<button class="logout-btn" type="submit">Log Out</button>
+			</form>
 		</div>
-		<form method="post" action="/auth/logout">
-			<button class="logout-btn" type="submit">Log Out</button>
-		</form>
 	</div>
 	<div class="dashboard-content-section">
 		<h2>SI Sessions</h2>
@@ -41,6 +41,7 @@
 <style>
 	.dashboard-container {
 		display: flex;
+		flex-direction: column;
 		gap: 3rem;
 	}
 
@@ -57,6 +58,15 @@
 		border-radius: 0.5rem;
 	}
 
+	.student-name {
+		font-weight: 600;
+		font-size: 1.5rem;
+	}
+
+	.dashboard-content-section {
+		width: 100%;
+	}
+
 	.logout-btn {
 		width: 100%;
 		cursor: pointer;
@@ -68,12 +78,34 @@
 
 	.schedule-entry {
 		padding: 1rem;
-		border-radius: 8px;
 	}
 
 	.card-container {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
 		gap: 1rem;
+	}
+
+	@media screen and (min-width: 640px) {
+		.student-name {
+			font-size: 2rem;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		.card-container {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		.dashboard-container {
+			flex-direction: row;
+		}
+	}
+
+	@media screen and (min-width: 1280px) {
+		.card-container {
+			grid-template-columns: 1fr 1fr;
+		}
 	}
 </style>

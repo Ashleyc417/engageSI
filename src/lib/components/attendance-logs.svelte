@@ -35,26 +35,33 @@
 	});
 </script>
 
-<table>
-	<thead>
-		<tr>
-			<th>SI Course</th>
-			<th>SI Leader</th>
-			<th>Logged At</th>
-		</tr>
-	</thead>
-	<tbody>
-		{#each attendanceLogs as log, i}
+<div class="table-container">
+	<table>
+		<thead>
 			<tr>
-				<td>{log.siCourse}</td>
-				<td>{log.siLeader}</td>
-				<td title={logTimestamps[i].formattedTime}>{logTimestamps[i].timePassed}</td>
+				<th>SI Course</th>
+				<th>SI Leader</th>
+				<th>Logged At</th>
 			</tr>
-		{/each}
-	</tbody>
-</table>
+		</thead>
+		<tbody>
+			{#each attendanceLogs as log, i}
+				<tr>
+					<td>{log.siCourse}</td>
+					<td>{log.siLeader}</td>
+					<td title={logTimestamps[i].formattedTime}>{logTimestamps[i].timePassed}</td>
+				</tr>
+			{/each}
+		</tbody>
+	</table>
+</div>
 
 <style>
+	.table-container {
+		width: 100%;
+		overflow-x: scroll;
+	}
+
 	table {
 		width: 100%;
 		border-collapse: collapse;
@@ -76,5 +83,11 @@
 
 	table tbody tr {
 		border: 2px solid #dddddd;
+	}
+
+	@media screen and (min-width: 640px) {
+		.table-container {
+			overflow-x: unset;
+		}
 	}
 </style>
