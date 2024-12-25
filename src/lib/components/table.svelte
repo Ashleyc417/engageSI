@@ -41,24 +41,24 @@
 		font-size: 1.8rem;
 		font-weight: bold;
 		text-align: center;
-		color: #007bff;
+		color: rgb(var(--color-foreground));
 	}
 
 	.card-container {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
 		gap: 1rem;
 	}
 
-	@media (max-width: 768px) {
+	@media (min-width: 640px) {
 		.card-container {
 			grid-template-columns: 1fr 1fr;
 		}
 	}
 
-	@media (max-width: 480px) {
+	@media (min-width: 1024px) {
 		.card-container {
-			grid-template-columns: 1fr;
+			grid-template-columns: 1fr 1fr 1fr;
 		}
 	}
 </style>
