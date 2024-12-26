@@ -17,7 +17,8 @@ export const load = async ({ locals: { supabase, safeGetSession } }) => {
 	const attendanceLogsQuery = await supabase
 		.from("attendance_logs")
 		.select("*")
-		.eq("user_id", user.id);
+		.eq("user_id", user.id)
+		.order("created_at", { ascending: false });
 	if (attendanceLogsQuery.error) {
 		error(500, { message: attendanceLogsQuery.error.message });
 	}

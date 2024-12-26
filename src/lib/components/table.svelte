@@ -3,8 +3,6 @@
 
 	export let schedules;
 	export let departmentName;
-
-	console.log(departmentName);
 </script>
 
 <div class="schedule-cards">
