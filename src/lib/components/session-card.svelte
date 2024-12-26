@@ -30,7 +30,13 @@
 		<p><strong>Instructor:</strong> {sessionInfo.courseInstructor}</p>
 	</div>
 
-	<button on:click={() => (isPopoverOpen = true)} class="mark-attendance-btn"> Join! </button>
+	<button on:click={() => (isPopoverOpen = true)} class="mark-attendance-btn">
+		{#if isDashboard}
+			Mark Attendance!
+		{:else}
+			Join!
+		{/if}
+	</button>
 	{#if isDashboard}
 		<button class="remove-session-btn" on:click={() => (isDeletePopoverOpen = true)}>
 			Remove SI Session
@@ -49,8 +55,16 @@
 				{/if}
 			</p>
 			<div class="form-buttons">
-				<button class="" type="submit">Yes!</button>
-				<button class="" on:click|preventDefault={() => (isPopoverOpen = false)}> Cancel </button>
+				<button class="action-btn" type="submit">
+					{#if isDashboard}
+						Yes, mark attendance!
+					{:else}
+						Yes, join this session!
+					{/if}
+				</button>
+				<button class="secondary-btn" on:click|preventDefault={() => (isPopoverOpen = false)}>
+					Cancel
+				</button>
 			</div>
 		</div>
 	</form>
@@ -63,8 +77,11 @@
 			<div class="form-wrapper">
 				<p class="form-text">Are you sure you want to remove this SI session from your list?</p>
 				<div class="form-buttons">
-					<button class="" type="submit">Yes, remove this session</button>
-					<button class="" on:click|preventDefault={() => (isDeletePopoverOpen = false)}>
+					<button class="danger-btn" type="submit">Yes, remove this session</button>
+					<button
+						class="secondary-btn"
+						on:click|preventDefault={() => (isDeletePopoverOpen = false)}
+					>
 						Cancel
 					</button>
 				</div>
@@ -136,7 +153,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		gap: 0.5rem;
+		gap: 1rem;
 	}
 
 	.form-text {
@@ -148,6 +165,40 @@
 	.form-wrapper > .form-buttons {
 		display: flex;
 		gap: 0.5rem;
+	}
+
+	.action-btn,
+	.secondary-btn,
+	.danger-btn {
+		cursor: pointer;
+		border: none;
+		padding: 0.5rem 1rem;
+		border-radius: 0.25rem;
+		background-color: transparent;
+		transition:
+			border-color 150ms ease-in,
+			opacity 150ms ease-in;
+	}
+
+	.action-btn {
+		background-color: rgb(var(--color-foreground));
+	}
+
+	.danger-btn {
+		background-color: rgb(var(--color-danger));
+	}
+
+	.action-btn:hover,
+	.danger-btn:hover {
+		opacity: 0.9;
+	}
+
+	.secondary-btn {
+		border: 2px solid rgb(var(--color-background-700));
+	}
+
+	.secondary-btn:hover {
+		border-color: rgb(var(--color-background-600));
 	}
 
 	@media screen and (min-width: 640px) {
