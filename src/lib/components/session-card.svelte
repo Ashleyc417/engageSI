@@ -1,40 +1,77 @@
 <script>
+	import Popover from "$lib/components/popover.svelte";
+
 	export let sessionInfo;
 	export let isDashboard;
 	export let sessionKey;
 
-	const requestPath = isDashboard ? "/account/departments/join" : "/account/departments/add";
+	const REQUEST_PATH = "/account/departments";
+
+	const action = isDashboard ? "join" : "add";
 	const siSession = sessionKey.split(";")[1];
+
+	let isPopoverOpen = false;
+	let isDeletePopoverOpen = false;
 </script>
 
-<form method="post" action={`${requestPath}?sessionKey=${sessionKey}`}>
-	<div class="card">
-		<p class="si-leader-text">
-			{#if isDashboard}
-				<strong>{siSession} —</strong>
-			{/if}
-			<strong>SI Leader:</strong>
-			{sessionInfo.siLeader}
-		</p>
-		<div class="session-info">
-			<p><strong>Days:</strong> {sessionInfo.sessionDays}</p>
-			<p><strong>Times:</strong> {sessionInfo.sessionTimes}</p>
-			<p><strong>Location:</strong> {sessionInfo.location}</p>
-			<p><strong>Course Number:</strong> {sessionInfo.classNumber}</p>
-			<p><strong>Instructor:</strong> {sessionInfo.courseInstructor}</p>
-		</div>
-
-		<button type="submit" class="mark-attendance-btn"> Join! </button>
+<div class="card">
+	<p class="si-leader-text">
 		{#if isDashboard}
-			<button
-				class="remove-session-btn"
-				formaction="/account/departments/remove?sessionKey={sessionKey}"
-			>
-				Remove SI Session
-			</button>
+			<strong>{siSession} —</strong>
 		{/if}
+		<strong>SI Leader:</strong>
+		{sessionInfo.siLeader}
+	</p>
+	<div class="session-info">
+		<p><strong>Days:</strong> {sessionInfo.sessionDays}</p>
+		<p><strong>Times:</strong> {sessionInfo.sessionTimes}</p>
+		<p><strong>Location:</strong> {sessionInfo.location}</p>
+		<p><strong>Course Number:</strong> {sessionInfo.classNumber}</p>
+		<p><strong>Instructor:</strong> {sessionInfo.courseInstructor}</p>
 	</div>
-</form>
+
+	<button on:click={() => (isPopoverOpen = true)} class="mark-attendance-btn"> Join! </button>
+	{#if isDashboard}
+		<button class="remove-session-btn" on:click={() => (isDeletePopoverOpen = true)}>
+			Remove SI Session
+		</button>
+	{/if}
+</div>
+
+<Popover bind:isOpen={isPopoverOpen}>
+	<form method="post" action={`${REQUEST_PATH}/${action}?sessionKey=${sessionKey}`}>
+		<div class="form-wrapper">
+			<p class="form-text">
+				{#if isDashboard}
+					Do you want to mark yourself attendance to this SI session?
+				{:else}
+					Would you like to add this SI session to your list?
+				{/if}
+			</p>
+			<div class="form-buttons">
+				<button class="" type="submit">Yes!</button>
+				<button class="" on:click|preventDefault={() => (isPopoverOpen = false)}> Cancel </button>
+			</div>
+		</div>
+	</form>
+</Popover>
+
+<!-- Popover to delete SI session from list -->
+{#if isDashboard}
+	<Popover bind:isOpen={isDeletePopoverOpen}>
+		<form method="post" action={`${REQUEST_PATH}/remove?sessionKey=${sessionKey}`}>
+			<div class="form-wrapper">
+				<p class="form-text">Are you sure you want to remove this SI session from your list?</p>
+				<div class="form-buttons">
+					<button class="" type="submit">Yes, remove this session</button>
+					<button class="" on:click|preventDefault={() => (isDeletePopoverOpen = false)}>
+						Cancel
+					</button>
+				</div>
+			</div>
+		</form>
+	</Popover>
+{/if}
 
 <style>
 	.card {
@@ -92,5 +129,30 @@
 
 	.card p strong {
 		font-size: 1.2rem;
+	}
+
+	.form-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
+	}
+
+	.form-text {
+		font-size: 1rem;
+		line-height: normal;
+		text-align: center;
+	}
+
+	.form-wrapper > .form-buttons {
+		display: flex;
+		gap: 0.5rem;
+	}
+
+	@media screen and (min-width: 640px) {
+		.form-text {
+			font-size: 1.25rem;
+		}
 	}
 </style>

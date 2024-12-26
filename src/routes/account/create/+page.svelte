@@ -15,7 +15,7 @@
 </script>
 
 <form method="post" action="?/createAccount" use:enhance={handleSubmit}>
-	<h2 class="text-center text-lg font-semibold md:text-xl">Account Information</h2>
+	<h2>Account Information</h2>
 	<p>Please provide your full name and CSUF CWID to continue:</p>
 
 	<div>
