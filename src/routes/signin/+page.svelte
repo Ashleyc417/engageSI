@@ -22,11 +22,11 @@
 
 	<div>
 		<label for="email">Email</label>
-		<input id="email" type="email" />
+		<input name="email" type="email" />
 	</div>
 	<div>
 		<label for="password">Password</label>
-		<input id="password" type="password" />
+		<input name="password" type="password" />
 	</div>
 
 	{#if form && form.message}
@@ -60,7 +60,7 @@
 	}
 
 	a {
-		color: white;
+		color: rgb(var(--color-text));
 		text-underline-offset: 2px;
 	}
 

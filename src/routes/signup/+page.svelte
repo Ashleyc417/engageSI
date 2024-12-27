@@ -64,7 +64,7 @@
 	}
 
 	a {
-		color: white;
+		color: rgb(var(--color-text));
 		text-underline-offset: 2px;
 	}
 

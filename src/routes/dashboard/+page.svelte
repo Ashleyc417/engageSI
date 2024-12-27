@@ -35,6 +35,7 @@
 		<div class="attendance-record">
 			{#if attendanceLogs.length > 0}
 				<AttendanceLogs {attendanceLogs} />
+				<a href="/attendance/1">View all attendance logs.</a>
 			{:else}
 				<p>Attendance logs will appear here.</p>
 			{/if}
@@ -43,6 +44,14 @@
 </section>
 
 <style>
+	a {
+		display: block;
+		margin-top: 0.5rem;
+		color: rgb(var(--color-text));
+		text-align: end;
+		text-underline-offset: 2px;
+	}
+
 	.dashboard-container {
 		display: flex;
 		flex-direction: column;

@@ -19,7 +19,10 @@ export const actions = {
 			return fail(400, { message: "Please enter an email and a password" });
 		}
 
-		const { error: signInErr } = await supabase.auth.signInWithPassword({ email, password });
+		const { error: signInErr } = await supabase.auth.signInWithPassword({
+			email: email.toString(),
+			password: password.toString()
+		});
 		if (signInErr) {
 			return fail(401, { message: "Invalid credentials. Please try again." });
 		}
