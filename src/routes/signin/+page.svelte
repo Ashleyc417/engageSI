@@ -2,14 +2,14 @@
 	export let form;
 </script>
 
-<form method="post" action="/auth/?/signIn">
+<form method="post" action="?/signIn">
 	<h2>Sign In</h2>
 
 	<div>
-		<button type="submit" formaction="/auth/?/socialLogin&provider=google" class="auth-button">
+		<button type="submit" formaction="?/socialLogin&provider=google" class="auth-button">
 			<img src="/google.svg" alt="Google Icon" /> Sign In with Google
 		</button>
-		<button type="submit" formaction="/auth/?/socialLogin&provider=discord" class="auth-button">
+		<button type="submit" formaction="?/socialLogin&provider=discord" class="auth-button">
 			<img src="/discord.svg" alt="Discord Icon" /> Sign In with Discord
 		</button>
 	</div>
@@ -113,6 +113,10 @@
 		background-color: rgb(var(--color-background-500));
 		border-radius: 0.25rem;
 		padding: 0.5rem;
+	}
+
+	.error-msg {
+		color: rgb(var(--color-danger));
 	}
 
 	@media screen and (min-width: 640px) {

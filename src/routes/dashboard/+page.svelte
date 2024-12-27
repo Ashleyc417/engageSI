@@ -13,7 +13,7 @@
 		<div class="user-card">
 			<p class="student-name">Name: {data.profile.full_name}</p>
 			<p>CWID: {data.profile.cwid}</p>
-			<form method="post" action="/auth/logout">
+			<form method="post" action="?/logout">
 				<button class="logout-btn" type="submit">Log Out</button>
 			</form>
 		</div>
@@ -76,8 +76,9 @@
 		cursor: pointer;
 		border: 2px solid rgb(var(--color-background-600));
 		background-color: transparent;
-		padding: 0.5rem;
 		border-radius: 0.25rem;
+		margin-top: 0.5rem;
+		padding: 0.5rem;
 	}
 
 	.schedule-entry,

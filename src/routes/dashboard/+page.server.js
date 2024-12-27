@@ -56,3 +56,17 @@ export const load = async ({ locals: { supabase, safeGetSession } }) => {
 	}
 	return { userSessions, attendanceLogs };
 };
+
+export const actions = {
+	logout: async ({ locals: { supabase, safeGetSession } }) => {
+		const session = await safeGetSession();
+		if (!session) {
+			error(401, "Unauthorized");
+		}
+		const { error: err } = await supabase.auth.signOut();
+		if (err) {
+			error(500, "Something went wrong signing out");
+		}
+		redirect(303, "/");
+	}
+};

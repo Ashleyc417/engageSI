@@ -1,4 +1,3 @@
-import { fail } from "@sveltejs/kit";
 import { redirect } from "sveltekit-flash-message/server";
 
 export const actions = {
@@ -43,14 +42,13 @@ export const actions = {
 				cookies
 			);
 		}
-
 		redirect(
 			"/dashboard",
-			{ type: "success", message: "SI session successfully added to list." },
+			{ type: "success", message: "SI session successfully added to list!" },
 			cookies
 		);
 	},
-	join: async ({ url, locals: { supabase, safeGetSession } }) => {
+	join: async ({ url, cookies, locals: { supabase, safeGetSession } }) => {
 		const { session, user } = await safeGetSession();
 		if (!session || !user) {
 			redirect(303, "/signin");
@@ -58,7 +56,11 @@ export const actions = {
 
 		const sessionKey = url.searchParams.get("sessionKey");
 		if (!sessionKey) {
-			return fail(422, { message: "Unable to process SI session key" });
+			redirect(
+				"/dashboard",
+				{ type: "error", message: "Unable to process SI session key." },
+				cookies
+			);
 		}
 
 		const insertAttendanceQuery = await supabase
@@ -67,12 +69,19 @@ export const actions = {
 
 		if (insertAttendanceQuery.error) {
 			console.error(insertAttendanceQuery.error.message);
-			return fail(400, { message: "Something went wrong" });
+			redirect(
+				"/departments",
+				{ type: "error", message: "Something went wrong, please try again." },
+				cookies
+			);
 		}
-
-		redirect(303, "/dashboard");
+		redirect(
+			"/dashboard",
+			{ type: "success", message: "Successfully marked attendance for this SI session!" },
+			cookies
+		);
 	},
-	remove: async ({ url, locals: { supabase, safeGetSession } }) => {
+	remove: async ({ url, cookies, locals: { supabase, safeGetSession } }) => {
 		const { session, user } = await safeGetSession();
 		if (!session || !user) {
 			redirect(303, "/signin");
@@ -80,7 +89,11 @@ export const actions = {
 
 		const sessionKey = url.searchParams.get("sessionKey");
 		if (!sessionKey) {
-			return fail(422, { message: "Unable to process SI session key" });
+			redirect(
+				"/dashboard",
+				{ type: "error", message: "Unable to process SI session key." },
+				cookies
+			);
 		}
 
 		const deleteSessionKeyQuery = await supabase
@@ -91,9 +104,16 @@ export const actions = {
 
 		if (deleteSessionKeyQuery.error) {
 			console.error(deleteSessionKeyQuery.error.message);
-			return fail(400, { message: "Something went wrong" });
+			redirect(
+				"/departments",
+				{ type: "error", message: "Something went wrong, please try again." },
+				cookies
+			);
 		}
-
-		redirect(303, "/dashboard");
+		redirect(
+			"/dashboard",
+			{ type: "success", message: "Removed SI session from list successfully." },
+			cookies
+		);
 	}
 };

@@ -3,7 +3,7 @@ import { error, fail, redirect } from "@sveltejs/kit";
 export const load = async ({ locals: { supabase, safeGetSession } }) => {
 	const { session, user } = await safeGetSession();
 	if (!session || !user) {
-		error(400, "User not authenticated");
+		redirect(303, "/signin");
 	}
 
 	const profileQuery = await supabase
@@ -50,6 +50,7 @@ export const actions = {
 			.eq("cwid", cwid.toString());
 
 		if (cwidQuery.error) {
+			console.error(cwidQuery.error);
 			return fail(500, { message: "Something went wrong, please try again." });
 		}
 		if (cwidQuery.count) {
@@ -65,7 +66,8 @@ export const actions = {
 			.eq("id", user.id);
 
 		if (updateProfileQuery.error) {
-			error(500, { message: updateProfileQuery.error.message });
+			console.error(updateProfileQuery.error);
+			return fail(500, { message: "Something went wrong, please try again." });
 		}
 
 		redirect(303, "/");

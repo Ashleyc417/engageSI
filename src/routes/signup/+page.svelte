@@ -2,14 +2,14 @@
 	export let form;
 </script>
 
-<form method="post" action="/auth/?/signUp">
+<form method="post">
 	<h2>Sign Up</h2>
 
 	<div>
-		<button type="submit" formaction="/auth/?/socialLogin&provider=google" class="auth-button">
+		<button type="submit" formaction="/signin/?/socialLogin&provider=google" class="auth-button">
 			<img src="/google.svg" alt="Google Icon" /> Sign Up with Google
 		</button>
-		<button type="submit" formaction="/auth/?/socialLogin&provider=discord" class="auth-button">
+		<button type="submit" formaction="/signin/?/socialLogin&provider=discord" class="auth-button">
 			<img src="/discord.svg" alt="Discord Icon" /> Sign Up with Discord
 		</button>
 	</div>
@@ -22,19 +22,19 @@
 
 	<div>
 		<label for="email">Email</label>
-		<input id="email" type="email" />
+		<input name="email" type="email" />
 	</div>
 	<div>
 		<label for="cwid">Password</label>
-		<input id="password" type="password" />
+		<input name="password" type="password" />
 	</div>
 	<div>
 		<label for="cwid">Confirm Your Password</label>
-		<input id="confirm-password" type="password" />
+		<input name="confirm-password" type="password" />
 	</div>
 
 	{#if form && form.message}
-		<div class="text-red-600 text-sm">{form.message}</div>
+		<div class="error-msg">{form.message}</div>
 	{/if}
 
 	<button class="submit-btn" type="submit">Sign Up</button>
@@ -117,6 +117,10 @@
 		background-color: rgb(var(--color-background-500));
 		border-radius: 0.25rem;
 		padding: 0.5rem;
+	}
+
+	.error-msg {
+		color: rgb(var(--color-danger));
 	}
 
 	@media screen and (min-width: 640px) {
