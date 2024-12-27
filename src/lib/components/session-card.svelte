@@ -45,7 +45,7 @@
 </div>
 
 <Popover bind:isOpen={isPopoverOpen}>
-	<form method="post" action={`${REQUEST_PATH}/${action}?sessionKey=${sessionKey}`}>
+	<form method="post" action={`${REQUEST_PATH}/?/${action}&sessionKey=${sessionKey}`}>
 		<div class="form-wrapper">
 			<p class="form-text">
 				{#if isDashboard}
@@ -73,7 +73,7 @@
 <!-- Popover to delete SI session from list -->
 {#if isDashboard}
 	<Popover bind:isOpen={isDeletePopoverOpen}>
-		<form method="post" action={`${REQUEST_PATH}/remove?sessionKey=${sessionKey}`}>
+		<form method="post" action={`${REQUEST_PATH}/?/remove&sessionKey=${sessionKey}`}>
 			<div class="form-wrapper">
 				<p class="form-text">Are you sure you want to remove this SI session from your list?</p>
 				<div class="form-buttons">
