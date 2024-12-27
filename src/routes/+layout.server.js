@@ -1,6 +1,7 @@
 import { error, redirect } from "@sveltejs/kit";
+import { loadFlash } from "sveltekit-flash-message/server";
 
-export const load = async ({ url, locals: { supabase, safeGetSession }, cookies }) => {
+export const load = loadFlash(async ({ url, locals: { supabase, safeGetSession }, cookies }) => {
 	const { session, user } = await safeGetSession();
 
 	if (!session || !user) {
@@ -50,4 +51,4 @@ export const load = async ({ url, locals: { supabase, safeGetSession }, cookies 
 		error(500, { message: insertNewProfileQuery.error.message });
 	}
 	redirect(303, "/account/create");
-};
+});
