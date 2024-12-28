@@ -13,6 +13,7 @@ export const load = async ({ params, locals: { supabase, safeGetSession } }) => 
 		.from("attendance_logs")
 		.select("*")
 		.eq("user_id", user.id)
+		.order("created_at", { ascending: false })
 		.range(0 + (pageNumber - 1) * 8, 7 + (pageNumber - 1) * 8);
 	if (attendanceLogsQuery.error) {
 		error(500, attendanceLogsQuery.error.message);
@@ -26,8 +27,24 @@ export const load = async ({ params, locals: { supabase, safeGetSession } }) => 
 		error(500, "Server Error");
 	}
 
+	const attendanceLogs = [];
+	const attendanceData = attendanceLogsQuery.data;
+
+	for (const entry of attendanceData) {
+		const sessionKey = entry.session_key;
+		const [department, siCourse, siLeader] = sessionKey.split(";");
+		const { default: departmentSchedule } = await import(`$lib/schedules/${department}.json`);
+
+		for (const session of departmentSchedule.sessionsOffered[siCourse]) {
+			if (session.siLeader === siLeader) {
+				attendanceLogs.push({ loggedAt: entry.created_at, siCourse, siLeader });
+				break;
+			}
+		}
+	}
+
 	return {
-		attendanceLogs: attendanceLogsQuery.data ?? [],
+		attendanceLogs,
 		pageNumber,
 		numLogs: numLogsQuery.count
 	};
