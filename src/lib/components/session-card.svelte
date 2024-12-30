@@ -1,4 +1,5 @@
 <script>
+	import { enhance } from "$app/forms";
 	import Popover from "$lib/components/popover.svelte";
 
 	export let sessionInfo;
@@ -77,7 +78,7 @@
 			<div class="form-wrapper">
 				<p class="form-text">Are you sure you want to remove this SI session from your list?</p>
 				<div class="form-buttons">
-					<button class="danger-btn" type="submit">Yes, remove this session</button>
+					<button class="danger-btn" type="submit"> Yes, remove this session </button>
 					<button
 						class="secondary-btn"
 						on:click|preventDefault={() => (isDeletePopoverOpen = false)}

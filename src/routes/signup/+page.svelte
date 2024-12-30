@@ -1,8 +1,19 @@
 <script>
+	import { enhance } from "$app/forms";
+
 	export let form;
+
+	let loading = false;
+	const handleSubmit = () => {
+		loading = true;
+		return async ({ update }) => {
+			await update();
+			loading = false;
+		};
+	};
 </script>
 
-<form method="post">
+<form method="post" use:enhance={handleSubmit}>
 	<h2>Sign Up</h2>
 
 	<div>
@@ -37,7 +48,13 @@
 		<div class="error-msg">{form.message}</div>
 	{/if}
 
-	<button class="submit-btn" type="submit">Sign Up</button>
+	<button class="submit-btn" type="submit">
+		{#if loading}
+			Loading...
+		{:else}
+			Sign Up
+		{/if}
+	</button>
 	<p>Already have an account? <a href="/signin">Sign in!</a></p>
 </form>
 

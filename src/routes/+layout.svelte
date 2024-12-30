@@ -90,7 +90,8 @@
 		bottom: 3rem;
 		right: 2rem;
 		border-radius: 0.375rem;
-		background-color: rgb(var(--color-background-500));
+		background-color: rgb(var(--color-background-300));
+		border: 2px solid rgb(var(--color-background-600));
 		padding: 0.75rem;
 		display: flex;
 		align-items: center;
