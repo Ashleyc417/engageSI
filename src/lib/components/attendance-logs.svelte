@@ -59,35 +59,76 @@
 <style>
 	.table-container {
 		width: 100%;
-		overflow-x: scroll;
+		overflow-x: auto;
+		border-radius: 0.5rem;
+		background-color: rgb(var(--color-background-300));
+		border: 2px solid rgb(var(--color-background-600));
 	}
 
 	table {
 		width: 100%;
-		border-collapse: collapse;
-		font-size: 18px;
+		border-collapse: separate;
+		border-spacing: 0 2px;
+		font-size: 1rem;
 		text-align: left;
 	}
 
 	table th,
 	table td {
-		padding: 0.5rem 1rem;
+		padding: 1rem;
 		text-align: left;
+	}
+
+	table th {
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		background-color: rgb(var(--color-background-300));
+		color: rgb(var(--color-text));
 	}
 
 	table thead tr {
-		text-align: left;
-		border: 2px solid white;
-		background-color: rgb(var(--color-background-500));
+		background-color: rgb(var(--color-background-700));
 	}
 
 	table tbody tr {
-		border: 2px solid #dddddd;
+		background-color: rgb(var(--color-background-500));
+		transition: opacity 150ms ease-in;
+	}
+
+	table th:first-child,
+	table td:first-child {
+		padding-left: 1.5rem;
+	}
+
+	table th:last-child,
+	table td:last-child {
+		padding-right: 1.5rem;
 	}
 
 	@media screen and (min-width: 640px) {
 		.table-container {
-			overflow-x: unset;
+			overflow-x: visible;
+		}
+
+		table {
+			font-size: 1.125rem;
+		}
+
+		table th:first-child {
+			border-top-left-radius: 0.5rem;
+		}
+
+		table th:last-child {
+			border-top-right-radius: 0.5rem;
+		}
+
+		table tbody tr:last-child td:first-child {
+			border-bottom-left-radius: 0.5rem;
+		}
+
+		table tbody tr:last-child td:last-child {
+			border-bottom-right-radius: 0.5rem;
 		}
 	}
 </style>
