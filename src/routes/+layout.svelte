@@ -59,7 +59,7 @@
 		</span>
 		<span>{$flash.message}</span>
 		<button class="close-btn" on:click={() => ($flash = undefined)}>
-			<i class="icon">✖</i>
+			<img class="icon" src="/close.svg" alt="Close Icon" />
 		</button>
 	</div>
 {/if}
@@ -92,7 +92,7 @@
 		border-radius: 0.375rem;
 		background-color: rgb(var(--color-background-300));
 		border: 2px solid rgb(var(--color-background-600));
-		padding: 0.75rem;
+		padding: 1rem;
 		display: flex;
 		align-items: center;
 		gap: 0.5rem;

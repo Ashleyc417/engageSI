@@ -1,4 +1,5 @@
 <script>
+	import { beforeNavigate } from "$app/navigation";
 	import { fade } from "svelte/transition";
 
 	export let profile;
@@ -7,6 +8,12 @@
 	function toggleSidebar() {
 		isSidebarOpen = !isSidebarOpen;
 	}
+
+	beforeNavigate((navigation) => {
+		if (isSidebarOpen && navigation.from?.url.toString() != navigation.to?.url.toString()) {
+			isSidebarOpen = false;
+		}
+	});
 </script>
 
 <nav>
