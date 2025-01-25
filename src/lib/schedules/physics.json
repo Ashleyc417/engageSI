@@ -3,81 +3,81 @@
   "sessionsOffered": {
     "PHYS 211": [
       {
-        "classNumber": "18796",
-        "courseInstructor": "Gary Kleiban",
-        "siLeader": "Lauren Hofreiter",
+        "classNumber": "20617",
+        "courseInstructor": "Gina Passante",
+        "siLeader": "James Lincoln",
         "sessionDays": "Tu Th",
-        "sessionTimes": "2:30-3:45 pm",
+        "sessionTimes": "10:00-11:15 am",
         "location": "MH-600"
       },
       {
-        "classNumber": "19332",
+        "classNumber": "19534",
         "courseInstructor": "Michael Dubuque",
-        "siLeader": "Mohammed Mohseni",
-        "sessionDays": "Mo We",
-        "sessionTimes": "7:00-8:15 pm",
-        "location": "MH-600"
-      },
-      {
-        "classNumber": "20026",
-        "courseInstructor": "Anton Peshkov",
-        "siLeader": "Tyler Erautt",
-        "sessionDays": "Mo We",
-        "sessionTimes": "2:30-3:45 pm",
+        "siLeader": "Lauren Hofreiter",
+        "sessionDays": "Mo We Fr",
+        "sessionTimes": "10:00-10:50 am",
         "location": "MH-600"
       }
     ],
     "PHYS 212": [
       {
-        "classNumber": "20192",
-        "courseInstructor": "Gary Kleiban",
-        "siLeader": "James Lincoln",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "1:00-2:15 pm",
+        "classNumber": "20618",
+        "courseInstructor": "Anton Peshkov",
+        "siLeader": "Mohammed Mohseni",
+        "sessionDays": "Mo We Fr",
+        "sessionTimes": "12:00-12:50 pm",
         "location": "MH-600"
       },
       {
-        "classNumber": "19563",
+        "classNumber": "19654",
         "courseInstructor": "Gabriel Bonilla",
         "siLeader": "Aleishai Pena-Lopez",
-        "sessionDays": "Mo We",
-        "sessionTimes": "1:00-2:15 pm",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "5:30-6:45 pm",
         "location": "MH-600"
       }
     ],
     "PHYS 225": [
       {
-        "classNumber": "19453",
-        "courseInstructor": "Meng Shen",
-        "siLeader": "Jonathan Prijyanonda",
+        "classNumber": "21649",
+        "courseInstructor": "Gary Kleiban",
+        "siLeader": "Sam Montoya",
         "sessionDays": "Tu Th",
         "sessionTimes": "4:00-5:15 pm",
+        "location": "MH-600"
+      },
+      {
+        "classNumber": "19505",
+        "courseInstructor": "Gary Kleiban",
+        "siLeader": "Anthony Gallegos",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "MH-600"
+      },
+      {
+        "classNumber": "19657",
+        "courseInstructor": "Meng Shen",
+        "siLeader": "Tyler Erautt",
+        "sessionDays": "Mo We Fr",
+        "sessionTimes": "8:00-8:50 am",
         "location": "MH-600"
       }
     ],
     "PHYS 226": [
       {
-        "classNumber": "20425",
-        "courseInstructor": "Mary Usufzy",
-        "siLeader": "Sam Montoya",
-        "sessionDays": "Mo We Fr",
-        "sessionTimes": "10:00-10:50 am",
-        "location": "MH-600"
-      },
-      {
-        "classNumber": "20208",
-        "courseInstructor": "Linda Leonard",
-        "siLeader": "Anthony Gallegos",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "8:30-9:45 am",
-        "location": "MH-600"
-      },
-      {
-        "classNumber": "19454",
-        "courseInstructor": "Jocelyn Read",
+        "classNumber": "21646",
+        "courseInstructor": "Nabila Tanjeem",
         "siLeader": "Justin Razzouq",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "MH-600"
+      },
+      {
+        "classNumber": "19548",
+        "courseInstructor": "Matthew Lockerby",
+        "siLeader": "Jon Prijyanonda",
         "sessionDays": "Mo We",
-        "sessionTimes": "8:30-9:45 am",
+        "sessionTimes": "1:00-2:15 pm",
         "location": "MH-600"
       }
     ]

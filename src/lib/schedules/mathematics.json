@@ -1,77 +1,55 @@
 {
   "department": "Mathematics",
   "sessionsOffered": {
-    "MATH 115A": [
-      {
-        "classNumber": "20382",
-        "courseInstructor": "Jessica Rivas",
-        "siLeader": "Christian Ramirez",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "10:00-11:15 am",
-        "location": "MH-187D"
-      }
-    ],
-    "MATH 115B": [
-      {
-        "classNumber": "N/A",
-        "courseInstructor": "N/A",
-        "siLeader": "N/A",
-        "sessionDays": "N/A",
-        "sessionTimes": "N/A",
-        "location": "N/A"
-      }
-    ],
     "MATH 115": [
       {
-        "classNumber": "18748",
-        "courseInstructor": "Vincent Razo",
-        "siLeader": "Luca Ngo",
-        "sessionDays": "Tu Th",
+        "classNumber": "18080",
+        "courseInstructor": "Evan Snyder",
+        "siLeader": "Kaeda Luna",
+        "sessionDays": "Mo We",
         "sessionTimes": "10:00-11:15 am",
         "location": "MH-187D"
       },
       {
-        "classNumber": "18749",
-        "courseInstructor": "Natalie Conghuyen",
-        "siLeader": "Demi Chen",
+        "classNumber": "18261",
+        "courseInstructor": "Victoria Bender Whieldon",
+        "siLeader": "Trisha Huynh",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "19683",
+        "courseInstructor": "Crystal Ferguson",
+        "siLeader": "Christian Ramirez",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "MH-187D"
+      }
+    ],
+    "MATH 125": [
+      {
+        "classNumber": "19685",
+        "courseInstructor": "Ray Biggerstaff",
+        "siLeader": "Vic Mendoza",
+        "sessionDays": "Mo We",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "18228",
+        "courseInstructor": "Ashley Thune-Aguayo",
+        "siLeader": "Jeniz Amador",
         "sessionDays": "Mo We",
         "sessionTimes": "1:00-2:15 pm",
         "location": "MH-187D"
       }
     ],
-    "MATH 120": [
-      {
-        "classNumber": "20031",
-        "courseInstructor": "Guadalupe Merino",
-        "siLeader": "Madison Blattner",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "8:30-9:45 am",
-        "location": "MH-663"
-      }
-    ],
-    "MATH 125": [
-      {
-        "classNumber": "18762",
-        "courseInstructor": "Jessica Rivas",
-        "siLeader": "Max Ichinose",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "8:30-9:45 am",
-        "location": "MH-187D"
-      },
-      {
-        "classNumber": "19655",
-        "courseInstructor": "Ashley Thune-Aguayo",
-        "siLeader": "Vic Mendoza",
-        "sessionDays": "Mo We",
-        "sessionTimes": "10:00-11:15 am",
-        "location": "MH-187D"
-      }
-    ],
     "MATH 130": [
       {
-        "classNumber": "19874",
-        "courseInstructor": "Atousa Karimi",
-        "siLeader": "Kaedalyne Luna",
+        "classNumber": "19686",
+        "courseInstructor": "John Heart",
+        "siLeader": "Luca Ngo",
         "sessionDays": "Mo We",
         "sessionTimes": "11:30-12:45 pm",
         "location": "MH-187D"
@@ -79,59 +57,59 @@
     ],
     "MATH 135": [
       {
-        "classNumber": "20251",
-        "courseInstructor": "Jeremy Wilson",
+        "classNumber": "18106",
+        "courseInstructor": "Thanh Hoang",
+        "siLeader": "Jack Matthews",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "18264",
+        "courseInstructor": "Amena Syed",
+        "siLeader": "Katie Haxton",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "MH-187D"
+      },
+      {
+        "classNumber": "18265",
+        "courseInstructor": "Thanh Hoang",
         "siLeader": "Cat Nguyen",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "11:30-12:45 pm",
-        "location": "MH-187D"
-      },
-      {
-        "classNumber": "19377",
-        "courseInstructor": "Susan Deeb",
-        "siLeader": "Sasha Tafolla",
         "sessionDays": "Mo We",
-        "sessionTimes": "11:30-12:45 pm",
-        "location": "MH-187D"
-      },
-      {
-        "classNumber": "19323",
-        "courseInstructor": "Mahnaz Moradi Nargesi",
-        "siLeader": "Angeline Gaurano",
-        "sessionDays": "Tu Th",
         "sessionTimes": "2:30-3:45 pm",
         "location": "MH-187D"
       }
     ],
     "MATH 150A": [
       {
-        "classNumber": "20391",
-        "courseInstructor": "Nicholas Brubaker",
-        "siLeader": "Adrian Bautista",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "8:30-9:45 am",
+        "classNumber": "18298",
+        "courseInstructor": "Trevor Ridley",
+        "siLeader": "Sama Ahmed",
+        "sessionDays": "Mo We",
+        "sessionTimes": "11:30-12:45 pm",
         "location": "MH-187D"
       },
       {
-        "classNumber": "19786",
-        "courseInstructor": "Hassan Yousefi",
-        "siLeader": "Sama Ahmed",
-        "sessionDays": "Mo We",
+        "classNumber": "18285",
+        "courseInstructor": "Kevin Mofid",
+        "siLeader": "Adrian Bautista",
+        "sessionDays": "Tu Th",
         "sessionTimes": "1:00-2:15 pm",
         "location": "MH-187D"
       },
       {
-        "classNumber": "19646",
-        "courseInstructor": "George Arthur",
-        "siLeader": "Josephine Choi",
+        "classNumber": "18313",
+        "courseInstructor": "Kristin Kurianski",
+        "siLeader": "Angeline Gaurano",
         "sessionDays": "Tu Th",
         "sessionTimes": "2:30-3:45 pm",
         "location": "MH-187D"
       },
       {
-        "classNumber": "20386",
-        "courseInstructor": "Nicholas Brubaker",
-        "siLeader": "Trisha Huynh",
+        "classNumber": "18072",
+        "courseInstructor": "Sam Pacheco",
+        "siLeader": "Max Ichinose",
         "sessionDays": "Mo We",
         "sessionTimes": "4:00-5:15 pm",
         "location": "MH-187D"
@@ -139,33 +117,33 @@
     ],
     "MATH 150B": [
       {
-        "classNumber": "18770",
+        "classNumber": "18086",
         "courseInstructor": "Derdei Bichara",
-        "siLeader": "Joshua Hambric",
-        "sessionDays": "Mo We",
+        "siLeader": "Mark Garcia",
+        "sessionDays": "Tu Th",
         "sessionTimes": "8:30-9:45 am",
         "location": "MH-187D"
       },
       {
-        "classNumber": "18769",
-        "courseInstructor": "Derdei Bichara",
-        "siLeader": "Mark Garcia",
-        "sessionDays": "Tu Th",
+        "classNumber": "20924",
+        "courseInstructor": "Francisco Zapeda",
+        "siLeader": "Josephine Choi",
+        "sessionDays": "Mo We",
         "sessionTimes": "1:00-2:15 pm",
         "location": "MH-187D"
       },
       {
-        "classNumber": "19324",
-        "courseInstructor": "Kun Niu",
-        "siLeader": "Max Haaga",
+        "classNumber": "18300",
+        "courseInstructor": "Jeremy Wilson",
+        "siLeader": "Josh Hambric",
         "sessionDays": "Mo We",
         "sessionTimes": "2:30-3:45 pm",
         "location": "MH-187D"
       },
       {
-        "classNumber": "19789",
-        "courseInstructor": "Thomas Murphy",
-        "siLeader": "Roberto Ruiz",
+        "classNumber": "19691",
+        "courseInstructor": "Derdei Bichara",
+        "siLeader": "Max Haaga",
         "sessionDays": "Tu Th",
         "sessionTimes": "4:00-5:15 pm",
         "location": "MH-187D"
@@ -173,25 +151,25 @@
     ],
     "MATH 250A": [
       {
-        "classNumber": "21519",
-        "courseInstructor": "Stephanie Reed",
-        "siLeader": "Vanessa Roque",
+        "classNumber": "18307",
+        "courseInstructor": "Tommy Murphy",
+        "siLeader": "Tomas Oh",
         "sessionDays": "Tu Th",
-        "sessionTimes": "1:00-2:15 pm",
+        "sessionTimes": "10:00-11:15 am",
         "location": "MH-187D"
       },
       {
-        "classNumber": "19344",
-        "courseInstructor": "Stephanie Reed",
-        "siLeader": "Tomas Oh",
+        "classNumber": "19747",
+        "courseInstructor": "Alfonso Agnew",
+        "siLeader": "Vincent Nguyen",
         "sessionDays": "Tu Th",
         "sessionTimes": "11:30-12:45 pm",
         "location": "MH-187D"
       },
       {
-        "classNumber": "19402",
-        "courseInstructor": "Alfonso Agnew",
-        "siLeader": "Joshua Valdez",
+        "classNumber": "19695",
+        "courseInstructor": "Tommy Murphy",
+        "siLeader": "Sasha Tafolla",
         "sessionDays": "Mo We",
         "sessionTimes": "4:00-5:15 pm",
         "location": "MH-187D"
@@ -199,21 +177,11 @@
     ],
     "MATH 250B": [
       {
-        "classNumber": "19380",
+        "classNumber": "19857",
         "courseInstructor": "Scott Annin",
-        "siLeader": "Janda Huang",
+        "siLeader": "Audrey Large",
         "sessionDays": "Tu Th",
         "sessionTimes": "4:00-5:15 pm",
-        "location": "MH-187D"
-      }
-    ],
-    "MATH 280": [
-      {
-        "classNumber": "19650",
-        "courseInstructor": "Roberto Soto",
-        "siLeader": "Vincent Nguyen",
-        "sessionDays": "Mo We",
-        "sessionTimes": "2:30-3:45 pm",
         "location": "MH-187D"
       }
     ]

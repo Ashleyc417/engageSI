@@ -3,29 +3,29 @@
   "sessionsOffered": {
     "KNES 210": [
       {
-        "classNumber": "15290",
+        "classNumber": "14745",
         "courseInstructor": "Samantha Richards",
         "siLeader": "Juan Hernandez",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "7:00-8:15 pm",
-        "location": "PLS-255"
+        "sessionDays": "Mo We",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "LH-319A"
       }
     ],
     "KNES 348": [
       {
-        "classNumber": "14969",
-        "courseInstructor": "William Thomas",
+        "classNumber": "14622",
+        "courseInstructor": "Jared Coburn",
         "siLeader": "Aron Rosas",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "10:00-11:15 am",
-        "location": "GH-239"
+        "sessionDays": "Mo We",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "LH-301"
       },
       {
-        "classNumber": "15165",
+        "classNumber": "14623",
         "courseInstructor": "Daniela Rubin",
         "siLeader": "Michael Gomez",
         "sessionDays": "Tu Th",
-        "sessionTimes": "2:30-3:45 pm",
+        "sessionTimes": "11:30-12:45 pm",
         "location": "MH-223"
       }
     ]

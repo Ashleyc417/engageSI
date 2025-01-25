@@ -3,105 +3,97 @@
   "sessionsOffered": {
     "BIOL 151": [
       {
-        "classNumber": "19568, 19570, 19572, 19576, 19579",
-        "courseInstructor": "Maryam Sanei",
-        "siLeader": "Josephine Azmy",
-        "sessionDays": "Mo We Fr",
-        "sessionTimes": "11:00-11:50 am",
-        "location": "MH-223"
-      },
-      {
-        "classNumber": "19583, 20159, 19917, 19918, 19919",
-        "courseInstructor": "Catherine Brennan",
+        "classNumber": "18750, 18755, 18757, 18759, 18761",
+        "courseInstructor": "Precious Daileg",
         "siLeader": "Anjolie Hsu",
-        "sessionDays": "Mo We",
-        "sessionTimes": "4:00-5:15 pm",
-        "location": "MH-223"
-      },
-      {
-        "classNumber": "19583, 20159, 19917, 19918, 19919",
-        "courseInstructor": "Catherine Brennan",
-        "siLeader": "Nanette Villegas",
-        "sessionDays": "Mo We",
-        "sessionTimes": "1:00-2:15 pm",
-        "location": "H-321A"
-      },
-      {
-        "classNumber": "19944, 19946, 20157, 20290, 20292",
-        "courseInstructor": "Seong Min Kim",
-        "siLeader": "Will Shin",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "5:30pm-6:45pm",
-        "location": "MH-223"
-      }
-    ],
-    "BIOL 152": [
-      {
-        "classNumber": "21651, 21653, 21655",
-        "courseInstructor": "Lane Whitlow",
-        "siLeader": "Jasmine Ahmadi",
         "sessionDays": "Mo We Fr",
         "sessionTimes": "10:00-10:50 am",
         "location": "MH-223"
       },
       {
-        "classNumber": "21641, 21643, 21645, 21647, 21649",
-        "courseInstructor": "Lane Whitlow",
-        "siLeader": "Bobby Rastegar",
-        "sessionDays": "Mo We",
-        "sessionTimes": "11:30-12:45pm",
-        "location": "GH-229"
-      },
-      {
-        "classNumber": "21641, 21643, 21645, 21647, 21649",
-        "courseInstructor": "Lane Whitlow",
-        "siLeader": "Jaye Bui",
-        "sessionDays": "Mo We",
-        "sessionTimes": "5:30-6:45 pm",
+        "classNumber": "18750, 18755, 18757, 18759, 18761",
+        "courseInstructor": "Precious Daileg",
+        "siLeader": "Angie Martinez",
+        "sessionDays": "Mo We Fr",
+        "sessionTimes": "11:00-11:50 am",
         "location": "MH-223"
       },
       {
-        "classNumber": "19586, 19588, 19640, 19642, 19762, 19764, 21637, 21639",
-        "courseInstructor": "Douglas Eernisse",
-        "siLeader": "Andrew Doan",
+        "classNumber": "18750, 18755, 18757, 18759, 18761",
+        "courseInstructor": "Precious Daileg",
+        "siLeader": "Alyssa Stammerjohan",
+        "sessionDays": "Mo We Fr",
+        "sessionTimes": "1:00-1:50 pm",
+        "location": "MH-223"
+      },
+      {
+        "classNumber": "19812, 19814, 19816, 19818, 19820",
+        "courseInstructor": "Nilay Patel",
+        "siLeader": "Will Shin",
         "sessionDays": "Mo We",
         "sessionTimes": "1:00-2:15 pm",
-        "location": "MH-223"
+        "location": "GH-204"
       },
       {
-        "classNumber": "19586, 19588, 19640, 19642, 19762, 19764, 21637, 21639",
-        "courseInstructor": "Douglas Eernisse",
-        "siLeader": "Mia Ceja",
+        "classNumber": "19812, 19814, 19816, 19818, 19820",
+        "courseInstructor": "Nilay Patel",
+        "siLeader": "Andrew Doan",
         "sessionDays": "Mo We",
         "sessionTimes": "4:00-5:15 pm",
-        "location": "LH-403A"
+        "location": "MH-223"
+      }
+    ],
+    "BIOL 152": [
+      {
+        "classNumber": "18817, 19752, 19791, 21688, 21690",
+        "courseInstructor": "Lane Whitlow",
+        "siLeader": "Jasmine Ahmadi",
+        "sessionDays": "Mo We",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "CS-110A"
+      },
+      {
+        "classNumber": "18767, 18769, 18771, 18773, 18775, 18819, 18825, 18826",
+        "courseInstructor": "Jennifer Burnaford",
+        "siLeader": "Mia Ceja",
+        "sessionDays": "Mo We",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "GH-207"
+      },
+      {
+        "classNumber": "18767, 18769, 18771, 18773, 18775, 18819, 18825, 18826",
+        "courseInstructor": "Jennifer Burnaford",
+        "siLeader": "Josephine Azmy",
+        "sessionDays": "Mo We",
+        "sessionTimes": "4:00-5:15 pm",
+        "location": "GH-336"
       }
     ],
     "BIOL 251": [
       {
-        "classNumber": "19767",
-        "courseInstructor": "Nikolas Nikolaidis",
+        "classNumber": "18788",
+        "courseInstructor": "Melanie Sacco",
         "siLeader": "Wesley Chao",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "10:00-11:15 am",
-        "location": "MH-223"
-      },
-      {
-        "classNumber": "23365",
-        "courseInstructor": "Ryan Walter",
-        "siLeader": "Alyssa Stammerjohan",
         "sessionDays": "Mo We",
-        "sessionTimes": "10:00-11:15 am",
-        "location": "H-513"
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "MH-600"
       }
     ],
     "BIOL 252": [
       {
-        "classNumber": "19768",
-        "courseInstructor": "Darren Sandquist",
-        "siLeader": "James Rodriguez",
+        "classNumber": "18790",
+        "courseInstructor": "Danielle Zacherl",
+        "siLeader": "Bobby Rastegar",
         "sessionDays": "Mo We",
-        "sessionTimes": "2:30-3:45pm",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "TBD"
+      },
+      {
+        "classNumber": "18790",
+        "courseInstructor": "Danielle Zacherl",
+        "siLeader": "Jorge Amezcua",
+        "sessionDays": "Mo We",
+        "sessionTimes": "2:30-3:45 pm",
         "location": "MH-223"
       }
     ]

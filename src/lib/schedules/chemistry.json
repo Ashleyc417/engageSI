@@ -3,232 +3,220 @@
   "sessionsOffered": {
     "CHEM 115": [
       {
-        "classNumber": "19712",
+        "classNumber": "19070",
         "courseInstructor": "Steven Saric",
-        "siLeader": "David Velasquez",
+        "siLeader": "Matthew Guerrero",
         "sessionDays": "Mo We",
         "sessionTimes": "4:00-5:15 pm",
-        "location": "MH-529"
+        "location": "MH-564"
       },
       {
-        "classNumber": "19664",
-        "courseInstructor": "Mehdi Jalali Heravi",
-        "siLeader": "Kaiwei Shi",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "1:00-2:15 pm",
-        "location": "MH-657"
-      },
-      {
-        "classNumber": "20168",
+        "classNumber": "19047",
         "courseInstructor": "Cathie Overstreet",
-        "siLeader": "Ivy Ambrosio",
-        "sessionDays": "Mo We",
-        "sessionTimes": "2:30-3:45 pm",
-        "location": "MH-529"
-      },
-      {
-        "classNumber": "20284",
-        "courseInstructor": "Cynthia Pratt",
         "siLeader": "Yasmin Ambeguia",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "1:00-2:15 pm",
-        "location": "MH-663"
-      }
-    ],
-    "CHEM 120A": [
-      {
-        "classNumber": "19731, 19720",
-        "courseInstructor": "Mehdi Jalali Heravi",
-        "siLeader": "Milca Monge",
         "sessionDays": "Mo We Fr",
         "sessionTimes": "10:00-10:50 am",
         "location": "MH-529"
       },
       {
-        "classNumber": "19857, 19860",
-        "courseInstructor": "Michael Giblin",
+        "classNumber": "19674",
+        "courseInstructor": "Cathie Overstreet",
+        "siLeader": "Kaiwei Shi",
+        "sessionDays": "Mo We",
+        "sessionTimes": "11:00-12:15 pm",
+        "location": "MH-465"
+      }
+    ],
+    "CHEM 120A": [
+      {
+        "classNumber": "19072, 19075",
+        "courseInstructor": "Sissi Li",
         "siLeader": "Trianna Lopez",
+        "sessionDays": "Mo We Fr",
+        "sessionTimes": "9:00-9:50 am",
+        "location": "MH-529"
+      },
+      {
+        "classNumber": "19078, 19116",
+        "courseInstructor": "Sissi Li",
+        "siLeader": "Julia Miranda",
+        "sessionDays": "Mo We",
+        "sessionTimes": "2:00-3:15 pm",
+        "location": "H-125"
+      },
+      {
+        "classNumber": "19145, 19148",
+        "courseInstructor": "Cathie Overstreet",
+        "siLeader": "Andrian Nguyen",
+        "sessionDays": "Mo We",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "MH-465"
+      },
+      {
+        "classNumber": "19151, 19154",
+        "courseInstructor": "Mehdi Jalali Heravi",
+        "siLeader": "Alena Nguyen",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "H-321B"
+      }
+    ],
+    "CHEM 120B": [
+      {
+        "classNumber": "19087, 19089",
+        "courseInstructor": "Michael Giblin",
+        "siLeader": "Ethan Apodaca",
+        "sessionDays": "Mo We Fr",
+        "sessionTimes": "10:00-10:50 am",
+        "location": "CPAC-146"
+      },
+      {
+        "classNumber": "19091, 19093",
+        "courseInstructor": "Joya Cooley",
+        "siLeader": "Edrin Astillero",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "MH-529"
+      },
+      {
+        "classNumber": "19095, 19169",
+        "courseInstructor": "Mehdi Jalali Heravi",
+        "siLeader": "Lucy Guzman",
+        "sessionDays": "Mo We",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "MH-529"
+      },
+      {
+        "classNumber": "19171, 19097",
+        "courseInstructor": "Joya Cooley",
+        "siLeader": "David Velazquez",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "MH-529"
+      },
+      {
+        "classNumber": "19164, 19119",
+        "courseInstructor": "Mehdi Jalali Heravi",
+        "siLeader": "Ivy Ambrosio",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "MH-564"
+      }
+    ],
+    "CHEM 301A": [
+      {
+        "classNumber": "19104",
+        "courseInstructor": "Michael Ferracane",
+        "siLeader": "Cassandra Yuan",
+        "sessionDays": "Mo We",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "MH-564"
+      },
+      {
+        "classNumber": "19166",
+        "courseInstructor": "Aaron Watson",
+        "siLeader": "Joelyna Pham",
         "sessionDays": "Tu Th",
         "sessionTimes": "1:00-2:15 pm",
         "location": "MH-529"
       },
       {
-        "classNumber": "19742, 19745",
-        "courseInstructor": "Julia Chan",
-        "siLeader": "Andrian Nguyen",
+        "classNumber": "19121",
+        "courseInstructor": "Crystal Jenkins",
+        "siLeader": "Michelle Le",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "MH-600"
+      },
+      {
+        "classNumber": "21191",
+        "courseInstructor": "Jeff Leister",
+        "siLeader": "Damian Ventura",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "4:00-5:15pm",
+        "location": "MH-529"
+      }
+    ],
+    "CHEM 301B": [
+      {
+        "classNumber": "19173",
+        "courseInstructor": "Ryan Cammarota",
+        "siLeader": "Jose Ortiz Franco",
+        "sessionDays": "Mo We",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "MH-529"
+      },
+      {
+        "classNumber": "19105",
+        "courseInstructor": "Ryan Cammarota",
+        "siLeader": "Amanda Tsang",
+        "sessionDays": "Mo We",
+        "sessionTimes": "4:00-5:15 pm",
+        "location": "MH-529"
+      },
+      {
+        "classNumber": "19122",
+        "courseInstructor": "Juan Fernandez",
+        "siLeader": "Patrick Walthall",
         "sessionDays": "Tu Th",
         "sessionTimes": "1:00-2:15 pm",
         "location": "MH-223"
       },
       {
-        "classNumber": "23331, 23338",
-        "courseInstructor": "Juan Fernandez",
-        "siLeader": "Danial Parsi",
-        "sessionDays": "Mo We",
-        "sessionTimes": "2:30-3:45 pm",
-        "location": "MH-657"
-      }
-    ],
-    "CHEM 120B": [
-      {
-        "classNumber": "19992, 19994",
-        "courseInstructor": "Mehdi Jalali Heravi",
-        "siLeader": "Edrin Astillero",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "10:00-11:15 am",
-        "location": "PLS-255"
-      },
-      {
-        "classNumber": "19716, 19846",
-        "courseInstructor": "Steven Saric",
-        "siLeader": "Marianna Navarro",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "1:00-2:15 pm",
-        "location": "H-414"
-      },
-      {
-        "classNumber": "19714, 19848",
-        "courseInstructor": "Joya Cooley",
-        "siLeader": "Lucy Guzman",
-        "sessionDays": "Mo We",
-        "sessionTimes": "2:30-3:45 pm",
-        "location": "H-530"
-      },
-      {
-        "classNumber": "19850, 19852",
-        "courseInstructor": "Anneka Casas",
-        "siLeader": "Joleyna Pham",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "1:00-2:15 pm",
-        "location": "MH-584"
-      }
-    ],
-    "CHEM 123": [
-      {
-        "classNumber": "19394",
-        "courseInstructor": "Michael Giblin",
-        "siLeader": "Guian Calisterio",
-        "sessionDays": "Mo We Fr",
-        "sessionTimes": "9:00-9:50 am",
-        "location": "MH-529"
-      }
-    ],
-    "CHEM 301A": [
-      {
-        "classNumber": "10672",
-        "courseInstructor": "Juan Fernandez",
-        "siLeader": "Michelle Le",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "10:00-11:15 am",
-        "location": "MH-600"
-      },
-      {
-        "classNumber": "20089",
-        "courseInstructor": "Ryan Cammarota",
-        "siLeader": "Cassandra Yuan",
-        "sessionDays": "Mo We",
-        "sessionTimes": "11:30-12:45 pm",
-        "location": "MH-529"
-      },
-      {
-        "classNumber": "19972",
-        "courseInstructor": "Michael Ferracane",
-        "siLeader": "Amanda Tsang",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "11:30-12:45 pm",
-        "location": "MH-600"
-      },
-      {
-        "classNumber": "19426, 23083",
+        "classNumber": "19176",
         "courseInstructor": "Aaron Watson",
-        "siLeader": "Damian Ventura",
-        "sessionDays": "Mo We",
-        "sessionTimes": "4:00-5:15pm",
-        "location": "MH-584"
-      }
-    ],
-    "CHEM 301B": [
-      {
-        "classNumber": "19804",
-        "courseInstructor": "Jeff Leister",
-        "siLeader": "Patrick Walthall",
+        "siLeader": "Jose Ortiz Franco",
         "sessionDays": "Tu Th",
-        "sessionTimes": "4:00-5:15pm",
-        "location": "MH-529"
-      },
-      {
-        "classNumber": "19948",
-        "courseInstructor": "Aaron Watson",
-        "siLeader": "Matthew Guerrero",
-        "sessionDays": "Mo We",
-        "sessionTimes": "5:30-6:45 pm",
-        "location": "MH-529"
-      },
-      {
-        "classNumber": "20211",
-        "courseInstructor": "Juan Fernandez",
-        "siLeader": "Jose Ortiz",
-        "sessionDays": "Mo We",
         "sessionTimes": "10:00-11:15 am",
-        "location": "E-321"
+        "location": "MH-529"
       }
     ],
     "CHEM 315": [
       {
-        "classNumber": "19805",
-        "courseInstructor": "John Haan",
-        "siLeader": "Usman Akhtar",
+        "classNumber": "19049",
+        "courseInstructor": "Daniel Curtis",
+        "siLeader": "Guian Calisterio",
         "sessionDays": "Mo We",
-        "sessionTimes": "12:30-1:45pm",
-        "location": "EC-165"
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "MH-564"
       },
       {
-        "classNumber": "19806",
-        "courseInstructor": "Allyson Fry-Petit",
+        "classNumber": "19050",
+        "courseInstructor": "Mehdi Jalali Heravi",
         "siLeader": "Alex Hobrath",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "2:30-3:45 pm",
-        "location": "MH-529"
-      }
-    ],
-    "CHEM 361A": [
-      {
-        "classNumber": "18625",
-        "courseInstructor": "Andrew Petit",
-        "siLeader": "Leo Zhang",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "10:00-11:15 am",
+        "sessionDays": "Mo We",
+        "sessionTimes": "11:30-12:45 pm",
         "location": "MH-529"
       }
     ],
     "CHEM 361B": [
       {
-        "classNumber": "19567",
-        "courseInstructor": "Michael Groves",
+        "classNumber": "19059",
+        "courseInstructor": "Paula Hudson",
         "siLeader": "Damian Ventura",
         "sessionDays": "Tu Th",
-        "sessionTimes": "11:30-12:45 pm",
-        "location": "MH-529"
+        "sessionTimes": "10:00-11:15 am",
+        "location": "MH-564"
       }
     ],
     "CHEM 423A": [
       {
-        "classNumber": "19666",
+        "classNumber": "19033",
         "courseInstructor": "Kenneth Childers",
         "siLeader": "Amanda Reyes",
         "sessionDays": "Mo We",
-        "sessionTimes": "1:00-2:15 pm",
-        "location": "H-516"
+        "sessionTimes": "10:00-11:15 am",
+        "location": "H-514"
       }
     ],
     "CHEM 423B": [
       {
-        "classNumber": "19593",
-        "courseInstructor": "Madeline Rasche",
+        "classNumber": "19058",
+        "courseInstructor": "Lorraine Washburn",
         "siLeader": "John Baker",
         "sessionDays": "Mo We",
         "sessionTimes": "1:00-2:15 pm",
-        "location": "MH-529"
+        "location": "MH-564"
       }
     ]
   }

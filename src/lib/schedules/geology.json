@@ -1,0 +1,23 @@
+{
+  "department": "Geology",
+  "sessionsOffered": {
+    "GEOL 101": [
+      {
+        "classNumber": "19389",
+        "courseInstructor": "Sinan Akciz",
+        "siLeader": "Kayla Gutierrez",
+        "sessionDays": "Mo We",
+        "sessionTimes": "4:15-5:30 pm",
+        "location": "MH-600"
+      },
+      {
+        "classNumber": "19214",
+        "courseInstructor": "Emily Hamecher",
+        "siLeader": "Jason Palomino",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "GH-240"
+      }
+    ]
+  }
+}

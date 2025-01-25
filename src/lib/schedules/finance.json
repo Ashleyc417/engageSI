@@ -3,44 +3,20 @@
   "sessionsOffered": {
     "FIN 320": [
       {
-        "classNumber": "12681",
-        "courseInstructor": "Kelly Ko",
-        "siLeader": "Ladi Trejo",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "11:30-12:45 pm",
-        "location": "H-516"
-      },
-      {
-        "classNumber": "12075",
-        "courseInstructor": "Kelly Ko",
-        "siLeader": "Nirvan Chitnis",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "2:30 am-3:45 pm",
-        "location": "PLS-255"
-      },
-      {
-        "classNumber": "12602",
-        "courseInstructor": "Mark Collinson",
-        "siLeader": "Madalyn Aiello",
-        "sessionDays": "Mo We",
-        "sessionTimes": "4:00-5:15 pm",
-        "location": "PLS-255"
-      },
-      {
-        "classNumber": "21379",
-        "courseInstructor": "Mark Collinson",
-        "siLeader": "Soroosh Hesam",
-        "sessionDays": "Mo We",
-        "sessionTimes": "11:30-12:45 am",
-        "location": "PLS-255"
-      },
-      {
-        "classNumber": "12027",
+        "classNumber": "12056",
         "courseInstructor": "Mehmet Akbulut",
-        "siLeader": "Giang Truong",
+        "siLeader": "Ladi Trejo",
         "sessionDays": "Mo We",
-        "sessionTimes": "2:30-3:45 pm",
-        "location": "LH-319A"
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "PLS-255"
+      },
+      {
+        "classNumber": "12673",
+        "courseInstructor": "Mark Collinson",
+        "siLeader": "Mo We",
+        "sessionDays": "Mo We",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "PLS-255"
       }
     ]
   }

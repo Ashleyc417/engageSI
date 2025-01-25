@@ -3,72 +3,88 @@
   "sessionsOffered": {
     "ACCT 201A": [
       {
-        "classNumber": "12079",
+        "classNumber": "12027",
         "courseInstructor": "Randy Hoffman",
-        "siLeader": "Grace Albertson",
+        "siLeader": "Joshua Park",
         "sessionDays": "Tu Th",
-        "sessionTimes": "11:30-12:45 pm",
-        "location": "GH-204"
+        "sessionTimes": "10:00-11:15 am",
+        "location": "PLS-255"
       }
     ],
     "ACCT201A": [
       {
-        "classNumber": "23053",
+        "classNumber": "20670",
         "courseInstructor": "Michael Manning",
-        "siLeader": "Grace Tjiptadjaja",
+        "siLeader": "Clinton Cox",
         "sessionDays": "Mo We",
-        "sessionTimes": "10:00-11:15 am",
-        "location": "MH-465"
+        "sessionTimes": "4:00-5:15 pm",
+        "location": "PLS-255"
       }
     ],
     "ACCT 201B": [
       {
-        "classNumber": "11939",
+        "classNumber": "12180",
         "courseInstructor": "Randy Hoffman",
-        "siLeader": "Jackson Steuber",
+        "siLeader": "Grace Albertson",
         "sessionDays": "Tu Th",
         "sessionTimes": "2:30- 3:45 pm",
-        "location": "MH-663"
+        "location": "PLS-255"
+      },
+      {
+        "classNumber": "12207",
+        "courseInstructor": "Ken Guo",
+        "siLeader": "Kelly Moc",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "PLS-255"
       }
     ],
     "ACCT 301A": [
       {
-        "classNumber": "12265",
-        "courseInstructor": "Farzana Afrin",
+        "classNumber": "12402",
+        "courseInstructor": "Shuting Wu",
         "siLeader": "Helen Ku",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "1:00-2:15 pm",
-        "location": "CPAC-205"
+        "sessionDays": "Mo We",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "PLS-255"
       }
     ],
     "ACCT 301B": [
       {
-        "classNumber": "12292",
+        "classNumber": "12287",
         "courseInstructor": "Walied Keshk",
         "siLeader": "Heather Le",
+        "sessionDays": "Mo We",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "PLS-255"
+      },
+      {
+        "classNumber": "12234",
+        "courseInstructor": "Sophia Wang",
+        "siLeader": "Nirvan Chitnis",
         "sessionDays": "Tu Th",
-        "sessionTimes": "11:30-12:45 pm",
+        "sessionTimes": "1:00-2:15 pm",
         "location": "PLS-255"
       }
     ],
     "ACCT 302": [
       {
-        "classNumber": "12062",
+        "classNumber": "20785",
         "courseInstructor": "Zhejia Ling",
         "siLeader": "Stacie Bautista",
         "sessionDays": "Tu Th",
-        "sessionTimes": "1:00-2:15 pm",
-        "location": "PLS-255"
+        "sessionTimes": "2:30-3:45pm",
+        "location": "LH-319A"
       }
     ],
     "ACCT 308": [
       {
-        "classNumber": "11946",
+        "classNumber": "12289",
         "courseInstructor": "Jonathan Durrant",
         "siLeader": "Isaac McDonald",
         "sessionDays": "Mo We",
-        "sessionTimes": "2:30-3:45 pm",
-        "location": "PLS-255"
+        "sessionTimes": "4:00-5:15pm",
+        "location": "LH-319A"
       }
     ]
   }
