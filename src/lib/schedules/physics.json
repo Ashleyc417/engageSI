@@ -53,14 +53,6 @@
         "sessionDays": "Tu Th",
         "sessionTimes": "2:30-3:45 pm",
         "location": "MH-600"
-      },
-      {
-        "classNumber": "19657",
-        "courseInstructor": "Meng Shen",
-        "siLeader": "Tyler Erautt",
-        "sessionDays": "Mo We Fr",
-        "sessionTimes": "8:00-8:50 am",
-        "location": "MH-600"
       }
     ],
     "PHYS 226": [

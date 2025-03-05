@@ -3,12 +3,12 @@
   "sessionsOffered": {
     "POSC 100": [
       {
-        "classNumber": "17539",
+        "classNumber": "17484",
         "courseInstructor": "Scott Spitzer",
         "siLeader": "Arturo Murillo Vargas",
         "sessionDays": "Tu Th",
-        "sessionTimes": "11:30-12:45 pm",
-        "location": "GH-304"
+        "sessionTimes": "4:00-5:15 pm",
+        "location": "PLS-255"
       }
     ]
   }

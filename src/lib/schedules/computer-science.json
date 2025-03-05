@@ -1,148 +1,96 @@
 {
   "department": "Computer Science",
   "sessionsOffered": {
-    "CPSC 120A": [
-      {
-        "classNumber": "20623",
-        "courseInstructor": "Kevin Wortman",
-        "siLeader": "Jonathan Aslam",
-        "sessionDays": "Mo We",
-        "sessionTimes": "5:30-6:45 pm",
-        "location": "PLS-255"
-      },
-      {
-        "classNumber": "21607",
-        "courseInstructor": "Kanika Sood",
-        "siLeader": "Syon Chau",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "11:00-12:15 pm",
-        "location": "CS-401"
-      },
-      {
-        "classNumber": "21611",
-        "courseInstructor": "Kevin Wortman",
-        "siLeader": "Joel Rico",
-        "sessionDays": "Mo We",
-        "sessionTimes": "4:30-5:45 pm",
-        "location": "CS-401"
-      },
-      {
-        "classNumber": "22656",
-        "courseInstructor": "Stephen May",
-        "siLeader": "Katherine Sutandar",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "1:00-2:15 pm",
-        "location": "H-323"
-      }
-    ],
-    "CPSC 121A": [
-      {
-        "classNumber": "18390",
-        "courseInstructor": "Rong Jin",
-        "siLeader": "Dane Camacho",
-        "sessionDays": "Mo We",
-        "sessionTimes": "11:00-12:15 pm",
-        "location": "MH-600"
-      },
-      {
-        "classNumber": "18391",
-        "courseInstructor": "Joshna Suresh",
-        "siLeader": "Samuel Kim",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "9:30-10:45 am",
-        "location": "CS-202"
-      },
-      {
-        "classNumber": "21666",
-        "courseInstructor": "Paul Inventado",
-        "siLeader": "Ashley Chan",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "4:00-5:15 pm",
-        "location": "E-NE042"
-      }
-    ],
     "CPSC 131": [
       {
-        "classNumber": "21676",
+        "classNumber": "13581",
         "courseInstructor": "Michael Peralta",
-        "siLeader": "Ricardo Granados Macias",
+        "siLeader": "Syon Chau",
+        "sessionDays": "Mo We",
+        "sessionTimes": "2:30-3:45 pm",
+        "location": "LH-319A"
+      },
+      {
+        "classNumber": "13612",
+        "courseInstructor": "Thomas Bettens",
+        "siLeader": "Samuel Kim",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "CS-202"
+      },
+      {
+        "classNumber": "13743",
+        "courseInstructor": "Michael Peralta",
+        "siLeader": "Ashley Chan",
         "sessionDays": "Tu Th",
         "sessionTimes": "11:30-12:45 pm",
-        "location": "CS-202"
+        "location": "GH-204"
       },
       {
-        "classNumber": "18092",
+        "classNumber": "13922",
         "courseInstructor": "Michael Peralta",
         "siLeader": "David Solano",
-        "sessionDays": "Mo We",
-        "sessionTimes": "4:00-5:15 pm",
-        "location": "CS-202"
-      },
-      {
-        "classNumber": "21677",
-        "courseInstructor": "Thomas Bettens",
-        "siLeader": "Destiny Bonillas",
-        "sessionDays": "Mo We",
-        "sessionTimes": "10:00-11:15 am",
-        "location": "CS-202"
-      },
-      {
-        "classNumber": "21679",
-        "courseInstructor": "Thomas Bettens",
-        "siLeader": "Derrick Lee",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "4:00-5:15 pm",
-        "location": "CS-202"
-      },
-      {
-        "classNumber": "21680",
-        "courseInstructor": "Michael Peralta",
-        "siLeader": "Esteban Escartin",
-        "sessionDays": "Mo We",
-        "sessionTimes": "8:30-9:45 am",
-        "location": "CS-202"
+        "sessionDays": "Mo Tu",
+        "sessionTimes": "M: 1:00-2:15 pm, T: 2:30-3:45 pm",
+        "location": "M:GH-240 Tu: CS-202"
       }
     ],
     "CPSC 240": [
       {
-        "classNumber": "17998, 17999",
-        "courseInstructor": "Yitsen Ku",
-        "siLeader": "Andrew Saldana",
+        "classNumber": "13951",
+        "courseInstructor": "Joshua Ku",
+        "siLeader": "Dane Camacho",
         "sessionDays": "Mo We",
-        "sessionTimes": "3:00-4:15 pm",
-        "location": "CS-110A"
+        "sessionTimes": "4:00- 5:15 pm",
+        "location": "CS-102A"
       },
       {
-        "classNumber": "18097, 18098",
+        "classNumber": "13604",
         "courseInstructor": "Floyd Holliday",
-        "siLeader": "Sara Sadek",
+        "siLeader": "Kaitlyn Lee",
         "sessionDays": "Mo We",
-        "sessionTimes": "11:30-12:45 pm",
+        "sessionTimes": "1:00-2:15 pm",
+        "location": "CS-102A"
+      },
+      {
+        "classNumber": "13686",
+        "courseInstructor": "Joshua Ku",
+        "siLeader": "Jonathan Aslam",
+        "sessionDays": "Mo We",
+        "sessionTimes": "2:30-3:45 pm",
         "location": "CS-110B"
       },
       {
-        "classNumber": "18278, 18279",
-        "courseInstructor": "Yitsen Ku",
-        "siLeader": "Raxel Ortiz",
-        "sessionDays": "Mo We",
-        "sessionTimes": "1:00-2:15 pm",
-        "location": "E-NE042"
-      },
-      {
-        "classNumber": "18352, 18353",
-        "courseInstructor": "Yitsen Ku",
-        "siLeader": "Nicholas Chung",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "2:00-3:15 pm",
-        "location": "CS-202"
-      },
-      {
-        "classNumber": "22896, 22897",
+        "classNumber": "13710",
         "courseInstructor": "Floyd Holliday",
         "siLeader": "Khoa Nguyen",
         "sessionDays": "Tu Th",
-        "sessionTimes": "2:30-3:45 am",
-        "location": "E-SE022"
+        "sessionTimes": "10:00-11:15 am",
+        "location": "GH-333"
+      },
+      {
+        "classNumber": "13569",
+        "courseInstructor": "Floyd Holliday",
+        "siLeader": "Sara Sadek",
+        "sessionDays": "We Fr",
+        "sessionTimes": "W: 4:00-5:15pm, F: 11:30-12:45 pm",
+        "location": "CS-202"
+      },
+      {
+        "classNumber": "13793",
+        "courseInstructor": "Mehdi Peiravi",
+        "siLeader": "Nicholas Chung",
+        "sessionDays": "Tu Th",
+        "sessionTimes": "10:00-11:15 am",
+        "location": "CS-202"
+      },
+      {
+        "classNumber": "13829",
+        "courseInstructor": "Mehdi Peiravi",
+        "siLeader": "Ricardo Granados Macias",
+        "sessionDays": "Mo We",
+        "sessionTimes": "11:45-1:00 pm",
+        "location": "GH-207"
       }
     ]
   }

@@ -3,67 +3,56 @@
   "sessionsOffered": {
     "ECON 201": [
       {
-        "classNumber": "12617",
+        "classNumber": "21305",
         "courseInstructor": "Robert Mead",
         "siLeader": "Emily Baros",
         "sessionDays": "Mo We",
-        "sessionTimes": "2:30-3:45 pm",
-        "location": "GH-302"
-      },
-      {
-        "classNumber": "12351",
-        "courseInstructor": "Francis Mummery",
-        "siLeader": "Joshua Angell",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "4:00-5:15 pm",
-        "location": "GH-304"
+        "sessionTimes": "11:30-12:45 pm",
+        "location": "EC-008"
       }
     ],
     "ECON 202": [
       {
-        "classNumber": "12711",
+        "classNumber": "20823",
         "courseInstructor": "Francis Mummery",
         "siLeader": "Scott Bunal",
-        "sessionDays": "Mo We",
+        "sessionDays": "Tu Th",
         "sessionTimes": "10:00-11:15 am",
-        "location": "PLS-255"
+        "location": "LH-319A"
       }
     ],
     "ECON 315": [
       {
-        "classNumber": "12108",
+        "classNumber": "12481",
         "courseInstructor": "Francis Mummery",
         "siLeader": "Angelica Mora",
         "sessionDays": "Tu Th",
         "sessionTimes": "2:30-3:45 pm",
-        "location": "H-321B"
+        "location": "GH-337"
       },
       {
-        "classNumber": "12108",
+        "classNumber": "12481",
         "courseInstructor": "Francis Mummery",
-        "siLeader": "Wanting Yu",
-        "sessionDays": "Tu Th",
-        "sessionTimes": "11:30-12:45 pm",
-        "location": "H-530"
-      },
-      {
-        "classNumber": "12442",
-        "courseInstructor": "Kenneth Kim",
         "siLeader": "Li Li",
         "sessionDays": "Mo We",
-        "sessionTimes": "10:00-11:15 am",
-        "location": "GH-207"
-      }
-    ],
-    "ECON 320": [
-      {
-        "classNumber": "21672",
-        "courseInstructor": "Kenneth Kim",
-        "siLeader": "Jake Herrera",
-        "sessionDays": "Mo We",
         "sessionTimes": "1:00-2:15 pm",
-        "location": "PLS-255"
-        
+        "location": "LH-319A"
+      },
+      {
+        "classNumber": "12482, 12742",
+        "courseInstructor": "Morteza Rahmatian",
+        "siLeader": "Angelica Mora",
+        "sessionDays": "Tu",
+        "sessionTimes": "Zoom: 8:30-9:45 am, In-person: 4:00-5:15pm",
+        "location": "Zoom/GH-337"
+      },
+      {
+        "classNumber": "12482, 12742",
+        "courseInstructor": "Morteza Rahmatian",
+        "siLeader": "Li Li",
+        "sessionDays": "Th",
+        "sessionTimes": "Zoom: 8:30-9:45am, In-person: 4:00-5:15pm",
+        "location": "Zoom/GH-337"
       }
     ]
   }
